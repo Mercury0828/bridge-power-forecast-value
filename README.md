@@ -80,8 +80,8 @@ the pre-registration and amendment records are available from the corresponding 
 
 ## Citation
 
-Please cite the paper and this repository (`CITATION.cff`). The archived version of this repository has a DOI on
-Zenodo.
+Please cite the paper and this repository (`CITATION.cff`). The repository is archived on Zenodo:
+[doi:10.5281/zenodo.22986729](https://doi.org/10.5281/zenodo.22986729) (all versions).
 
 ## Licence
 
