@@ -339,7 +339,7 @@ def fig_tpit_errors():
     ax.plot(e[vis], np.asarray(core.error_pmf(2.0))[vis], linestyle="-", color="0.6", linewidth=1.6, alpha=0.8,
             label="declared σ = 2 q")
     ax.set_xlim(-12, 6)
-    ax.set_xlabel("Projected − actual (quarters; < 0: later than projected)" if PAPER
+    ax.set_xlabel("Projected − actual (quarters; < 0: late)" if PAPER
                   else "Estimate − actual (quarters; < 0: later than estimated)")
     ax.set_ylabel("Probability")
     ax.legend(loc="upper left", frameon=False)
