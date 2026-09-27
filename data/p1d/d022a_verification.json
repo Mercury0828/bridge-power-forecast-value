@@ -1,0 +1,46 @@
+{
+ "registered": {
+  "status": "HighsModelStatus.kSolveError",
+  "z_primary": 589.8120945290746,
+  "tol": 5.998120945290745e-05,
+  "ints_hash": "e5eb3e85c7d2594f"
+ },
+ "repaired": {
+  "status": "HighsModelStatus.kOptimal",
+  "z_primary": 589.8120945290746,
+  "tol": 5.998120945290745e-05,
+  "ints_hash": "e5eb3e85c7d2594f",
+  "tiebreak_obj": 23756.780236982144,
+  "max_primal_infeasibility": 9.532420186530999e-08,
+  "primary_value": 589.812154510284,
+  "primary_bound": 589.812154510284,
+  "primary_ok": true,
+  "ints_fixed_max_frac": 0.0
+ },
+ "face": {
+  "cell": {
+   "cfg": "A+staged",
+   "level": "high",
+   "r": 4,
+   "p": 0.0018846446518252246
+  },
+  "max_unpolished_JQ": 634.3770921110049,
+  "status_max": "HighsModelStatus.kOptimal",
+  "min_unpolished_JQ": 634.3769815521664,
+  "status_min": "HighsModelStatus.kOptimal",
+  "J_polished_item": 634.3770790332388,
+  "L0_true_law_no_signal": 632.5754372103461,
+  "bound_on_policy_JQ": [
+   632.5754372103461,
+   634.3770921110049
+  ],
+  "max_change_in_grid_statistic": 0.0016977396364806871,
+  "note": "any policy the rule could return has L0 <= J_Q <= max_unpolished_JQ; the grid statistic weighs this cell p/2"
+ },
+ "model_files_identical": true,
+ "model_hashes": {
+  "registered": "07b78d239ea177ce4d771f7b4355fb43f6d517962b1048442378b7f910c21db6",
+  "repaired": "07b78d239ea177ce4d771f7b4355fb43f6d517962b1048442378b7f910c21db6"
+ },
+ "ints_identical": true
+}

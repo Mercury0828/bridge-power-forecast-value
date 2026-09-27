@@ -1,0 +1,86 @@
+{
+ "jobs": [
+  {
+   "job": "77448214ddc2e629f1f4",
+   "kind": "nosig",
+   "cfg": "A",
+   "identical": true,
+   "raw_differing_keys": [
+    "detail"
+   ],
+   "differing_keys_after_schema_normalization": []
+  },
+  {
+   "job": "7ca670559c0eaa37a9aa",
+   "kind": "sig",
+   "cfg": "A",
+   "identical": true,
+   "raw_differing_keys": [
+    "detail"
+   ],
+   "differing_keys_after_schema_normalization": []
+  },
+  {
+   "job": "c42e268957bccd47d452",
+   "kind": "nosig",
+   "cfg": "A+staged",
+   "identical": true,
+   "raw_differing_keys": [
+    "detail"
+   ],
+   "differing_keys_after_schema_normalization": []
+  },
+  {
+   "job": "5bff27dd8847234ecf4b",
+   "kind": "sig",
+   "cfg": "A+staged",
+   "identical": true,
+   "raw_differing_keys": [
+    "detail"
+   ],
+   "differing_keys_after_schema_normalization": []
+  },
+  {
+   "job": "47a6f41618e53ebc4c75",
+   "kind": "nosig",
+   "cfg": "B",
+   "identical": true,
+   "raw_differing_keys": [
+    "detail"
+   ],
+   "differing_keys_after_schema_normalization": []
+  },
+  {
+   "job": "53320abe6ba8d7ccd2a4",
+   "kind": "sig",
+   "cfg": "B",
+   "identical": true,
+   "raw_differing_keys": [
+    "detail"
+   ],
+   "differing_keys_after_schema_normalization": []
+  },
+  {
+   "job": "3447e652b8c09bddfe36",
+   "kind": "nosig",
+   "cfg": "B+staged",
+   "identical": true,
+   "raw_differing_keys": [
+    "detail"
+   ],
+   "differing_keys_after_schema_normalization": []
+  },
+  {
+   "job": "a6ea1b99131e73c7366a",
+   "kind": "sig",
+   "cfg": "B+staged",
+   "identical": true,
+   "raw_differing_keys": [
+    "detail"
+   ],
+   "differing_keys_after_schema_normalization": []
+  }
+ ],
+ "all_identical": true,
+ "note": "Identity is exact equality of the JSON after removing the null `rsb` branch key that Phase 1e added to policy_detail; raw differences are listed per job."
+}

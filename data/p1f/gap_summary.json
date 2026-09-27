@@ -1,0 +1,476 @@
+{
+ "runs": {
+  "p1c_main": {
+   "oracle": {
+    "n": 200,
+    "ok": 200,
+    "primary_gap_max": null,
+    "gap_max": 9.859795921879809e-06,
+    "statuses": {}
+   },
+   "sig": {
+    "n": 88,
+    "ok": 88,
+    "primary_gap_max": null,
+    "gap_max": null,
+    "statuses": {}
+   },
+   "nosig": {
+    "n": 88,
+    "ok": 88,
+    "primary_gap_max": 9.998031675338191e-05,
+    "gap_max": null,
+    "statuses": {}
+   }
+  },
+  "p1d_permit": {
+   "sig": {
+    "n": 88,
+    "ok": 88,
+    "primary_gap_max": null,
+    "gap_max": null,
+    "statuses": {}
+   },
+   "nosig": {
+    "n": 88,
+    "ok": 88,
+    "primary_gap_max": 9.914908747131739e-05,
+    "gap_max": null,
+    "statuses": {}
+   }
+  },
+  "p1d_refurb": {
+   "sig": {
+    "n": 176,
+    "ok": 176,
+    "primary_gap_max": null,
+    "gap_max": null,
+    "statuses": {}
+   },
+   "nosig": {
+    "n": 176,
+    "ok": 176,
+    "primary_gap_max": 9.8784559489907e-05,
+    "gap_max": null,
+    "statuses": {}
+   }
+  },
+  "p1d_spine": {
+   "nosig": {
+    "n": 88,
+    "ok": 88,
+    "primary_gap_max": 9.924434101426494e-05,
+    "gap_max": null,
+    "statuses": {}
+   },
+   "sig": {
+    "n": 88,
+    "ok": 88,
+    "primary_gap_max": null,
+    "gap_max": null,
+    "statuses": {}
+   }
+  },
+  "p1d_stage": {
+   "sig": {
+    "n": 88,
+    "ok": 88,
+    "primary_gap_max": null,
+    "gap_max": null,
+    "statuses": {}
+   },
+   "nosig": {
+    "n": 88,
+    "ok": 88,
+    "primary_gap_max": 9.912751315934099e-05,
+    "gap_max": null,
+    "statuses": {}
+   }
+  },
+  "p1d_units": {
+   "units_nosig": {
+    "n": 88,
+    "ok": 88,
+    "primary_gap_max": null,
+    "gap_max": null,
+    "statuses": {}
+   },
+   "units_sig": {
+    "n": 88,
+    "ok": 88,
+    "primary_gap_max": null,
+    "gap_max": null,
+    "statuses": {}
+   }
+  },
+  "p1e_e1": {
+   "nosig": {
+    "n": 88,
+    "ok": 88,
+    "primary_gap_max": 9.933610333092492e-05,
+    "gap_max": null,
+    "statuses": {}
+   },
+   "sig": {
+    "n": 88,
+    "ok": 88,
+    "primary_gap_max": null,
+    "gap_max": null,
+    "statuses": {}
+   }
+  },
+  "p1e_e1s": {
+   "sig": {
+    "n": 70,
+    "ok": 70,
+    "primary_gap_max": null,
+    "gap_max": null,
+    "statuses": {}
+   },
+   "nosig": {
+    "n": 70,
+    "ok": 70,
+    "primary_gap_max": 9.933610333057577e-05,
+    "gap_max": null,
+    "statuses": {}
+   }
+  },
+  "p1e_e2": {
+   "batch_nosig": {
+    "n": 88,
+    "ok": 88,
+    "primary_gap_max": null,
+    "gap_max": null,
+    "statuses": {}
+   },
+   "batch_sig": {
+    "n": 88,
+    "ok": 88,
+    "primary_gap_max": null,
+    "gap_max": null,
+    "statuses": {}
+   }
+  },
+  "p1e_e4a": {
+   "nosig": {
+    "n": 88,
+    "ok": 88,
+    "primary_gap_max": 9.841429175127311e-05,
+    "gap_max": null,
+    "statuses": {}
+   },
+   "sig": {
+    "n": 88,
+    "ok": 88,
+    "primary_gap_max": null,
+    "gap_max": null,
+    "statuses": {}
+   }
+  },
+  "p1e_e4a2": {
+   "batch_nosig": {
+    "n": 88,
+    "ok": 88,
+    "primary_gap_max": null,
+    "gap_max": null,
+    "statuses": {}
+   },
+   "batch_sig": {
+    "n": 88,
+    "ok": 88,
+    "primary_gap_max": null,
+    "gap_max": null,
+    "statuses": {}
+   }
+  },
+  "p1e_e4b_rsb": {
+   "batch_nosig": {
+    "n": 88,
+    "ok": 88,
+    "primary_gap_max": null,
+    "gap_max": null,
+    "statuses": {}
+   },
+   "batch_sig": {
+    "n": 88,
+    "ok": 88,
+    "primary_gap_max": null,
+    "gap_max": null,
+    "statuses": {}
+   }
+  },
+  "p1e_e4b_spine": {
+   "batch_sig": {
+    "n": 88,
+    "ok": 88,
+    "primary_gap_max": null,
+    "gap_max": null,
+    "statuses": {}
+   },
+   "batch_nosig": {
+    "n": 88,
+    "ok": 88,
+    "primary_gap_max": null,
+    "gap_max": null,
+    "statuses": {}
+   }
+  },
+  "p1f_blocks4": {
+   "nosig": {
+    "n": 88,
+    "ok": 85,
+    "primary_gap_max": 9.805432053146906e-05,
+    "gap_max": null,
+    "statuses": {}
+   },
+   "sig": {
+    "n": 88,
+    "ok": 88,
+    "primary_gap_max": 9.943863163669376e-05,
+    "gap_max": null,
+    "statuses": {}
+   }
+  },
+  "p1f_naive": {
+   "sig": {
+    "n": 88,
+    "ok": 88,
+    "primary_gap_max": 8.883233419659353e-05,
+    "gap_max": null,
+    "statuses": {}
+   },
+   "nosig": {
+    "n": 88,
+    "ok": 88,
+    "primary_gap_max": 9.998031675338191e-05,
+    "gap_max": null,
+    "statuses": {}
+   }
+  },
+  "p1f_nocchp": {
+   "sig": {
+    "n": 88,
+    "ok": 88,
+    "primary_gap_max": 9.813653177518054e-05,
+    "gap_max": null,
+    "statuses": {}
+   },
+   "nosig": {
+    "n": 88,
+    "ok": 88,
+    "primary_gap_max": 9.224295702182476e-05,
+    "gap_max": null,
+    "statuses": {}
+   }
+  },
+  "p1f_s_capex": {
+   "sig": {
+    "n": 176,
+    "ok": 176,
+    "primary_gap_max": 9.991757693883369e-05,
+    "gap_max": null,
+    "statuses": {}
+   },
+   "nosig": {
+    "n": 176,
+    "ok": 176,
+    "primary_gap_max": 8.523384550446515e-05,
+    "gap_max": null,
+    "statuses": {}
+   }
+  },
+  "p1f_s_co2": {
+   "nosig": {
+    "n": 176,
+    "ok": 176,
+    "primary_gap_max": 9.978022099455098e-05,
+    "gap_max": null,
+    "statuses": {}
+   },
+   "sig": {
+    "n": 176,
+    "ok": 176,
+    "primary_gap_max": 9.99820988394693e-05,
+    "gap_max": null,
+    "statuses": {}
+   }
+  },
+  "p1f_s_diesel": {
+   "sig": {
+    "n": 176,
+    "ok": 176,
+    "primary_gap_max": 9.999860205783486e-05,
+    "gap_max": null,
+    "statuses": {}
+   },
+   "nosig": {
+    "n": 176,
+    "ok": 176,
+    "primary_gap_max": 9.909566352682735e-05,
+    "gap_max": null,
+    "statuses": {}
+   }
+  },
+  "p1f_s_disc": {
+   "sig": {
+    "n": 176,
+    "ok": 176,
+    "primary_gap_max": 9.965804194792487e-05,
+    "gap_max": null,
+    "statuses": {}
+   },
+   "nosig": {
+    "n": 176,
+    "ok": 176,
+    "primary_gap_max": 9.866946108891141e-05,
+    "gap_max": null,
+    "statuses": {}
+   }
+  },
+  "p1f_s_eff": {
+   "nosig": {
+    "n": 88,
+    "ok": 88,
+    "primary_gap_max": 9.937442141966612e-05,
+    "gap_max": null,
+    "statuses": {}
+   },
+   "sig": {
+    "n": 88,
+    "ok": 88,
+    "primary_gap_max": 9.92486403892167e-05,
+    "gap_max": null,
+    "statuses": {}
+   }
+  },
+  "p1f_s_gas": {
+   "sig": {
+    "n": 176,
+    "ok": 176,
+    "primary_gap_max": 9.90433747205402e-05,
+    "gap_max": null,
+    "statuses": {}
+   },
+   "nosig": {
+    "n": 176,
+    "ok": 176,
+    "primary_gap_max": 9.855019478881601e-05,
+    "gap_max": null,
+    "statuses": {}
+   }
+  },
+  "p1f_s_grid": {
+   "nosig": {
+    "n": 176,
+    "ok": 176,
+    "primary_gap_max": 9.546532806403172e-05,
+    "gap_max": null,
+    "statuses": {}
+   },
+   "sig": {
+    "n": 176,
+    "ok": 176,
+    "primary_gap_max": 9.999998723394692e-05,
+    "gap_max": null,
+    "statuses": {}
+   }
+  },
+  "p1f_s_life": {
+   "nosig": {
+    "n": 176,
+    "ok": 176,
+    "primary_gap_max": 9.756246590817487e-05,
+    "gap_max": null,
+    "statuses": {}
+   },
+   "sig": {
+    "n": 176,
+    "ok": 176,
+    "primary_gap_max": 9.999990826507226e-05,
+    "gap_max": null,
+    "statuses": {}
+   }
+  },
+  "p1f_s_rent": {
+   "sig": {
+    "n": 176,
+    "ok": 176,
+    "primary_gap_max": 9.995139795148321e-05,
+    "gap_max": null,
+    "statuses": {}
+   },
+   "nosig": {
+    "n": 176,
+    "ok": 176,
+    "primary_gap_max": 9.845874384189324e-05,
+    "gap_max": null,
+    "statuses": {}
+   }
+  },
+  "p1f_size075": {
+   "nosig": {
+    "n": 88,
+    "ok": 88,
+    "primary_gap_max": 9.266664143778671e-05,
+    "gap_max": null,
+    "statuses": {}
+   },
+   "sig": {
+    "n": 88,
+    "ok": 88,
+    "primary_gap_max": 9.961264725578031e-05,
+    "gap_max": null,
+    "statuses": {}
+   }
+  },
+  "p1f_size300": {
+   "nosig": {
+    "n": 88,
+    "ok": 88,
+    "primary_gap_max": 9.783780337935442e-05,
+    "gap_max": null,
+    "statuses": {}
+   },
+   "sig": {
+    "n": 88,
+    "ok": 88,
+    "primary_gap_max": 9.964096786703492e-05,
+    "gap_max": null,
+    "statuses": {}
+   }
+  },
+  "p1f_tau2": {
+   "nosig": {
+    "n": 88,
+    "ok": 88,
+    "primary_gap_max": 9.998031675338191e-05,
+    "gap_max": null,
+    "statuses": {}
+   },
+   "sig": {
+    "n": 88,
+    "ok": 88,
+    "primary_gap_max": 9.9250734813795e-05,
+    "gap_max": null,
+    "statuses": {}
+   }
+  },
+  "p1f_tau6": {
+   "sig": {
+    "n": 88,
+    "ok": 88,
+    "primary_gap_max": 9.827815678506987e-05,
+    "gap_max": null,
+    "statuses": {}
+   },
+   "nosig": {
+    "n": 88,
+    "ok": 88,
+    "primary_gap_max": 9.998031675338191e-05,
+    "gap_max": null,
+    "statuses": {}
+   }
+  }
+ },
+ "note": "Signal jobs store the tie-break stage's status and gap; their primary stage is optimal at mip_rel_gap 1e-4 because a job is usable only if that stage is kOptimal (model/signal.py solve_saa). No-signal jobs store the primary gap; oracle jobs were solved at 1e-5."
+}

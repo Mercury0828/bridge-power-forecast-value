@@ -1,0 +1,2693 @@
+{
+ "units": "orders and capacity: MW electrical (GE, DG, BESS), MWth (ABS); gas MMBtu HHV; diesel gallons; grid MWh; sym2, shift 0",
+ "cells": [
+  {
+   "cfg": "A",
+   "level": "low",
+   "r": 7,
+   "decisions": {
+    "no_signal": {
+     "timing": {
+      "ABS": {
+       "root": 0.0,
+       "pre_signal": 0.0,
+       "post_signal": 0.0
+      },
+      "BESS": {
+       "root": 0.0,
+       "pre_signal": 0.0,
+       "post_signal": 0.0
+      },
+      "DG": {
+       "root": 8.4,
+       "pre_signal": 0.851909,
+       "post_signal": 43.244444
+      },
+      "GE": {
+       "root": 62.37,
+       "pre_signal": 0.000313,
+       "post_signal": 0.0
+      }
+     },
+     "installed_by_tau": {
+      "ABS": 0.0,
+      "BESS": 0.0,
+      "DG": 0.0,
+      "GE": 0.0
+     }
+    },
+    "signal": [
+     {
+      "timing": {
+       "ABS": {
+        "root": 0.0,
+        "pre_signal": 0.0,
+        "post_signal": 0.0
+       },
+       "BESS": {
+        "root": 0.0,
+        "pre_signal": 0.0,
+        "post_signal": 14.666667
+       },
+       "DG": {
+        "root": 8.4,
+        "pre_signal": 0.0,
+        "post_signal": 29.43
+       },
+       "GE": {
+        "root": 62.37,
+        "pre_signal": 0.0,
+        "post_signal": 0.0
+       }
+      },
+      "installed_by_tau": {
+       "ABS": 0.0,
+       "BESS": 0.0,
+       "DG": 0.0,
+       "GE": 0.0
+      },
+      "median_T": 10,
+      "installed_by_median_T": {
+       "ABS": 0.0,
+       "BESS": 0.0,
+       "DG": 37.83,
+       "GE": 62.37
+      },
+      "no_signal_installed_by_median_T": {
+       "ABS": 0.0,
+       "BESS": 0.0,
+       "DG": 52.496353,
+       "GE": 62.370312999999996
+      }
+     },
+     {
+      "timing": {
+       "ABS": {
+        "root": -0.0,
+        "pre_signal": 0.0,
+        "post_signal": 3.901419
+       },
+       "BESS": {
+        "root": -0.0,
+        "pre_signal": 0.0,
+        "post_signal": 9.166667
+       },
+       "DG": {
+        "root": 8.4,
+        "pre_signal": 0.0,
+        "post_signal": 34.93
+       },
+       "GE": {
+        "root": 62.37,
+        "pre_signal": 0.0,
+        "post_signal": 0.0
+       }
+      },
+      "installed_by_tau": {
+       "ABS": 0.0,
+       "BESS": 0.0,
+       "DG": 0.0,
+       "GE": 0.0
+      },
+      "median_T": 11,
+      "installed_by_median_T": {
+       "ABS": 0.0,
+       "BESS": 0.0,
+       "DG": 43.33,
+       "GE": 62.37
+      },
+      "no_signal_installed_by_median_T": {
+       "ABS": 0.0,
+       "BESS": 0.0,
+       "DG": 52.496353,
+       "GE": 62.370312999999996
+      }
+     },
+     {
+      "timing": {
+       "ABS": {
+        "root": -0.0,
+        "pre_signal": 0.0,
+        "post_signal": 3.965
+       },
+       "BESS": {
+        "root": -0.0,
+        "pre_signal": 0.0,
+        "post_signal": 0.0
+       },
+       "DG": {
+        "root": 8.4,
+        "pre_signal": 0.0,
+        "post_signal": 62.115133
+       },
+       "GE": {
+        "root": 62.37,
+        "pre_signal": 0.0,
+        "post_signal": 0.0
+       }
+      },
+      "installed_by_tau": {
+       "ABS": 0.0,
+       "BESS": 0.0,
+       "DG": 0.0,
+       "GE": 0.0
+      },
+      "median_T": 11,
+      "installed_by_median_T": {
+       "ABS": 3.965,
+       "BESS": 0.0,
+       "DG": 70.515133,
+       "GE": 62.37
+      },
+      "no_signal_installed_by_median_T": {
+       "ABS": 0.0,
+       "BESS": 0.0,
+       "DG": 52.496353,
+       "GE": 62.370312999999996
+      }
+     }
+    ]
+   },
+   "quantities": {
+    "cfg": "A",
+    "level": "low",
+    "r": 7,
+    "p": 0.2261746301850835,
+    "reports": [
+     {
+      "mean_delay_days": 220.0
+     }
+    ],
+    "thresholds": [
+     10,
+     11
+    ],
+    "P_cat": [
+     0.43852562916163723,
+     0.16910436325037936,
+     0.39237000758798335
+    ],
+    "no_signal": {
+     "cost_match": 0.0,
+     "all": {
+      "GE_MWh_e": 668092.829222509,
+      "owned_DG_MWh_e": 170456.49451933653,
+      "rental_MWh_e": 224261.24866016553,
+      "grid_MWh": 7084694.7771014115,
+      "ABS_cooling_MWh_th": 0.0,
+      "elec_chiller_cooling_MWh_th": 6574499.999999984,
+      "service_elec_MWh": 7100459.999999925,
+      "service_cooling_MWh_th": 6574499.999999984,
+      "gas_MMBtu": 5614652.136785966,
+      "diesel_gal": 27630242.022565145,
+      "owned_DG_MWh": 170456.49451933653,
+      "gas_fuel_MWh_HHV": 1645560.4152362153,
+      "diesel_fuel_MWh_HHV": 1112891.1750840591,
+      "recovered_heat_used_MWh_th": 0.0,
+      "onsite_fuel_MWh_HHV": 2758451.5903202742
+     },
+     "by_cat": [
+      {
+       "GE_MWh_e": 592860.4299306569,
+       "owned_DG_MWh_e": 124630.64343252608,
+       "rental_MWh_e": 189057.4902603381,
+       "grid_MWh": 7240956.785879901,
+       "ABS_cooling_MWh_th": 0.0,
+       "elec_chiller_cooling_MWh_th": 6574500.000000007,
+       "service_elec_MWh": 7100460.00000003,
+       "service_cooling_MWh_th": 6574500.000000007,
+       "gas_MMBtu": 4982399.053137241,
+       "diesel_gal": 21958169.35850049,
+       "owned_DG_MWh": 124630.64343252608,
+       "gas_fuel_MWh_HHV": 1460257.6357377612,
+       "diesel_fuel_MWh_HHV": 884431.3734247811,
+       "recovered_heat_used_MWh_th": 0.0,
+       "onsite_fuel_MWh_HHV": 2344689.0091625424
+      },
+      {
+       "GE_MWh_e": 657212.6750732047,
+       "owned_DG_MWh_e": 164347.77557385858,
+       "rental_MWh_e": 214312.35113039147,
+       "grid_MWh": 7111632.547725994,
+       "ABS_cooling_MWh_th": 0.0,
+       "elec_chiller_cooling_MWh_th": 6574499.999999991,
+       "service_elec_MWh": 7100459.999999989,
+       "service_cooling_MWh_th": 6574499.999999991,
+       "gas_MMBtu": 5523215.321315212,
+       "diesel_gal": 26506208.869297504,
+       "owned_DG_MWh": 164347.77557385858,
+       "gas_fuel_MWh_HHV": 1618761.8175015277,
+       "diesel_fuel_MWh_HHV": 1067617.356065324,
+       "recovered_heat_used_MWh_th": 0.0,
+       "onsite_fuel_MWh_HHV": 2686379.1735668518
+      },
+      {
+       "GE_MWh_e": 756864.183043378,
+       "owned_DG_MWh_e": 224305.72050158467,
+       "rental_MWh_e": 267893.9217795953,
+       "grid_MWh": 6898441.524178887,
+       "ABS_cooling_MWh_th": 0.0,
+       "elec_chiller_cooling_MWh_th": 6574500.000000023,
+       "service_elec_MWh": 7100460.000000036,
+       "service_cooling_MWh_th": 6574500.000000023,
+       "gas_MMBtu": 6360686.594296549,
+       "diesel_gal": 34453974.9596826,
+       "owned_DG_MWh": 224305.72050158467,
+       "gas_fuel_MWh_HHV": 1864210.6079415444,
+       "diesel_fuel_MWh_HHV": 1387737.5611796458,
+       "recovered_heat_used_MWh_th": 0.0,
+       "onsite_fuel_MWh_HHV": 3251948.16912119
+      }
+     ]
+    },
+    "signal": {
+     "cost_match": 0.0,
+     "by_cat": [
+      {
+       "GE_MWh_e": 592858.811351129,
+       "owned_DG_MWh_e": 79272.30065799181,
+       "rental_MWh_e": 234417.45161439638,
+       "grid_MWh": 7240956.785879901,
+       "ABS_cooling_MWh_th": 0.0,
+       "elec_chiller_cooling_MWh_th": 6574500.000000007,
+       "service_elec_MWh": 7100460.00000003,
+       "service_cooling_MWh_th": 6574500.000000007,
+       "gas_MMBtu": 4982385.450594888,
+       "diesel_gal": 21958282.659067173,
+       "owned_DG_MWh": 79272.30065799181,
+       "gas_fuel_MWh_HHV": 1460253.6490606354,
+       "diesel_fuel_MWh_HHV": 884435.9369461824,
+       "recovered_heat_used_MWh_th": 0.0,
+       "onsite_fuel_MWh_HHV": 2344689.586006818
+      },
+      {
+       "GE_MWh_e": 657210.733281169,
+       "owned_DG_MWh_e": 125896.15713102122,
+       "rental_MWh_e": 252765.91136526474,
+       "grid_MWh": 7111632.547725994,
+       "ABS_cooling_MWh_th": 0.0,
+       "elec_chiller_cooling_MWh_th": 6574499.999999991,
+       "service_elec_MWh": 7100459.999999989,
+       "service_cooling_MWh_th": 6574499.999999991,
+       "gas_MMBtu": 5523199.002494944,
+       "diesel_gal": 26506344.794740014,
+       "owned_DG_MWh": 125896.15713102122,
+       "gas_fuel_MWh_HHV": 1618757.0347288817,
+       "diesel_fuel_MWh_HHV": 1067622.830871709,
+       "recovered_heat_used_MWh_th": 0.0,
+       "onsite_fuel_MWh_HHV": 2686379.8656005906
+      },
+      {
+       "GE_MWh_e": 755516.9685142939,
+       "owned_DG_MWh_e": 324169.20971763675,
+       "rental_MWh_e": 162912.2444580049,
+       "grid_MWh": 6898441.524178887,
+       "ABS_cooling_MWh_th": 39602.16344268585,
+       "elec_chiller_cooling_MWh_th": 6534897.836557348,
+       "service_elec_MWh": 7100460.000000036,
+       "service_cooling_MWh_th": 6574500.000000023,
+       "gas_MMBtu": 6349364.603394126,
+       "diesel_gal": 34095701.79229491,
+       "owned_DG_MWh": 324169.20971763675,
+       "gas_fuel_MWh_HHV": 1860892.3222139876,
+       "diesel_fuel_MWh_HHV": 1373307.0308234678,
+       "recovered_heat_used_MWh_th": 56574.519203836935,
+       "onsite_fuel_MWh_HHV": 3234199.353037455
+      }
+     ],
+     "all": {
+      "GE_MWh_e": 667563.1844934048,
+      "owned_DG_MWh_e": 183246.8002851471,
+      "rental_MWh_e": 209463.75754265854,
+      "grid_MWh": 7084694.777101416,
+      "ABS_cooling_MWh_th": 15538.701170507204,
+      "elec_chiller_cooling_MWh_th": 6558961.298829507,
+      "service_elec_MWh": 7100460.000000024,
+      "service_cooling_MWh_th": 6574500.00000001,
+      "gas_MMBtu": 5610201.002482574,
+      "diesel_gal": 27489739.04794639,
+      "owned_DG_MWh": 183246.8002851471,
+      "gas_fuel_MWh_HHV": 1644255.8623923138,
+      "diesel_fuel_MWh_HHV": 1107231.9948134494,
+      "recovered_heat_used_MWh_th": 22198.14452929601,
+      "onsite_fuel_MWh_HHV": 2751487.8572057635
+     }
+    }
+   }
+  },
+  {
+   "cfg": "A",
+   "level": "high",
+   "r": 12,
+   "decisions": {
+    "no_signal": {
+     "timing": {
+      "ABS": {
+       "root": 0.0,
+       "pre_signal": 0.0,
+       "post_signal": 0.0
+      },
+      "BESS": {
+       "root": 0.0,
+       "pre_signal": 0.0,
+       "post_signal": 0.0
+      },
+      "DG": {
+       "root": 8.4,
+       "pre_signal": 0.851962,
+       "post_signal": 43.244444
+      },
+      "GE": {
+       "root": 62.37,
+       "pre_signal": 0.00026,
+       "post_signal": 0.0
+      }
+     },
+     "installed_by_tau": {
+      "ABS": 0.0,
+      "BESS": 0.0,
+      "DG": 0.0,
+      "GE": 0.0
+     }
+    },
+    "signal": [
+     {
+      "timing": {
+       "ABS": {
+        "root": 0.0,
+        "pre_signal": 0.0,
+        "post_signal": 0.0
+       },
+       "BESS": {
+        "root": 0.0,
+        "pre_signal": 0.0,
+        "post_signal": 14.666667
+       },
+       "DG": {
+        "root": 8.4,
+        "pre_signal": 0.071283,
+        "post_signal": 29.358717
+       },
+       "GE": {
+        "root": 62.37,
+        "pre_signal": 0.0,
+        "post_signal": 0.0
+       }
+      },
+      "installed_by_tau": {
+       "ABS": 0.0,
+       "BESS": 0.0,
+       "DG": 0.0,
+       "GE": 0.0
+      },
+      "median_T": 9,
+      "installed_by_median_T": {
+       "ABS": 0.0,
+       "BESS": 0.0,
+       "DG": 37.83,
+       "GE": 62.37
+      },
+      "no_signal_installed_by_median_T": {
+       "ABS": 0.0,
+       "BESS": 0.0,
+       "DG": 52.496406,
+       "GE": 62.370259999999995
+      }
+     },
+     {
+      "timing": {
+       "ABS": {
+        "root": -0.0,
+        "pre_signal": 0.0,
+        "post_signal": 0.0
+       },
+       "BESS": {
+        "root": -0.0,
+        "pre_signal": 0.0,
+        "post_signal": 9.166667
+       },
+       "DG": {
+        "root": 8.4,
+        "pre_signal": 0.071283,
+        "post_signal": 34.858717
+       },
+       "GE": {
+        "root": 62.37,
+        "pre_signal": 0.0,
+        "post_signal": 0.0
+       }
+      },
+      "installed_by_tau": {
+       "ABS": 0.0,
+       "BESS": 0.0,
+       "DG": 0.0,
+       "GE": 0.0
+      },
+      "median_T": 10,
+      "installed_by_median_T": {
+       "ABS": 0.0,
+       "BESS": 0.0,
+       "DG": 43.33,
+       "GE": 62.37
+      },
+      "no_signal_installed_by_median_T": {
+       "ABS": 0.0,
+       "BESS": 0.0,
+       "DG": 52.496406,
+       "GE": 62.370259999999995
+      }
+     },
+     {
+      "timing": {
+       "ABS": {
+        "root": -0.0,
+        "pre_signal": 0.0,
+        "post_signal": 3.194752
+       },
+       "BESS": {
+        "root": -0.0,
+        "pre_signal": 0.0,
+        "post_signal": 0.0
+       },
+       "DG": {
+        "root": 8.4,
+        "pre_signal": 0.071283,
+        "post_signal": 62.15682
+       },
+       "GE": {
+        "root": 62.37,
+        "pre_signal": 0.0,
+        "post_signal": 0.0
+       }
+      },
+      "installed_by_tau": {
+       "ABS": 0.0,
+       "BESS": 0.0,
+       "DG": 0.0,
+       "GE": 0.0
+      },
+      "median_T": 12,
+      "installed_by_median_T": {
+       "ABS": 3.194752,
+       "BESS": 0.0,
+       "DG": 70.62810300000001,
+       "GE": 62.37
+      },
+      "no_signal_installed_by_median_T": {
+       "ABS": 0.0,
+       "BESS": 0.0,
+       "DG": 52.496406,
+       "GE": 62.370259999999995
+      }
+     }
+    ]
+   },
+   "quantities": {
+    "cfg": "A",
+    "level": "high",
+    "r": 12,
+    "p": 0.11448177937823506,
+    "reports": [
+     {
+      "mean_delay_days": 210.0
+     }
+    ],
+    "thresholds": [
+     10,
+     11
+    ],
+    "P_cat": [
+     0.487540072081497,
+     0.13819228552545,
+     0.374267642393053
+    ],
+    "no_signal": {
+     "cost_match": 0.0,
+     "all": {
+      "GE_MWh_e": 672903.4342971969,
+      "owned_DG_MWh_e": 168197.38578556236,
+      "rental_MWh_e": 276157.185039472,
+      "grid_MWh": 7030247.344381202,
+      "ABS_cooling_MWh_th": 0.0,
+      "elec_chiller_cooling_MWh_th": 6574500.000000055,
+      "service_elec_MWh": 7100459.999999965,
+      "service_cooling_MWh_th": 6574500.000000055,
+      "gas_MMBtu": 5655080.461833643,
+      "diesel_gal": 31104819.957752407,
+      "owned_DG_MWh": 168197.38578556236,
+      "gas_fuel_MWh_HHV": 1657409.2795526504,
+      "diesel_fuel_MWh_HHV": 1252840.2612358823,
+      "recovered_heat_used_MWh_th": 0.0,
+      "onsite_fuel_MWh_HHV": 2910249.5407885327
+     },
+     "by_cat": [
+      {
+       "GE_MWh_e": 507648.91584071575,
+       "owned_DG_MWh_e": 71031.28006550441,
+       "rental_MWh_e": 161567.93751995242,
+       "grid_MWh": 7407257.216077274,
+       "ABS_cooling_MWh_th": 0.0,
+       "elec_chiller_cooling_MWh_th": 6574499.99999994,
+       "service_elec_MWh": 7100459.999999931,
+       "service_cooling_MWh_th": 6574499.99999994,
+       "gas_MMBtu": 4266281.488725375,
+       "diesel_gal": 16281945.23098198,
+       "owned_DG_MWh": 71031.28006550441,
+       "gas_fuel_MWh_HHV": 1250375.5828620677,
+       "diesel_fuel_MWh_HHV": 655804.3590774017,
+       "recovered_heat_used_MWh_th": 0.0,
+       "onsite_fuel_MWh_HHV": 1906179.9419394694
+      },
+      {
+       "GE_MWh_e": 605410.1802456742,
+       "owned_DG_MWh_e": 131450.1552304227,
+       "rental_MWh_e": 200862.19637448792,
+       "grid_MWh": 7209782.817652838,
+       "ABS_cooling_MWh_th": 0.0,
+       "elec_chiller_cooling_MWh_th": 6574500.00000002,
+       "service_elec_MWh": 7100460.000000046,
+       "service_cooling_MWh_th": 6574500.00000002,
+       "gas_MMBtu": 5087867.154784646,
+       "diesel_gal": 23261864.612343743,
+       "owned_DG_MWh": 131450.1552304227,
+       "gas_fuel_MWh_HHV": 1491168.5682252774,
+       "diesel_fuel_MWh_HHV": 936941.6243960259,
+       "recovered_heat_used_MWh_th": 0.0,
+       "onsite_fuel_MWh_HHV": 2428110.1926213033
+      },
+      {
+       "GE_MWh_e": 913093.1720479912,
+       "owned_DG_MWh_e": 308339.2201915869,
+       "rental_MWh_e": 453228.4278108689,
+       "grid_MWh": 6472844.529452986,
+       "ABS_cooling_MWh_th": 0.0,
+       "elec_chiller_cooling_MWh_th": 6574499.999999984,
+       "service_elec_MWh": 7100459.999999984,
+       "service_cooling_MWh_th": 6574499.999999984,
+       "gas_MMBtu": 7673635.017891318,
+       "diesel_gal": 53309735.3601719,
+       "owned_DG_MWh": 308339.2201915869,
+       "gas_fuel_MWh_HHV": 2249013.78015572,
+       "diesel_fuel_MWh_HHV": 2147210.074379726,
+       "recovered_heat_used_MWh_th": 0.0,
+       "onsite_fuel_MWh_HHV": 4396223.854535446
+      }
+     ]
+    },
+    "signal": {
+     "cost_match": 0.0,
+     "by_cat": [
+      {
+       "GE_MWh_e": 507647.9281429106,
+       "owned_DG_MWh_e": 45799.787545449726,
+       "rental_MWh_e": 186800.41773780974,
+       "grid_MWh": 7407257.216077274,
+       "ABS_cooling_MWh_th": 0.0,
+       "elec_chiller_cooling_MWh_th": 6574499.99999994,
+       "service_elec_MWh": 7100459.999999931,
+       "service_cooling_MWh_th": 6574499.99999994,
+       "gas_MMBtu": 4266273.188113021,
+       "diesel_gal": 16282014.36982816,
+       "owned_DG_MWh": 45799.787545449726,
+       "gas_fuel_MWh_HHV": 1250373.1500917412,
+       "diesel_fuel_MWh_HHV": 655807.1438525661,
+       "recovered_heat_used_MWh_th": 0.0,
+       "onsite_fuel_MWh_HHV": 1906180.2939443074
+      },
+      {
+       "GE_MWh_e": 605408.7852150644,
+       "owned_DG_MWh_e": 100722.28053099493,
+       "rental_MWh_e": 231591.46610452663,
+       "grid_MWh": 7209782.817652838,
+       "ABS_cooling_MWh_th": 0.0,
+       "elec_chiller_cooling_MWh_th": 6574500.00000002,
+       "service_elec_MWh": 7100460.000000046,
+       "service_cooling_MWh_th": 6574500.00000002,
+       "gas_MMBtu": 5087855.430947402,
+       "diesel_gal": 23261962.264486507,
+       "owned_DG_MWh": 100722.28053099493,
+       "gas_fuel_MWh_HHV": 1491165.1321651235,
+       "diesel_fuel_MWh_HHV": 936945.557630046,
+       "recovered_heat_used_MWh_th": 0.0,
+       "onsite_fuel_MWh_HHV": 2428110.6897951695
+      },
+      {
+       "GE_MWh_e": 912006.9605566752,
+       "owned_DG_MWh_e": 454719.2939088789,
+       "rental_MWh_e": 301432.6550269115,
+       "grid_MWh": 6472844.529452986,
+       "ABS_cooling_MWh_th": 39911.41887746643,
+       "elec_chiller_cooling_MWh_th": 6534588.58112253,
+       "service_elec_MWh": 7100459.999999984,
+       "service_cooling_MWh_th": 6574499.999999984,
+       "gas_MMBtu": 7664506.496518298,
+       "diesel_gal": 52930636.42550533,
+       "owned_DG_MWh": 454719.2939088789,
+       "gas_fuel_MWh_HHV": 2246338.3635751167,
+       "diesel_fuel_MWh_HHV": 2131940.723552844,
+       "recovered_heat_used_MWh_th": 57016.312682094904,
+       "onsite_fuel_MWh_HHV": 4378279.087127961
+      }
+     ],
+     "all": {
+      "GE_MWh_e": 672496.2261584741,
+      "owned_DG_MWh_e": 206434.9919530494,
+      "rental_MWh_e": 235893.33227512043,
+      "grid_MWh": 7030247.344381207,
+      "ABS_cooling_MWh_th": 14937.55264783095,
+      "elec_chiller_cooling_MWh_th": 6559562.447352141,
+      "service_elec_MWh": 7100459.9999999665,
+      "service_cooling_MWh_th": 6574499.999999968,
+      "gas_MMBtu": 5651658.284635817,
+      "diesel_gal": 30962982.695971888,
+      "owned_DG_MWh": 206434.9919530494,
+      "gas_fuel_MWh_HHV": 1656406.2967865816,
+      "diesel_fuel_MWh_HHV": 1247127.3385331165,
+      "recovered_heat_used_MWh_th": 21339.36092547279,
+      "onsite_fuel_MWh_HHV": 2903533.6353196986
+     }
+    }
+   }
+  },
+  {
+   "cfg": "A+staged",
+   "level": "low",
+   "r": 7,
+   "decisions": {
+    "no_signal": {
+     "timing": {
+      "ABS": {
+       "root": 0.0,
+       "pre_signal": 37.061016,
+       "post_signal": 8.742228
+      },
+      "BESS": {
+       "root": 0.0,
+       "pre_signal": 0.0,
+       "post_signal": 0.0
+      },
+      "DG": {
+       "root": 6.3,
+       "pre_signal": 0.0,
+       "post_signal": 51.426489
+      },
+      "GE": {
+       "root": 57.915,
+       "pre_signal": 11.107369,
+       "post_signal": 0.0
+      }
+     },
+     "installed_by_tau": {
+      "ABS": 0.0,
+      "BESS": 0.0,
+      "DG": 0.0,
+      "GE": 0.0
+     }
+    },
+    "signal": [
+     {
+      "timing": {
+       "ABS": {
+        "root": 0.0,
+        "pre_signal": 37.061016,
+        "post_signal": 8.250528000000001
+       },
+       "BESS": {
+        "root": 0.0,
+        "pre_signal": 0.0,
+        "post_signal": 10.236205
+       },
+       "DG": {
+        "root": 6.3,
+        "pre_signal": 0.0,
+        "post_signal": 18.972898
+       },
+       "GE": {
+        "root": 57.915,
+        "pre_signal": 10.366409,
+        "post_signal": 0.0
+       }
+      },
+      "installed_by_tau": {
+       "ABS": 0.0,
+       "BESS": 0.0,
+       "DG": 0.0,
+       "GE": 0.0
+      },
+      "median_T": 10,
+      "installed_by_median_T": {
+       "ABS": 45.311544000000005,
+       "BESS": 0.0,
+       "DG": 25.272898,
+       "GE": 68.281409
+      },
+      "no_signal_installed_by_median_T": {
+       "ABS": 45.80324400000001,
+       "BESS": 0.0,
+       "DG": 57.726488999999994,
+       "GE": 69.022369
+      }
+     },
+     {
+      "timing": {
+       "ABS": {
+        "root": -0.0,
+        "pre_signal": 37.061016,
+        "post_signal": 16.622612
+       },
+       "BESS": {
+        "root": -0.0,
+        "pre_signal": 0.0,
+        "post_signal": 0.0
+       },
+       "DG": {
+        "root": 6.3,
+        "pre_signal": 0.0,
+        "post_signal": 29.209102
+       },
+       "GE": {
+        "root": 57.915,
+        "pre_signal": 10.366409,
+        "post_signal": 12.61616
+       }
+      },
+      "installed_by_tau": {
+       "ABS": 0.0,
+       "BESS": 0.0,
+       "DG": 0.0,
+       "GE": 0.0
+      },
+      "median_T": 11,
+      "installed_by_median_T": {
+       "ABS": 45.311544000000005,
+       "BESS": 0.0,
+       "DG": 35.509102,
+       "GE": 68.281409
+      },
+      "no_signal_installed_by_median_T": {
+       "ABS": 45.80324400000001,
+       "BESS": 0.0,
+       "DG": 57.726488999999994,
+       "GE": 69.022369
+      }
+     },
+     {
+      "timing": {
+       "ABS": {
+        "root": -0.0,
+        "pre_signal": 37.061016,
+        "post_signal": 37.061016
+       },
+       "BESS": {
+        "root": -0.0,
+        "pre_signal": 0.0,
+        "post_signal": 0.0
+       },
+       "DG": {
+        "root": 6.3,
+        "pre_signal": 0.0,
+        "post_signal": 12.101949
+       },
+       "GE": {
+        "root": 57.915,
+        "pre_signal": 10.366409,
+        "post_signal": 43.415443
+       }
+      },
+      "installed_by_tau": {
+       "ABS": 0.0,
+       "BESS": 0.0,
+       "DG": 0.0,
+       "GE": 0.0
+      },
+      "median_T": 11,
+      "installed_by_median_T": {
+       "ABS": 74.122032,
+       "BESS": 0.0,
+       "DG": 13.428873,
+       "GE": 111.696852
+      },
+      "no_signal_installed_by_median_T": {
+       "ABS": 45.80324400000001,
+       "BESS": 0.0,
+       "DG": 57.726488999999994,
+       "GE": 69.022369
+      }
+     }
+    ]
+   },
+   "quantities": {
+    "cfg": "A+staged",
+    "level": "low",
+    "r": 7,
+    "p": 0.2261746301850835,
+    "reports": [
+     {
+      "mean_delay_days": 220.0
+     }
+    ],
+    "thresholds": [
+     10,
+     11
+    ],
+    "P_cat": [
+     0.43852562916163723,
+     0.16910436325037936,
+     0.39237000758798335
+    ],
+    "no_signal": {
+     "cost_match": 0.0,
+     "all": {
+      "GE_MWh_e": 3394657.5688983733,
+      "owned_DG_MWh_e": 349161.10401297646,
+      "rental_MWh_e": 229856.55381843695,
+      "grid_MWh": 3812447.9472571188,
+      "ABS_cooling_MWh_th": 2251814.9722686494,
+      "elec_chiller_cooling_MWh_th": 4322685.02773139,
+      "service_elec_MWh": 7100459.999999925,
+      "service_cooling_MWh_th": 6574499.999999984,
+      "gas_MMBtu": 28528702.20902193,
+      "diesel_gal": 40531236.04819894,
+      "owned_DG_MWh": 349161.10401297646,
+      "gas_fuel_MWh_HHV": 8361284.351999394,
+      "diesel_fuel_MWh_HHV": 1632517.546406271,
+      "recovered_heat_used_MWh_th": 3216878.5318123563,
+      "onsite_fuel_MWh_HHV": 9993801.898405664
+     },
+     "by_cat": [
+      {
+       "GE_MWh_e": 3394653.014578143,
+       "owned_DG_MWh_e": 253533.82095197958,
+       "rental_MWh_e": 194071.42322856234,
+       "grid_MWh": 3943865.3965468872,
+       "ABS_cooling_MWh_th": 2251811.9500217196,
+       "elec_chiller_cooling_MWh_th": 4322688.04997824,
+       "service_elec_MWh": 7100460.00000003,
+       "service_cooling_MWh_th": 6574500.000000007,
+       "gas_MMBtu": 28528663.934514716,
+       "diesel_gal": 31332367.092637938,
+       "owned_DG_MWh": 253533.82095197958,
+       "gas_fuel_MWh_HHV": 8361273.134382977,
+       "diesel_fuel_MWh_HHV": 1262005.4070975422,
+       "recovered_heat_used_MWh_th": 3216874.2143167425,
+       "onsite_fuel_MWh_HHV": 9623278.541480519
+      },
+      {
+       "GE_MWh_e": 3394659.266376305,
+       "owned_DG_MWh_e": 338524.6757824726,
+       "rental_MWh_e": 220944.22523164787,
+       "grid_MWh": 3831994.827200228,
+       "ABS_cooling_MWh_th": 2251816.098714996,
+       "elec_chiller_cooling_MWh_th": 4322683.901285016,
+       "service_elec_MWh": 7100459.999999989,
+       "service_cooling_MWh_th": 6574499.999999991,
+       "gas_MMBtu": 28528716.474626467,
+       "diesel_gal": 39162823.07098843,
+       "owned_DG_MWh": 338524.6757824726,
+       "gas_fuel_MWh_HHV": 8361288.533008929,
+       "diesel_fuel_MWh_HHV": 1577400.5943012424,
+       "recovered_heat_used_MWh_th": 3216880.141021423,
+       "onsite_fuel_MWh_HHV": 9938689.127310172
+      },
+      {
+       "GE_MWh_e": 3394661.9273742577,
+       "owned_DG_MWh_e": 460621.40945620666,
+       "rental_MWh_e": 273692.2451931044,
+       "grid_MWh": 3657147.1313422495,
+       "ABS_cooling_MWh_th": 2251817.8645532476,
+       "elec_chiller_cooling_MWh_th": 4322682.1354468055,
+       "service_elec_MWh": 7100460.000000036,
+       "service_cooling_MWh_th": 6574500.000000023,
+       "gas_MMBtu": 28528738.83765326,
+       "diesel_gal": 51401955.82545177,
+       "owned_DG_MWh": 460621.40945620666,
+       "gas_fuel_MWh_HHV": 8361295.087237181,
+       "diesel_fuel_MWh_HHV": 2070368.5104708008,
+       "recovered_heat_used_MWh_th": 3216882.6636474966,
+       "onsite_fuel_MWh_HHV": 10431663.597707981
+      }
+     ]
+    },
+    "signal": {
+     "cost_match": 0.0,
+     "by_cat": [
+      {
+       "GE_MWh_e": 3362187.2946643876,
+       "owned_DG_MWh_e": 62173.26788798224,
+       "rental_MWh_e": 391894.193765811,
+       "grid_MWh": 3973300.005320501,
+       "ABS_cooling_MWh_th": 2230267.6982870037,
+       "elec_chiller_cooling_MWh_th": 4344232.301712971,
+       "service_elec_MWh": 7100460.00000003,
+       "service_cooling_MWh_th": 6574500.000000007,
+       "gas_MMBtu": 28255822.024359513,
+       "diesel_gal": 31784722.315765526,
+       "owned_DG_MWh": 62173.26788798224,
+       "gas_fuel_MWh_HHV": 8281307.744536786,
+       "diesel_fuel_MWh_HHV": 1280225.3754717147,
+       "recovered_heat_used_MWh_th": 3186096.711838577,
+       "onsite_fuel_MWh_HHV": 9561533.1200085
+      },
+      {
+       "GE_MWh_e": 3362187.2946644225,
+       "owned_DG_MWh_e": 162370.37865996282,
+       "rental_MWh_e": 405005.3476658585,
+       "grid_MWh": 3859991.740648474,
+       "ABS_cooling_MWh_th": 2230267.698287008,
+       "elec_chiller_cooling_MWh_th": 4344232.301713018,
+       "service_elec_MWh": 7100459.999999989,
+       "service_cooling_MWh_th": 6574499.999999991,
+       "gas_MMBtu": 28255822.024359807,
+       "diesel_gal": 39716300.842807494,
+       "owned_DG_MWh": 162370.37865996282,
+       "gas_fuel_MWh_HHV": 8281307.744536872,
+       "diesel_fuel_MWh_HHV": 1599693.5777416183,
+       "recovered_heat_used_MWh_th": 3186096.711838583,
+       "onsite_fuel_MWh_HHV": 9881001.32227849
+      },
+      {
+       "GE_MWh_e": 5128069.867145588,
+       "owned_DG_MWh_e": 8379.738606279601,
+       "rental_MWh_e": 310913.8374125036,
+       "grid_MWh": 2153481.1035496807,
+       "ABS_cooling_MWh_th": 3402107.373385515,
+       "elec_chiller_cooling_MWh_th": 3172392.62661451,
+       "service_elec_MWh": 7100460.000000036,
+       "service_cooling_MWh_th": 6574500.000000023,
+       "gas_MMBtu": 43096299.16349152,
+       "diesel_gal": 22350550.321314823,
+       "owned_DG_MWh": 8379.738606279601,
+       "gas_fuel_MWh_HHV": 12630802.802899038,
+       "diesel_fuel_MWh_HHV": 900235.6979193125,
+       "recovered_heat_used_MWh_th": 4860153.390550736,
+       "onsite_fuel_MWh_HHV": 13531038.500818351
+      }
+     ],
+     "all": {
+      "GE_MWh_e": 4055066.6530283294,
+      "owned_DG_MWh_e": 58010.06901215967,
+      "rental_MWh_e": 362337.0840607314,
+      "grid_MWh": 3240096.72707556,
+      "ABS_cooling_MWh_th": 2690062.440497307,
+      "elec_chiller_cooling_MWh_th": 3884437.5595026957,
+      "service_elec_MWh": 7100460.000000024,
+      "service_cooling_MWh_th": 6574500.00000001,
+      "gas_MMBtu": 34078780.15205008,
+      "diesel_gal": 29424300.715102375,
+      "owned_DG_MWh": 58010.06901215967,
+      "gas_fuel_MWh_HHV": 9987919.153590292,
+      "diesel_fuel_MWh_HHV": 1185152.2897307188,
+      "recovered_heat_used_MWh_th": 3842946.343567582,
+      "onsite_fuel_MWh_HHV": 11173071.443321012
+     }
+    }
+   }
+  },
+  {
+   "cfg": "A+staged",
+   "level": "high",
+   "r": 12,
+   "decisions": {
+    "no_signal": {
+     "timing": {
+      "ABS": {
+       "root": 0.0,
+       "pre_signal": 37.061016,
+       "post_signal": 8.250528000000001
+      },
+      "BESS": {
+       "root": 0.0,
+       "pre_signal": 0.0,
+       "post_signal": 0.0
+      },
+      "DG": {
+       "root": 6.3,
+       "pre_signal": 0.0,
+       "post_signal": 29.85292
+      },
+      "GE": {
+       "root": 57.915,
+       "pre_signal": 10.366409,
+       "post_signal": 0.0
+      }
+     },
+     "installed_by_tau": {
+      "ABS": 0.0,
+      "BESS": 0.0,
+      "DG": 0.0,
+      "GE": 0.0
+     }
+    },
+    "signal": [
+     {
+      "timing": {
+       "ABS": {
+        "root": 0.0,
+        "pre_signal": 37.061016,
+        "post_signal": 8.250528000000001
+       },
+       "BESS": {
+        "root": 0.0,
+        "pre_signal": 0.0,
+        "post_signal": 10.236205
+       },
+       "DG": {
+        "root": 6.3,
+        "pre_signal": 0.0,
+        "post_signal": 18.972898
+       },
+       "GE": {
+        "root": 57.915,
+        "pre_signal": 10.366409,
+        "post_signal": 0.0
+       }
+      },
+      "installed_by_tau": {
+       "ABS": 0.0,
+       "BESS": 0.0,
+       "DG": 0.0,
+       "GE": 0.0
+      },
+      "median_T": 9,
+      "installed_by_median_T": {
+       "ABS": 45.311544000000005,
+       "BESS": 0.0,
+       "DG": 25.272898,
+       "GE": 68.281409
+      },
+      "no_signal_installed_by_median_T": {
+       "ABS": 45.311544000000005,
+       "BESS": 0.0,
+       "DG": 36.15292,
+       "GE": 68.281409
+      }
+     },
+     {
+      "timing": {
+       "ABS": {
+        "root": -0.0,
+        "pre_signal": 37.061016,
+        "post_signal": 17.922434000000003
+       },
+       "BESS": {
+        "root": -0.0,
+        "pre_signal": 0.0,
+        "post_signal": 0.0
+       },
+       "DG": {
+        "root": 6.3,
+        "pre_signal": 0.0,
+        "post_signal": 29.209102
+       },
+       "GE": {
+        "root": 57.915,
+        "pre_signal": 10.366409,
+        "post_signal": 14.574904
+       }
+      },
+      "installed_by_tau": {
+       "ABS": 0.0,
+       "BESS": 0.0,
+       "DG": 0.0,
+       "GE": 0.0
+      },
+      "median_T": 10,
+      "installed_by_median_T": {
+       "ABS": 45.311544000000005,
+       "BESS": 0.0,
+       "DG": 35.509102,
+       "GE": 68.281409
+      },
+      "no_signal_installed_by_median_T": {
+       "ABS": 45.311544000000005,
+       "BESS": 0.0,
+       "DG": 36.15292,
+       "GE": 68.281409
+      }
+     },
+     {
+      "timing": {
+       "ABS": {
+        "root": -0.0,
+        "pre_signal": 37.061016,
+        "post_signal": 37.061016
+       },
+       "BESS": {
+        "root": -0.0,
+        "pre_signal": 0.0,
+        "post_signal": 0.0
+       },
+       "DG": {
+        "root": 6.3,
+        "pre_signal": 0.0,
+        "post_signal": 11.586177
+       },
+       "GE": {
+        "root": 57.915,
+        "pre_signal": 10.366409,
+        "post_signal": 43.415443
+       }
+      },
+      "installed_by_tau": {
+       "ABS": 0.0,
+       "BESS": 0.0,
+       "DG": 0.0,
+       "GE": 0.0
+      },
+      "median_T": 12,
+      "installed_by_median_T": {
+       "ABS": 74.122032,
+       "BESS": 0.0,
+       "DG": 13.428873,
+       "GE": 111.696852
+      },
+      "no_signal_installed_by_median_T": {
+       "ABS": 45.311544000000005,
+       "BESS": 0.0,
+       "DG": 36.15292,
+       "GE": 68.281409
+      }
+     }
+    ]
+   },
+   "quantities": {
+    "cfg": "A+staged",
+    "level": "high",
+    "r": 12,
+    "p": 0.11448177937823506,
+    "reports": [
+     {
+      "mean_delay_days": 210.0
+     }
+    ],
+    "thresholds": [
+     10,
+     11
+    ],
+    "P_cat": [
+     0.487540072081497,
+     0.13819228552545,
+     0.374267642393053
+    ],
+    "no_signal": {
+     "cost_match": 0.0,
+     "all": {
+      "GE_MWh_e": 3362187.2946643736,
+      "owned_DG_MWh_e": 157871.71601044887,
+      "rental_MWh_e": 440537.0581803555,
+      "grid_MWh": 3828958.6927834945,
+      "ABS_cooling_MWh_th": 2230267.6982869944,
+      "elec_chiller_cooling_MWh_th": 4344232.301713003,
+      "service_elec_MWh": 7100459.999999965,
+      "service_cooling_MWh_th": 6574500.000000055,
+      "gas_MMBtu": 28255822.024359394,
+      "diesel_gal": 41888614.19335631,
+      "owned_DG_MWh": 157871.71601044887,
+      "gas_fuel_MWh_HHV": 8281307.744536751,
+      "diesel_fuel_MWh_HHV": 1687190.0374312834,
+      "recovered_heat_used_MWh_th": 3186096.7118385634,
+      "onsite_fuel_MWh_HHV": 9968497.781968035
+     },
+     "by_cat": [
+      {
+       "GE_MWh_e": 3362187.2946644034,
+       "owned_DG_MWh_e": 70412.9709660678,
+       "rental_MWh_e": 237800.08240728258,
+       "grid_MWh": 4119154.4136009556,
+       "ABS_cooling_MWh_th": 2230267.6982870046,
+       "elec_chiller_cooling_MWh_th": 4344232.3017130615,
+       "service_elec_MWh": 7100459.999999931,
+       "service_cooling_MWh_th": 6574499.99999994,
+       "gas_MMBtu": 28255822.024359647,
+       "diesel_gal": 21574913.73613453,
+       "owned_DG_MWh": 70412.9709660678,
+       "gas_fuel_MWh_HHV": 8281307.744536825,
+       "diesel_fuel_MWh_HHV": 868994.5994875823,
+       "recovered_heat_used_MWh_th": 3186096.7118385783,
+       "onsite_fuel_MWh_HHV": 9150302.344024409
+      },
+      {
+       "GE_MWh_e": 3362187.2946644216,
+       "owned_DG_MWh_e": 132026.84662318885,
+       "rental_MWh_e": 346657.40210805525,
+       "grid_MWh": 3948683.2182430564,
+       "ABS_cooling_MWh_th": 2230267.6982870027,
+       "elec_chiller_cooling_MWh_th": 4344232.301713013,
+       "service_elec_MWh": 7100460.000000046,
+       "service_cooling_MWh_th": 6574500.00000002,
+       "gas_MMBtu": 28255822.0243598,
+       "diesel_gal": 33507897.41118709,
+       "owned_DG_MWh": 132026.84662318885,
+       "gas_fuel_MWh_HHV": 8281307.74453687,
+       "diesel_fuel_MWh_HHV": 1349631.439857728,
+       "recovered_heat_used_MWh_th": 3186096.7118385755,
+       "onsite_fuel_MWh_HHV": 9630939.184394598
+      },
+      {
+       "GE_MWh_e": 3362187.294664436,
+       "owned_DG_MWh_e": 281342.72765696514,
+       "rental_MWh_e": 739296.104792071,
+       "grid_MWh": 3406728.6345252614,
+       "ABS_cooling_MWh_th": 2230267.6982870023,
+       "elec_chiller_cooling_MWh_th": 4344232.301713026,
+       "service_elec_MWh": 7100459.999999984,
+       "service_cooling_MWh_th": 6574499.999999984,
+       "gas_MMBtu": 28255822.02435992,
+       "diesel_gal": 71444718.27143253,
+       "owned_DG_MWh": 281342.72765696514,
+       "gas_fuel_MWh_HHV": 8281307.744536905,
+       "diesel_fuel_MWh_HHV": 2877651.1043844456,
+       "recovered_heat_used_MWh_th": 3186096.711838575,
+       "onsite_fuel_MWh_HHV": 11158958.848921351
+      }
+     ]
+    },
+    "signal": {
+     "cost_match": 0.0,
+     "by_cat": [
+      {
+       "GE_MWh_e": 3362187.2946644034,
+       "owned_DG_MWh_e": 35533.89744218075,
+       "rental_MWh_e": 272679.1559311696,
+       "grid_MWh": 4119154.4136009556,
+       "ABS_cooling_MWh_th": 2230267.6982870046,
+       "elec_chiller_cooling_MWh_th": 4344232.3017130615,
+       "service_elec_MWh": 7100459.999999931,
+       "service_cooling_MWh_th": 6574499.99999994,
+       "gas_MMBtu": 28255822.024359647,
+       "diesel_gal": 21574913.73613452,
+       "owned_DG_MWh": 35533.89744218075,
+       "gas_fuel_MWh_HHV": 8281307.744536825,
+       "diesel_fuel_MWh_HHV": 868994.599487582,
+       "recovered_heat_used_MWh_th": 3186096.7118385783,
+       "onsite_fuel_MWh_HHV": 9150302.344024407
+      },
+      {
+       "GE_MWh_e": 3362187.3451090395,
+       "owned_DG_MWh_e": 127987.75376524904,
+       "rental_MWh_e": 350696.48593084293,
+       "grid_MWh": 3948683.1764988652,
+       "ABS_cooling_MWh_th": 2230267.700307863,
+       "elec_chiller_cooling_MWh_th": 4344232.299692147,
+       "service_elec_MWh": 7100460.000000046,
+       "service_cooling_MWh_th": 6574500.00000002,
+       "gas_MMBtu": 28255822.448296368,
+       "diesel_gal": 33507896.778726436,
+       "owned_DG_MWh": 127987.75376524904,
+       "gas_fuel_MWh_HHV": 8281307.868785571,
+       "diesel_fuel_MWh_HHV": 1349631.4143834712,
+       "recovered_heat_used_MWh_th": 3186096.7147255186,
+       "onsite_fuel_MWh_HHV": 9630939.283169042
+      },
+      {
+       "GE_MWh_e": 4999194.019217162,
+       "owned_DG_MWh_e": 7891.924651243456,
+       "rental_MWh_e": 429797.2096166873,
+       "grid_MWh": 2177727.2359363954,
+       "ABS_cooling_MWh_th": 3316585.3607002054,
+       "elec_chiller_cooling_MWh_th": 3257914.639299856,
+       "service_elec_MWh": 7100459.999999984,
+       "service_cooling_MWh_th": 6574499.999999984,
+       "gas_MMBtu": 42013226.53750103,
+       "diesel_gal": 30638239.39875515,
+       "owned_DG_MWh": 7891.924651243456,
+       "gas_fuel_MWh_HHV": 12313372.373241803,
+       "diesel_fuel_MWh_HHV": 1234047.3246358423,
+       "recovered_heat_used_MWh_th": 4737979.08671458,
+       "onsite_fuel_MWh_HHV": 13547419.697877645
+      }
+     ],
+     "all": {
+      "GE_MWh_e": 3974865.9490153976,
+      "owned_DG_MWh_e": 37964.81116555011,
+      "rental_MWh_e": 342264.75260468153,
+      "grid_MWh": 3368983.2310671536,
+      "ABS_cooling_MWh_th": 2636841.2489675926,
+      "elec_chiller_cooling_MWh_th": 3937658.7510324637,
+      "service_elec_MWh": 7100459.9999999665,
+      "service_cooling_MWh_th": 6574499.999999968,
+      "gas_MMBtu": 33404773.435525406,
+      "diesel_gal": 26616069.463916212,
+      "owned_DG_MWh": 37964.81116555011,
+      "gas_fuel_MWh_HHV": 9790379.084268875,
+      "diesel_fuel_MWh_HHV": 1072042.322236116,
+      "recovered_heat_used_MWh_th": 3766916.0699537043,
+      "onsite_fuel_MWh_HHV": 10862421.406504992
+     }
+    }
+   }
+  },
+  {
+   "cfg": "B",
+   "level": "low",
+   "r": 2,
+   "decisions": {
+    "no_signal": {
+     "timing": {
+      "ABS": {
+       "root": 0.0,
+       "pre_signal": 37.061016,
+       "post_signal": 47.253624
+      },
+      "BESS": {
+       "root": 0.0,
+       "pre_signal": 0.0,
+       "post_signal": 0.0
+      },
+      "DG": {
+       "root": 67.2,
+       "pre_signal": 0.0,
+       "post_signal": 0.0
+      },
+      "GE": {
+       "root": 57.915,
+       "pre_signal": 53.55543,
+       "post_signal": 15.585991
+      }
+     },
+     "installed_by_tau": {
+      "ABS": 0.0,
+      "BESS": 0.0,
+      "DG": 0.0,
+      "GE": 0.0
+     }
+    },
+    "signal": [
+     {
+      "timing": {
+       "ABS": {
+        "root": 0.0,
+        "pre_signal": 37.061016,
+        "post_signal": 33.515682
+       },
+       "BESS": {
+        "root": 0.0,
+        "pre_signal": 0.0,
+        "post_signal": 0.0
+       },
+       "DG": {
+        "root": 67.2,
+        "pre_signal": 0.0,
+        "post_signal": 0.0
+       },
+       "GE": {
+        "root": 57.915,
+        "pre_signal": 53.55543,
+        "post_signal": 0.0
+       }
+      },
+      "installed_by_tau": {
+       "ABS": 0.0,
+       "BESS": 0.0,
+       "DG": 0.0,
+       "GE": 0.0
+      },
+      "median_T": 14,
+      "installed_by_median_T": {
+       "ABS": 70.576698,
+       "BESS": 0.0,
+       "DG": 67.2,
+       "GE": 111.47043
+      },
+      "no_signal_installed_by_median_T": {
+       "ABS": 84.31464,
+       "BESS": 0.0,
+       "DG": 67.2,
+       "GE": 127.05642099999999
+      }
+     },
+     {
+      "timing": {
+       "ABS": {
+        "root": -0.0,
+        "pre_signal": 37.061016,
+        "post_signal": 38.248767
+       },
+       "BESS": {
+        "root": -0.0,
+        "pre_signal": 0.0,
+        "post_signal": 0.0
+       },
+       "DG": {
+        "root": 67.2,
+        "pre_signal": 0.0,
+        "post_signal": 8.46785
+       },
+       "GE": {
+        "root": 57.915,
+        "pre_signal": 53.55543,
+        "post_signal": 2.016285
+       }
+      },
+      "installed_by_tau": {
+       "ABS": 0.0,
+       "BESS": 0.0,
+       "DG": 0.0,
+       "GE": 0.0
+      },
+      "median_T": 16,
+      "installed_by_median_T": {
+       "ABS": 75.309783,
+       "BESS": 0.0,
+       "DG": 75.66785,
+       "GE": 113.48671499999999
+      },
+      "no_signal_installed_by_median_T": {
+       "ABS": 84.31464,
+       "BESS": 0.0,
+       "DG": 67.2,
+       "GE": 127.05642099999999
+      }
+     },
+     {
+      "timing": {
+       "ABS": {
+        "root": -0.0,
+        "pre_signal": 37.061016,
+        "post_signal": 74.12203
+       },
+       "BESS": {
+        "root": -0.0,
+        "pre_signal": 0.0,
+        "post_signal": 0.0
+       },
+       "DG": {
+        "root": 67.2,
+        "pre_signal": 0.0,
+        "post_signal": 0.0
+       },
+       "GE": {
+        "root": 57.915,
+        "pre_signal": 53.55543,
+        "post_signal": 56.07484899999999
+       }
+      },
+      "installed_by_tau": {
+       "ABS": 0.0,
+       "BESS": 0.0,
+       "DG": 0.0,
+       "GE": 0.0
+      },
+      "median_T": 19,
+      "installed_by_median_T": {
+       "ABS": 111.18304599999999,
+       "BESS": 0.0,
+       "DG": 67.2,
+       "GE": 167.545279
+      },
+      "no_signal_installed_by_median_T": {
+       "ABS": 84.31464,
+       "BESS": 0.0,
+       "DG": 67.2,
+       "GE": 127.05642099999999
+      }
+     }
+    ]
+   },
+   "quantities": {
+    "cfg": "B",
+    "level": "low",
+    "r": 2,
+    "p": 0.9982575,
+    "reports": [
+     {
+      "study_months": [
+       9.0,
+       12.0
+      ],
+      "typical_years": 3.0
+     }
+    ],
+    "thresholds": [
+     14,
+     18
+    ],
+    "P_cat": [
+     0.32906582533682593,
+     0.4116382668699934,
+     0.2592959077931807
+    ],
+    "no_signal": {
+     "cost_match": 0.0,
+     "all": {
+      "GE_MWh_e": 5784701.444436825,
+      "owned_DG_MWh_e": 468736.0125786995,
+      "rental_MWh_e": 0.0,
+      "grid_MWh": 1280021.1844559028,
+      "ABS_cooling_MWh_th": 3837647.4023541072,
+      "elec_chiller_cooling_MWh_th": 2736852.597645868,
+      "service_elec_MWh": 7100459.999999938,
+      "service_cooling_MWh_th": 6574500.0,
+      "gas_MMBtu": 48614630.939047076,
+      "diesel_gal": 32811520.880508967,
+      "owned_DG_MWh": 468736.0125786995,
+      "gas_fuel_MWh_HHV": 14248133.335007936,
+      "diesel_fuel_MWh_HHV": 1321582.778724235,
+      "recovered_heat_used_MWh_th": 5482353.43193444,
+      "onsite_fuel_MWh_HHV": 15569716.11373217
+     },
+     "by_cat": [
+      {
+       "GE_MWh_e": 5741335.574426248,
+       "owned_DG_MWh_e": 232757.28440098168,
+       "rental_MWh_e": 0.0,
+       "grid_MWh": 1563944.0742116794,
+       "ABS_cooling_MWh_th": 3808912.4031761615,
+       "elec_chiller_cooling_MWh_th": 2765587.596823817,
+       "service_elec_MWh": 7100460.000000004,
+       "service_cooling_MWh_th": 6574499.99999997,
+       "gas_MMBtu": 48250184.16747819,
+       "diesel_gal": 16293009.908068717,
+       "owned_DG_MWh": 232757.28440098168,
+       "gas_fuel_MWh_HHV": 14141320.095978368,
+       "diesel_fuel_MWh_HHV": 656250.0222559916,
+       "recovered_heat_used_MWh_th": 5441303.433108803,
+       "onsite_fuel_MWh_HHV": 14797570.118234359
+      },
+      {
+       "GE_MWh_e": 5805354.937983183,
+       "owned_DG_MWh_e": 453714.82953668555,
+       "rental_MWh_e": 0.0,
+       "grid_MWh": 1272208.3992918828,
+       "ABS_cooling_MWh_th": 3851332.7833654536,
+       "elec_chiller_cooling_MWh_th": 2723167.216634564,
+       "service_elec_MWh": 7100459.999999925,
+       "service_cooling_MWh_th": 6574499.999999996,
+       "gas_MMBtu": 48788202.89881067,
+       "diesel_gal": 31760038.06756799,
+       "owned_DG_MWh": 453714.82953668555,
+       "gas_fuel_MWh_HHV": 14299004.366591638,
+       "diesel_fuel_MWh_HHV": 1279231.1430665052,
+       "recovered_heat_used_MWh_th": 5501903.976236363,
+       "onsite_fuel_MWh_HHV": 15578235.509658143
+      },
+      {
+       "GE_MWh_e": 5806948.064398531,
+       "owned_DG_MWh_e": 792057.0762121297,
+       "rental_MWh_e": 0.0,
+       "grid_MWh": 932104.8618538765,
+       "ABS_cooling_MWh_th": 3852388.3974284623,
+       "elec_chiller_cooling_MWh_th": 2722111.6025715307,
+       "service_elec_MWh": 7100460.000000014,
+       "service_cooling_MWh_th": 6574499.999999996,
+       "gas_MMBtu": 48801591.533205256,
+       "diesel_gal": 55443995.334849074,
+       "owned_DG_MWh": 792057.0762121297,
+       "gas_fuel_MWh_HHV": 14302928.35088079,
+       "diesel_fuel_MWh_HHV": 2233173.819800905,
+       "recovered_heat_used_MWh_th": 5503411.996326375,
+       "onsite_fuel_MWh_HHV": 16536102.170681696
+      }
+     ]
+    },
+    "signal": {
+     "cost_match": 0.0,
+     "by_cat": [
+      {
+       "GE_MWh_e": 5081867.836829717,
+       "owned_DG_MWh_e": 251722.00228507747,
+       "rental_MWh_e": 29993.601800080036,
+       "grid_MWh": 2249587.0506682997,
+       "ABS_cooling_MWh_th": 3337734.416977132,
+       "elec_chiller_cooling_MWh_th": 3236765.583022877,
+       "service_elec_MWh": 7100460.000000004,
+       "service_cooling_MWh_th": 6574499.99999997,
+       "gas_MMBtu": 42708017.300716944,
+       "diesel_gal": 19720092.285961024,
+       "owned_DG_MWh": 251722.00228507747,
+       "gas_fuel_MWh_HHV": 12517003.898217158,
+       "diesel_fuel_MWh_HHV": 794286.0818579176,
+       "recovered_heat_used_MWh_th": 4768192.024253046,
+       "onsite_fuel_MWh_HHV": 13311289.980075076
+      },
+      {
+       "GE_MWh_e": 5330941.001252852,
+       "owned_DG_MWh_e": 541111.6684563606,
+       "rental_MWh_e": 19346.373962333997,
+       "grid_MWh": 1689908.8579159782,
+       "ABS_cooling_MWh_th": 3537017.068549721,
+       "elec_chiller_cooling_MWh_th": 3037482.931450272,
+       "service_elec_MWh": 7100459.999999925,
+       "service_cooling_MWh_th": 6574499.999999996,
+       "gas_MMBtu": 44801228.17452897,
+       "diesel_gal": 39232062.96930862,
+       "owned_DG_MWh": 541111.6684563606,
+       "gas_fuel_MWh_HHV": 13130488.913988562,
+       "diesel_fuel_MWh_HHV": 1580189.439644737,
+       "recovered_heat_used_MWh_th": 5052881.526499602,
+       "onsite_fuel_MWh_HHV": 14710678.3536333
+      },
+      {
+       "GE_MWh_e": 7210308.585990792,
+       "owned_DG_MWh_e": 142944.86657077554,
+       "rental_MWh_e": 0.0,
+       "grid_MWh": 29360.2048983375,
+       "ABS_cooling_MWh_th": 4784165.397779119,
+       "elec_chiller_cooling_MWh_th": 1790334.6022208845,
+       "service_elec_MWh": 7100460.000000014,
+       "service_cooling_MWh_th": 6574499.999999996,
+       "gas_MMBtu": 60595433.35666662,
+       "diesel_gal": 10006140.659954287,
+       "owned_DG_MWh": 142944.86657077554,
+       "gas_fuel_MWh_HHV": 17759505.673114482,
+       "diesel_fuel_MWh_HHV": 403027.4374006039,
+       "recovered_heat_used_MWh_th": 6834521.996827314,
+       "onsite_fuel_MWh_HHV": 18162533.110515088
+      }
+     ],
+     "all": {
+      "GE_MWh_e": 5736291.8587944,
+      "owned_DG_MWh_e": 342640.3967657285,
+      "rental_MWh_e": 17833.57717924138,
+      "grid_MWh": 1443506.3539180916,
+      "ABS_cooling_MWh_th": 3794820.416514962,
+      "elec_chiller_cooling_MWh_th": 2779679.58348504,
+      "service_elec_MWh": 7100459.999999973,
+      "service_cooling_MWh_th": 6574499.999999988,
+      "gas_MMBtu": 48207796.78130814,
+      "diesel_gal": 25233178.17614789,
+      "owned_DG_MWh": 342640.3967657285,
+      "gas_fuel_MWh_HHV": 14128897.063689372,
+      "diesel_fuel_MWh_HHV": 1016342.2125881038,
+      "recovered_heat_used_MWh_th": 5421172.023592802,
+      "onsite_fuel_MWh_HHV": 15145239.276277477
+     }
+    }
+   }
+  },
+  {
+   "cfg": "B",
+   "level": "high",
+   "r": 4,
+   "decisions": {
+    "no_signal": {
+     "timing": {
+      "ABS": {
+       "root": 0.0,
+       "pre_signal": 37.061016,
+       "post_signal": 47.253624
+      },
+      "BESS": {
+       "root": 0.0,
+       "pre_signal": 0.0,
+       "post_signal": 0.0
+      },
+      "DG": {
+       "root": 67.2,
+       "pre_signal": 0.0,
+       "post_signal": 0.0
+      },
+      "GE": {
+       "root": 57.915,
+       "pre_signal": 53.55543,
+       "post_signal": 15.585991
+      }
+     },
+     "installed_by_tau": {
+      "ABS": 0.0,
+      "BESS": 0.0,
+      "DG": 0.0,
+      "GE": 0.0
+     }
+    },
+    "signal": [
+     {
+      "timing": {
+       "ABS": {
+        "root": 0.0,
+        "pre_signal": 37.061016,
+        "post_signal": 33.515682
+       },
+       "BESS": {
+        "root": 0.0,
+        "pre_signal": 0.0,
+        "post_signal": 0.0
+       },
+       "DG": {
+        "root": 67.2,
+        "pre_signal": 0.0,
+        "post_signal": 0.0
+       },
+       "GE": {
+        "root": 57.915,
+        "pre_signal": 53.55543,
+        "post_signal": 0.0
+       }
+      },
+      "installed_by_tau": {
+       "ABS": 0.0,
+       "BESS": 0.0,
+       "DG": 0.0,
+       "GE": 0.0
+      },
+      "median_T": 12,
+      "installed_by_median_T": {
+       "ABS": 70.576698,
+       "BESS": 0.0,
+       "DG": 67.2,
+       "GE": 111.47043
+      },
+      "no_signal_installed_by_median_T": {
+       "ABS": 74.906579,
+       "BESS": 0.0,
+       "DG": 67.2,
+       "GE": 113.57631599999999
+      }
+     },
+     {
+      "timing": {
+       "ABS": {
+        "root": -0.0,
+        "pre_signal": 37.061016,
+        "post_signal": 38.248767
+       },
+       "BESS": {
+        "root": -0.0,
+        "pre_signal": 0.0,
+        "post_signal": 0.0
+       },
+       "DG": {
+        "root": 67.2,
+        "pre_signal": 0.0,
+        "post_signal": 8.46785
+       },
+       "GE": {
+        "root": 57.915,
+        "pre_signal": 53.55543,
+        "post_signal": 2.016285
+       }
+      },
+      "installed_by_tau": {
+       "ABS": 0.0,
+       "BESS": 0.0,
+       "DG": 0.0,
+       "GE": 0.0
+      },
+      "median_T": 16,
+      "installed_by_median_T": {
+       "ABS": 75.309783,
+       "BESS": 0.0,
+       "DG": 75.66785,
+       "GE": 113.48671499999999
+      },
+      "no_signal_installed_by_median_T": {
+       "ABS": 84.31464,
+       "BESS": 0.0,
+       "DG": 67.2,
+       "GE": 127.05642099999999
+      }
+     },
+     {
+      "timing": {
+       "ABS": {
+        "root": -0.0,
+        "pre_signal": 37.061016,
+        "post_signal": 74.12203
+       },
+       "BESS": {
+        "root": -0.0,
+        "pre_signal": 0.0,
+        "post_signal": 0.0
+       },
+       "DG": {
+        "root": 67.2,
+        "pre_signal": 0.0,
+        "post_signal": 0.0
+       },
+       "GE": {
+        "root": 57.915,
+        "pre_signal": 53.55543,
+        "post_signal": 56.07484899999999
+       }
+      },
+      "installed_by_tau": {
+       "ABS": 0.0,
+       "BESS": 0.0,
+       "DG": 0.0,
+       "GE": 0.0
+      },
+      "median_T": 22,
+      "installed_by_median_T": {
+       "ABS": 111.18304599999999,
+       "BESS": 0.0,
+       "DG": 67.2,
+       "GE": 167.545279
+      },
+      "no_signal_installed_by_median_T": {
+       "ABS": 84.31464,
+       "BESS": 0.0,
+       "DG": 67.2,
+       "GE": 127.05642099999999
+      }
+     }
+    ]
+   },
+   "quantities": {
+    "cfg": "B",
+    "level": "high",
+    "r": 4,
+    "p": 0.906835,
+    "reports": [
+     {
+      "study_months": [
+       9.0,
+       12.0
+      ],
+      "typical_years": 3.0
+     }
+    ],
+    "thresholds": [
+     14,
+     18
+    ],
+    "P_cat": [
+     0.4234949795002167,
+     0.25330618003041633,
+     0.3231354012427706
+    ],
+    "no_signal": {
+     "cost_match": 0.0,
+     "all": {
+      "GE_MWh_e": 5632255.081384592,
+      "owned_DG_MWh_e": 516778.70938642713,
+      "rental_MWh_e": 0.0,
+      "grid_MWh": 1400530.6349076626,
+      "ABS_cooling_MWh_th": 3736579.7498690085,
+      "elec_chiller_cooling_MWh_th": 2837920.250131003,
+      "service_elec_MWh": 7100460.000000029,
+      "service_cooling_MWh_th": 6574499.999999956,
+      "gas_MMBtu": 47333471.70395611,
+      "diesel_gal": 36174509.6570499,
+      "owned_DG_MWh": 516778.70938642713,
+      "gas_fuel_MWh_HHV": 13872647.04101879,
+      "diesel_fuel_MWh_HHV": 1457037.2755854132,
+      "recovered_heat_used_MWh_th": 5337971.071241441,
+      "onsite_fuel_MWh_HHV": 15329684.316604203
+     },
+     "by_cat": [
+      {
+       "GE_MWh_e": 5398876.500759921,
+       "owned_DG_MWh_e": 175580.45252104604,
+       "rental_MWh_e": 0.0,
+       "grid_MWh": 1999761.6745125453,
+       "ABS_cooling_MWh_th": 3581865.734630297,
+       "elec_chiller_cooling_MWh_th": 2992634.2653696574,
+       "service_elec_MWh": 7100460.000000018,
+       "service_cooling_MWh_th": 6574500.0000000065,
+       "gas_MMBtu": 45372158.112386376,
+       "diesel_gal": 12290631.676473223,
+       "owned_DG_MWh": 175580.45252104604,
+       "gas_fuel_MWh_HHV": 13297818.907498939,
+       "diesel_fuel_MWh_HHV": 495042.1902850126,
+       "recovered_heat_used_MWh_th": 5116951.049471853,
+       "onsite_fuel_MWh_HHV": 13792861.097783951
+      },
+      {
+       "GE_MWh_e": 5800294.129510216,
+       "owned_DG_MWh_e": 456238.08188912267,
+       "rental_MWh_e": 0.0,
+       "grid_MWh": 1275280.2172571116,
+       "ABS_cooling_MWh_th": 3847979.419395605,
+       "elec_chiller_cooling_MWh_th": 2726520.5806044075,
+       "service_elec_MWh": 7100459.999999972,
+       "service_cooling_MWh_th": 6574499.999999941,
+       "gas_MMBtu": 48745671.86440386,
+       "diesel_gal": 31936665.732238587,
+       "owned_DG_MWh": 456238.08188912267,
+       "gas_fuel_MWh_HHV": 14286539.23341262,
+       "diesel_fuel_MWh_HHV": 1286345.3539781242,
+       "recovered_heat_used_MWh_th": 5497113.456279436,
+       "onsite_fuel_MWh_HHV": 15572884.587390743
+      },
+      {
+       "GE_MWh_e": 5806943.621685589,
+       "owned_DG_MWh_e": 1011505.8340267892,
+       "rental_MWh_e": 0.0,
+       "grid_MWh": 712661.015721743,
+       "ABS_cooling_MWh_th": 3852385.4536557086,
+       "elec_chiller_cooling_MWh_th": 2722114.5463442835,
+       "service_elec_MWh": 7100459.999999962,
+       "service_cooling_MWh_th": 6574500.000000014,
+       "gas_MMBtu": 48801554.196645685,
+       "diesel_gal": 70805408.38187525,
+       "owned_DG_MWh": 1011505.8340267892,
+       "gas_fuel_MWh_HHV": 14302917.408161104,
+       "diesel_fuel_MWh_HHV": 2851900.97401457,
+       "recovered_heat_used_MWh_th": 5503407.790936727,
+       "onsite_fuel_MWh_HHV": 17154818.382175673
+      }
+     ]
+    },
+    "signal": {
+     "cost_match": 0.0,
+     "by_cat": [
+      {
+       "GE_MWh_e": 4928682.918173673,
+       "owned_DG_MWh_e": 185430.9266540934,
+       "rental_MWh_e": 13043.435505011821,
+       "grid_MWh": 2500027.4786441443,
+       "ABS_cooling_MWh_th": 3249739.0644292044,
+       "elec_chiller_cooling_MWh_th": 3324760.935570809,
+       "service_elec_MWh": 7100460.000000018,
+       "service_cooling_MWh_th": 6574500.0000000065,
+       "gas_MMBtu": 41420651.244331546,
+       "diesel_gal": 13893205.351137366,
+       "owned_DG_MWh": 185430.9266540934,
+       "gas_fuel_MWh_HHV": 12139698.488960007,
+       "diesel_fuel_MWh_HHV": 559590.6693934913,
+       "recovered_heat_used_MWh_th": 4642484.377756007,
+       "onsite_fuel_MWh_HHV": 12699289.158353498
+      },
+      {
+       "GE_MWh_e": 5330560.954549289,
+       "owned_DG_MWh_e": 544265.3651500017,
+       "rental_MWh_e": 19546.44587451681,
+       "grid_MWh": 1686975.7840504276,
+       "ABS_cooling_MWh_th": 3536764.871867611,
+       "elec_chiller_cooling_MWh_th": 3037735.128132423,
+       "service_elec_MWh": 7100459.999999972,
+       "service_cooling_MWh_th": 6574499.999999941,
+       "gas_MMBtu": 44798034.262032226,
+       "diesel_gal": 39466826.7717163,
+       "owned_DG_MWh": 544265.3651500017,
+       "gas_fuel_MWh_HHV": 13129552.831779668,
+       "diesel_fuel_MWh_HHV": 1589645.258515788,
+       "recovered_heat_used_MWh_th": 5052521.245525159,
+       "onsite_fuel_MWh_HHV": 14719198.090295456
+      },
+      {
+       "GE_MWh_e": 7213467.795114661,
+       "owned_DG_MWh_e": 146849.23441699042,
+       "rental_MWh_e": 0.0,
+       "grid_MWh": 21945.37955555806,
+       "ABS_cooling_MWh_th": 4786261.848953692,
+       "elec_chiller_cooling_MWh_th": 1788238.151046307,
+       "service_elec_MWh": 7100459.999999962,
+       "service_cooling_MWh_th": 6574500.000000014,
+       "gas_MMBtu": 60621983.350143604,
+       "diesel_gal": 10279446.40918933,
+       "owned_DG_MWh": 146849.23441699042,
+       "gas_fuel_MWh_HHV": 17767287.031108912,
+       "diesel_fuel_MWh_HHV": 414035.64920616883,
+       "recovered_heat_used_MWh_th": 6837516.927076704,
+       "onsite_fuel_MWh_HHV": 18181322.68031508
+      }
+     ],
+     "all": {
+      "GE_MWh_e": 5768641.896721821,
+      "owned_DG_MWh_e": 263847.03333661595,
+      "rental_MWh_e": 10475.064989452523,
+      "grid_MWh": 1493481.048495693,
+      "ABS_cooling_MWh_th": 3818861.727982262,
+      "elec_chiller_cooling_MWh_th": 2755638.272017751,
+      "service_elec_MWh": 7100459.999999987,
+      "service_cooling_MWh_th": 6574499.999999993,
+      "gas_MMBtu": 48479666.50005019,
+      "diesel_gal": 19202546.882824793,
+      "owned_DG_MWh": 263847.03333661595,
+      "gas_fuel_MWh_HHV": 14208577.520530537,
+      "diesel_fuel_MWh_HHV": 773440.3827364534,
+      "recovered_heat_used_MWh_th": 5455516.754260375,
+      "onsite_fuel_MWh_HHV": 14982017.903266989
+     }
+    }
+   }
+  },
+  {
+   "cfg": "B+staged",
+   "level": "low",
+   "r": 2,
+   "decisions": {
+    "no_signal": {
+     "timing": {
+      "ABS": {
+       "root": 0.0,
+       "pre_signal": 37.061016,
+       "post_signal": 47.662491
+      },
+      "BESS": {
+       "root": 0.0,
+       "pre_signal": 0.0,
+       "post_signal": 0.0
+      },
+      "DG": {
+       "root": 67.2,
+       "pre_signal": 0.0,
+       "post_signal": 0.0
+      },
+      "GE": {
+       "root": 57.915,
+       "pre_signal": 53.55543,
+       "post_signal": 16.202123999999998
+      }
+     },
+     "installed_by_tau": {
+      "ABS": 0.0,
+      "BESS": 0.0,
+      "DG": 0.0,
+      "GE": 0.0
+     }
+    },
+    "signal": [
+     {
+      "timing": {
+       "ABS": {
+        "root": 0.0,
+        "pre_signal": 37.061016,
+        "post_signal": 37.736821
+       },
+       "BESS": {
+        "root": 0.0,
+        "pre_signal": 0.0,
+        "post_signal": 0.0
+       },
+       "DG": {
+        "root": 67.2,
+        "pre_signal": 0.0,
+        "post_signal": 0.0
+       },
+       "GE": {
+        "root": 57.915,
+        "pre_signal": 53.55543,
+        "post_signal": 1.2448160000000001
+       }
+      },
+      "installed_by_tau": {
+       "ABS": 0.0,
+       "BESS": 0.0,
+       "DG": 0.0,
+       "GE": 0.0
+      },
+      "median_T": 14,
+      "installed_by_median_T": {
+       "ABS": 74.79783700000002,
+       "BESS": 0.0,
+       "DG": 67.2,
+       "GE": 112.715246
+      },
+      "no_signal_installed_by_median_T": {
+       "ABS": 84.723507,
+       "BESS": 0.0,
+       "DG": 67.2,
+       "GE": 127.67255399999999
+      }
+     },
+     {
+      "timing": {
+       "ABS": {
+        "root": -0.0,
+        "pre_signal": 37.061016,
+        "post_signal": 47.253624
+       },
+       "BESS": {
+        "root": -0.0,
+        "pre_signal": 0.0,
+        "post_signal": 0.0
+       },
+       "DG": {
+        "root": 67.2,
+        "pre_signal": 0.0,
+        "post_signal": 0.0
+       },
+       "GE": {
+        "root": 57.915,
+        "pre_signal": 53.55543,
+        "post_signal": 15.585991
+       }
+      },
+      "installed_by_tau": {
+       "ABS": 0.0,
+       "BESS": 0.0,
+       "DG": 0.0,
+       "GE": 0.0
+      },
+      "median_T": 16,
+      "installed_by_median_T": {
+       "ABS": 84.31464,
+       "BESS": 0.0,
+       "DG": 67.2,
+       "GE": 127.05642099999999
+      },
+      "no_signal_installed_by_median_T": {
+       "ABS": 84.723507,
+       "BESS": 0.0,
+       "DG": 67.2,
+       "GE": 127.67255399999999
+      }
+     },
+     {
+      "timing": {
+       "ABS": {
+        "root": -0.0,
+        "pre_signal": 37.061016,
+        "post_signal": 74.12203
+       },
+       "BESS": {
+        "root": -0.0,
+        "pre_signal": 0.0,
+        "post_signal": 0.0
+       },
+       "DG": {
+        "root": 67.2,
+        "pre_signal": 0.0,
+        "post_signal": 0.0
+       },
+       "GE": {
+        "root": 57.915,
+        "pre_signal": 53.55543,
+        "post_signal": 56.07484899999999
+       }
+      },
+      "installed_by_tau": {
+       "ABS": 0.0,
+       "BESS": 0.0,
+       "DG": 0.0,
+       "GE": 0.0
+      },
+      "median_T": 19,
+      "installed_by_median_T": {
+       "ABS": 111.18304599999999,
+       "BESS": 0.0,
+       "DG": 67.2,
+       "GE": 167.545279
+      },
+      "no_signal_installed_by_median_T": {
+       "ABS": 84.723507,
+       "BESS": 0.0,
+       "DG": 67.2,
+       "GE": 127.67255399999999
+      }
+     }
+    ]
+   },
+   "quantities": {
+    "cfg": "B+staged",
+    "level": "low",
+    "r": 2,
+    "p": 0.9982575,
+    "reports": [
+     {
+      "study_months": [
+       9.0,
+       12.0
+      ],
+      "typical_years": 3.0
+     }
+    ],
+    "thresholds": [
+     14,
+     18
+    ],
+    "P_cat": [
+     0.32906582533682593,
+     0.4116382668699934,
+     0.2592959077931807
+    ],
+    "no_signal": {
+     "cost_match": 0.0,
+     "all": {
+      "GE_MWh_e": 5821004.396905232,
+      "owned_DG_MWh_e": 463679.3563961782,
+      "rental_MWh_e": 0.0,
+      "grid_MWh": 1245204.7137413826,
+      "ABS_cooling_MWh_th": 3859918.240311183,
+      "elec_chiller_cooling_MWh_th": 2714581.759688788,
+      "service_elec_MWh": 7100459.999999938,
+      "service_cooling_MWh_th": 6574500.0,
+      "gas_MMBtu": 48919720.95159157,
+      "diesel_gal": 32457554.947732475,
+      "owned_DG_MWh": 463679.3563961782,
+      "gas_fuel_MWh_HHV": 14337550.103045596,
+      "diesel_fuel_MWh_HHV": 1307325.735208451,
+      "recovered_heat_used_MWh_th": 5514168.914730262,
+      "onsite_fuel_MWh_HHV": 15644875.838254048
+     },
+     "by_cat": [
+      {
+       "GE_MWh_e": 5806252.913245868,
+       "owned_DG_MWh_e": 231272.52259549047,
+       "rental_MWh_e": 0.0,
+       "grid_MWh": 1494614.2474032103,
+       "ABS_cooling_MWh_th": 3845787.1479013655,
+       "elec_chiller_cooling_MWh_th": 2728712.8520986266,
+       "service_elec_MWh": 7100460.000000004,
+       "service_cooling_MWh_th": 6574499.99999997,
+       "gas_MMBtu": 48795749.48291827,
+       "diesel_gal": 16189076.581684332,
+       "owned_DG_MWh": 231272.52259549047,
+       "gas_fuel_MWh_HHV": 14301216.143879915,
+       "diesel_fuel_MWh_HHV": 652063.7946566876,
+       "recovered_heat_used_MWh_th": 5493981.639859094,
+       "onsite_fuel_MWh_HHV": 14953279.938536603
+      },
+      {
+       "GE_MWh_e": 5828086.478398559,
+       "owned_DG_MWh_e": 448868.5698931392,
+       "rental_MWh_e": 0.0,
+       "grid_MWh": 1251849.406365939,
+       "ABS_cooling_MWh_th": 3866722.6514245197,
+       "elec_chiller_cooling_MWh_th": 2707777.3485754584,
+       "service_elec_MWh": 7100459.999999925,
+       "service_cooling_MWh_th": 6574499.999999996,
+       "gas_MMBtu": 48979238.76446149,
+       "diesel_gal": 31420799.892519742,
+       "owned_DG_MWh": 448868.5698931392,
+       "gas_fuel_MWh_HHV": 14354993.776219662,
+       "diesel_fuel_MWh_HHV": 1265567.3043294253,
+       "recovered_heat_used_MWh_th": 5523889.502035028,
+       "onsite_fuel_MWh_HHV": 15620561.080549087
+      },
+      {
+       "GE_MWh_e": 5828482.160091545,
+       "owned_DG_MWh_e": 782133.410563113,
+       "rental_MWh_e": 0.0,
+       "grid_MWh": 918136.8301062642,
+       "ABS_cooling_MWh_th": 3867049.488947989,
+       "elec_chiller_cooling_MWh_th": 2707450.5110520045,
+       "service_elec_MWh": 7100460.000000014,
+       "service_cooling_MWh_th": 6574499.999999996,
+       "gas_MMBtu": 48982564.07340935,
+       "diesel_gal": 54749338.73941791,
+       "owned_DG_MWh": 782133.410563113,
+       "gas_fuel_MWh_HHV": 14355968.3685256,
+       "diesel_fuel_MWh_HHV": 2205194.4342371477,
+       "recovered_heat_used_MWh_th": 5524356.412782841,
+       "onsite_fuel_MWh_HHV": 16561162.802762747
+      }
+     ]
+    },
+    "signal": {
+     "cost_match": 0.0,
+     "by_cat": [
+      {
+       "GE_MWh_e": 5302599.505723818,
+       "owned_DG_MWh_e": 339436.53206247167,
+       "rental_MWh_e": 25530.701557515145,
+       "grid_MWh": 1916879.5091757383,
+       "ABS_cooling_MWh_th": 3517588.813459096,
+       "elec_chiller_cooling_MWh_th": 3056911.1865409054,
+       "service_elec_MWh": 7100460.000000004,
+       "service_cooling_MWh_th": 6574499.99999997,
+       "gas_MMBtu": 44563046.24610297,
+       "diesel_gal": 25547706.353399076,
+       "owned_DG_MWh": 339436.53206247167,
+       "gas_fuel_MWh_HHV": 13060681.78373475,
+       "diesel_fuel_MWh_HHV": 1029010.7817773367,
+       "recovered_heat_used_MWh_th": 5025126.876370138,
+       "onsite_fuel_MWh_HHV": 14089692.565512087
+      },
+      {
+       "GE_MWh_e": 5806525.950575295,
+       "owned_DG_MWh_e": 454487.50598730805,
+       "rental_MWh_e": 0.0,
+       "grid_MWh": 1270042.8518717,
+       "ABS_cooling_MWh_th": 3852550.8883620785,
+       "elec_chiller_cooling_MWh_th": 2721949.1116379458,
+       "service_elec_MWh": 7100459.999999925,
+       "service_cooling_MWh_th": 6574499.999999996,
+       "gas_MMBtu": 48798044.08863478,
+       "diesel_gal": 31814125.419111565,
+       "owned_DG_MWh": 454487.50598730805,
+       "gas_fuel_MWh_HHV": 14301888.654347826,
+       "diesel_fuel_MWh_HHV": 1281409.6739735943,
+       "recovered_heat_used_MWh_th": 5503644.126231541,
+       "onsite_fuel_MWh_HHV": 15583298.32832142
+      },
+      {
+       "GE_MWh_e": 7210312.804853009,
+       "owned_DG_MWh_e": 142944.8671533512,
+       "rental_MWh_e": 0.0,
+       "grid_MWh": 29355.553398450204,
+       "ABS_cooling_MWh_th": 4784168.108012806,
+       "elec_chiller_cooling_MWh_th": 1790331.891987198,
+       "service_elec_MWh": 7100460.000000014,
+       "service_cooling_MWh_th": 6574499.999999996,
+       "gas_MMBtu": 60595468.81198469,
+       "diesel_gal": 10006140.700734584,
+       "owned_DG_MWh": 142944.8671533512,
+       "gas_fuel_MWh_HHV": 17759516.064473823,
+       "diesel_fuel_MWh_HHV": 403027.43904315314,
+       "recovered_heat_used_MWh_th": 6834525.868589723,
+       "onsite_fuel_MWh_HHV": 18162543.503516976
+      }
+     ],
+     "all": {
+      "GE_MWh_e": 6004697.165819265,
+      "owned_DG_MWh_e": 335846.4309441922,
+      "rental_MWh_e": 8401.281379451908,
+      "grid_MWh": 1161189.5510204767,
+      "ABS_cooling_MWh_th": 3983890.849412687,
+      "elec_chiller_cooling_MWh_th": 2590609.150587324,
+      "service_elec_MWh": 7100459.999999973,
+      "service_cooling_MWh_th": 6574499.999999988,
+      "gas_MMBtu": 50463474.9815451,
+      "diesel_gal": 24097339.862655092,
+      "owned_DG_MWh": 335846.4309441922,
+      "gas_fuel_MWh_HHV": 14789998.529174998,
+      "diesel_fuel_MWh_HHV": 970592.9052032407,
+      "recovered_heat_used_MWh_th": 5691272.642018124,
+      "onsite_fuel_MWh_HHV": 15760591.43437824
+     }
+    }
+   }
+  },
+  {
+   "cfg": "B+staged",
+   "level": "high",
+   "r": 4,
+   "decisions": {
+    "no_signal": {
+     "timing": {
+      "ABS": {
+       "root": 0.0,
+       "pre_signal": 37.061016,
+       "post_signal": 47.662491
+      },
+      "BESS": {
+       "root": 0.0,
+       "pre_signal": 0.0,
+       "post_signal": 0.0
+      },
+      "DG": {
+       "root": 67.2,
+       "pre_signal": 0.0,
+       "post_signal": 0.0
+      },
+      "GE": {
+       "root": 57.915,
+       "pre_signal": 53.55543,
+       "post_signal": 16.202123999999998
+      }
+     },
+     "installed_by_tau": {
+      "ABS": 0.0,
+      "BESS": 0.0,
+      "DG": 0.0,
+      "GE": 0.0
+     }
+    },
+    "signal": [
+     {
+      "timing": {
+       "ABS": {
+        "root": 0.0,
+        "pre_signal": 37.061016,
+        "post_signal": 37.736821
+       },
+       "BESS": {
+        "root": 0.0,
+        "pre_signal": 0.0,
+        "post_signal": 0.0
+       },
+       "DG": {
+        "root": 67.2,
+        "pre_signal": 0.0,
+        "post_signal": 0.0
+       },
+       "GE": {
+        "root": 57.915,
+        "pre_signal": 53.55543,
+        "post_signal": 1.2448160000000001
+       }
+      },
+      "installed_by_tau": {
+       "ABS": 0.0,
+       "BESS": 0.0,
+       "DG": 0.0,
+       "GE": 0.0
+      },
+      "median_T": 12,
+      "installed_by_median_T": {
+       "ABS": 74.71906000000001,
+       "BESS": 0.0,
+       "DG": 67.2,
+       "GE": 112.715246
+      },
+      "no_signal_installed_by_median_T": {
+       "ABS": 75.309784,
+       "BESS": 0.0,
+       "DG": 67.2,
+       "GE": 113.48671499999999
+      }
+     },
+     {
+      "timing": {
+       "ABS": {
+        "root": -0.0,
+        "pre_signal": 37.061016,
+        "post_signal": 47.253624
+       },
+       "BESS": {
+        "root": -0.0,
+        "pre_signal": 0.0,
+        "post_signal": 0.0
+       },
+       "DG": {
+        "root": 67.2,
+        "pre_signal": 0.0,
+        "post_signal": 0.0
+       },
+       "GE": {
+        "root": 57.915,
+        "pre_signal": 53.55543,
+        "post_signal": 15.585991
+       }
+      },
+      "installed_by_tau": {
+       "ABS": 0.0,
+       "BESS": 0.0,
+       "DG": 0.0,
+       "GE": 0.0
+      },
+      "median_T": 16,
+      "installed_by_median_T": {
+       "ABS": 84.31464,
+       "BESS": 0.0,
+       "DG": 67.2,
+       "GE": 127.05642099999999
+      },
+      "no_signal_installed_by_median_T": {
+       "ABS": 84.723507,
+       "BESS": 0.0,
+       "DG": 67.2,
+       "GE": 127.67255399999999
+      }
+     },
+     {
+      "timing": {
+       "ABS": {
+        "root": -0.0,
+        "pre_signal": 37.061016,
+        "post_signal": 74.12203
+       },
+       "BESS": {
+        "root": -0.0,
+        "pre_signal": 0.0,
+        "post_signal": 0.0
+       },
+       "DG": {
+        "root": 67.2,
+        "pre_signal": 0.0,
+        "post_signal": 0.0
+       },
+       "GE": {
+        "root": 57.915,
+        "pre_signal": 53.55543,
+        "post_signal": 56.07484899999999
+       }
+      },
+      "installed_by_tau": {
+       "ABS": 0.0,
+       "BESS": 0.0,
+       "DG": 0.0,
+       "GE": 0.0
+      },
+      "median_T": 22,
+      "installed_by_median_T": {
+       "ABS": 111.18304599999999,
+       "BESS": 0.0,
+       "DG": 67.2,
+       "GE": 167.545279
+      },
+      "no_signal_installed_by_median_T": {
+       "ABS": 84.723507,
+       "BESS": 0.0,
+       "DG": 67.2,
+       "GE": 127.67255399999999
+      }
+     }
+    ]
+   },
+   "quantities": {
+    "cfg": "B+staged",
+    "level": "high",
+    "r": 4,
+    "p": 0.906835,
+    "reports": [
+     {
+      "study_months": [
+       9.0,
+       12.0
+      ],
+      "typical_years": 3.0
+     }
+    ],
+    "thresholds": [
+     14,
+     18
+    ],
+    "P_cat": [
+     0.4234949795002167,
+     0.25330618003041633,
+     0.3231354012427706
+    ],
+    "no_signal": {
+     "cost_match": 0.0,
+     "all": {
+      "GE_MWh_e": 5705459.753643563,
+      "owned_DG_MWh_e": 511104.4187750996,
+      "rental_MWh_e": 0.0,
+      "grid_MWh": 1327211.6588480405,
+      "ABS_cooling_MWh_th": 3772784.2826985014,
+      "elec_chiller_cooling_MWh_th": 2801715.717301512,
+      "service_elec_MWh": 7100460.000000029,
+      "service_cooling_MWh_th": 6574499.999999956,
+      "gas_MMBtu": 47948683.7696205,
+      "diesel_gal": 35777309.31425697,
+      "owned_DG_MWh": 511104.4187750996,
+      "gas_fuel_MWh_HHV": 14052955.383827815,
+      "diesel_fuel_MWh_HHV": 1441038.8360540618,
+      "recovered_heat_used_MWh_th": 5389691.832426431,
+      "onsite_fuel_MWh_HHV": 15493994.219881877
+     },
+     "by_cat": [
+      {
+       "GE_MWh_e": 5539620.897133948,
+       "owned_DG_MWh_e": 175181.6696620805,
+       "rental_MWh_e": 0.0,
+       "grid_MWh": 1849203.9310511402,
+       "ABS_cooling_MWh_th": 3645846.676528313,
+       "elec_chiller_cooling_MWh_th": 2928653.3234717106,
+       "service_elec_MWh": 7100460.000000018,
+       "service_cooling_MWh_th": 6574500.0000000065,
+       "gas_MMBtu": 46554974.019513704,
+       "diesel_gal": 12262716.876345634,
+       "owned_DG_MWh": 175181.6696620805,
+       "gas_fuel_MWh_HHV": 13644482.420725001,
+       "diesel_fuel_MWh_HHV": 493917.8376756197,
+       "recovered_heat_used_MWh_th": 5208352.395040448,
+       "onsite_fuel_MWh_HHV": 14138400.25840062
+      },
+      {
+       "GE_MWh_e": 5826509.990707089,
+       "owned_DG_MWh_e": 451356.9934084623,
+       "rental_MWh_e": 0.0,
+       "grid_MWh": 1251174.5462972017,
+       "ABS_cooling_MWh_th": 3865234.386080912,
+       "elec_chiller_cooling_MWh_th": 2709265.613919108,
+       "service_elec_MWh": 7100459.999999972,
+       "service_cooling_MWh_th": 6574499.999999941,
+       "gas_MMBtu": 48965989.96190238,
+       "diesel_gal": 31594989.53859236,
+       "owned_DG_MWh": 451356.9934084623,
+       "gas_fuel_MWh_HHV": 14351110.774297299,
+       "diesel_fuel_MWh_HHV": 1272583.31670264,
+       "recovered_heat_used_MWh_th": 5521763.408687017,
+       "onsite_fuel_MWh_HHV": 15623694.090999939
+      },
+      {
+       "GE_MWh_e": 5828480.993694343,
+       "owned_DG_MWh_e": 998289.7369604197,
+       "rental_MWh_e": 0.0,
+       "grid_MWh": 701981.834473093,
+       "ABS_cooling_MWh_th": 3867048.456954562,
+       "elec_chiller_cooling_MWh_th": 2707451.5430454407,
+       "service_elec_MWh": 7100459.999999962,
+       "service_cooling_MWh_th": 6574500.000000014,
+       "gas_MMBtu": 48982554.271007255,
+       "diesel_gal": 69880281.58722937,
+       "owned_DG_MWh": 998289.7369604197,
+       "gas_fuel_MWh_HHV": 14355965.495605879,
+       "diesel_fuel_MWh_HHV": 2814638.7073737504,
+       "recovered_heat_used_MWh_th": 5524354.938506518,
+       "onsite_fuel_MWh_HHV": 17170604.202979628
+      }
+     ]
+    },
+    "signal": {
+     "cost_match": 0.0,
+     "by_cat": [
+      {
+       "GE_MWh_e": 5175343.836606028,
+       "owned_DG_MWh_e": 241438.60872042383,
+       "rental_MWh_e": 11095.877043684122,
+       "grid_MWh": 2170846.3415643014,
+       "ABS_cooling_MWh_th": 3428027.8651552163,
+       "elec_chiller_cooling_MWh_th": 3146472.1348447683,
+       "service_elec_MWh": 7100460.000000018,
+       "service_cooling_MWh_th": 6574500.0000000065,
+       "gas_MMBtu": 43493589.602837056,
+       "diesel_gal": 17677414.003487557,
+       "owned_DG_MWh": 241438.60872042383,
+       "gas_fuel_MWh_HHV": 12747241.970350837,
+       "diesel_fuel_MWh_HHV": 712011.0647862598,
+       "recovered_heat_used_MWh_th": 4897182.664507452,
+       "onsite_fuel_MWh_HHV": 13459253.035137096
+      },
+      {
+       "GE_MWh_e": 5805161.949166931,
+       "owned_DG_MWh_e": 457006.0196717099,
+       "rental_MWh_e": 0.0,
+       "grid_MWh": 1269102.9588404153,
+       "ABS_cooling_MWh_th": 3851203.6296399683,
+       "elec_chiller_cooling_MWh_th": 2723296.3703600424,
+       "service_elec_MWh": 7100459.999999972,
+       "service_cooling_MWh_th": 6574499.999999941,
+       "gas_MMBtu": 48786581.02079889,
+       "diesel_gal": 31990421.377019696,
+       "owned_DG_MWh": 457006.0196717099,
+       "gas_fuel_MWh_HHV": 14298529.021336135,
+       "diesel_fuel_MWh_HHV": 1288510.5243967907,
+       "recovered_heat_used_MWh_th": 5501719.470914241,
+       "onsite_fuel_MWh_HHV": 15587039.545732925
+      },
+      {
+       "GE_MWh_e": 7213475.477434913,
+       "owned_DG_MWh_e": 146849.23668057806,
+       "rental_MWh_e": 0.0,
+       "grid_MWh": 21936.93759137081,
+       "ABS_cooling_MWh_th": 4786266.599565868,
+       "elec_chiller_cooling_MWh_th": 1788233.4004341317,
+       "service_elec_MWh": 7100459.999999962,
+       "service_cooling_MWh_th": 6574500.000000014,
+       "gas_MMBtu": 60622047.91236301,
+       "diesel_gal": 10279446.567640465,
+       "owned_DG_MWh": 146849.23668057806,
+       "gas_fuel_MWh_HHV": 17767305.953213073,
+       "diesel_fuel_MWh_HHV": 414035.6555882652,
+       "recovered_heat_used_MWh_th": 6837523.713665526,
+       "onsite_fuel_MWh_HHV": 18181341.60880134
+      }
+     ],
+     "all": {
+      "GE_MWh_e": 5993323.404731705,
+      "owned_DG_MWh_e": 265464.2653947219,
+      "rental_MWh_e": 4699.048221151932,
+      "grid_MWh": 1248220.4019730699,
+      "ABS_cooling_MWh_th": 3974016.95566664,
+      "elec_chiller_cooling_MWh_th": 2600483.044333356,
+      "service_elec_MWh": 7100459.999999987,
+      "service_cooling_MWh_th": 6574499.999999993,
+      "gas_MMBtu": 50367889.89336525,
+      "diesel_gal": 18911431.953111168,
+      "owned_DG_MWh": 265464.2653947219,
+      "gas_fuel_MWh_HHV": 14761984.142252415,
+      "diesel_fuel_MWh_HHV": 761714.8525746501,
+      "recovered_heat_used_MWh_th": 5677167.079523771,
+      "onsite_fuel_MWh_HHV": 15523698.994827066
+     }
+    }
+   }
+  }
+ ]
+}

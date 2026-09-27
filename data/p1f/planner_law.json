@@ -1,0 +1,739 @@
+{
+ "runs": {
+  "p1c_main": {
+   "A": {
+    "value": 0.5231449526678026,
+    "n_pairs": 53,
+    "min_gain": 0.14060429315077272,
+    "max_excess_in_gap_units": -2.6933468754892074,
+    "embedding_ok": true
+   },
+   "A+staged": {
+    "value": 3.7274729113446705,
+    "n_pairs": 53,
+    "min_gain": 0.06614985909857296,
+    "max_excess_in_gap_units": -1.159697489480111,
+    "embedding_ok": true
+   },
+   "B": {
+    "value": 20.795895550154107,
+    "n_pairs": 14,
+    "min_gain": 9.992959931032829,
+    "max_excess_in_gap_units": -133.2704302736571,
+    "embedding_ok": true
+   },
+   "B+staged": {
+    "value": 15.907750003470179,
+    "n_pairs": 14,
+    "min_gain": 3.5790894589773643,
+    "max_excess_in_gap_units": -47.26323470955218,
+    "embedding_ok": true
+   }
+  },
+  "p1f_blocks4": {
+   "A|blocks4": {
+    "value": 0.5430948774541621,
+    "n_pairs": 53,
+    "min_gain": 0.16786295882980085,
+    "max_excess_in_gap_units": -3.2090103680505155,
+    "embedding_ok": true
+   },
+   "A+staged|blocks4": {
+    "value": 3.799254017770724,
+    "n_pairs": 49,
+    "min_gain": 0.07161344964777072,
+    "max_excess_in_gap_units": -1.2551415149349845,
+    "embedding_ok": true
+   },
+   "B|blocks4": {
+    "value": 20.843508380269956,
+    "n_pairs": 14,
+    "min_gain": 10.019794510160864,
+    "max_excess_in_gap_units": -132.83052676356584,
+    "embedding_ok": true
+   },
+   "B+staged|blocks4": {
+    "value": 16.009153753124824,
+    "n_pairs": 14,
+    "min_gain": 3.50760720136293,
+    "max_excess_in_gap_units": -46.30375177085632,
+    "embedding_ok": true
+   }
+  },
+  "p1f_naive": {
+   "A|naive": {
+    "value": 3.3849657758570513,
+    "n_pairs": 53,
+    "min_gain": 1.2086521716321386,
+    "max_excess_in_gap_units": -23.1523481756558,
+    "embedding_ok": true
+   },
+   "A+staged|naive": {
+    "value": 14.826773736526258,
+    "n_pairs": 53,
+    "min_gain": 0.8719597373534498,
+    "max_excess_in_gap_units": -15.286646594812586,
+    "embedding_ok": true
+   },
+   "B|naive": {
+    "value": 24.89141127236435,
+    "n_pairs": 14,
+    "min_gain": 15.039377270896352,
+    "max_excess_in_gap_units": -187.19531841579112,
+    "embedding_ok": true
+   },
+   "B+staged|naive": {
+    "value": 19.86130004972155,
+    "n_pairs": 14,
+    "min_gain": 10.661875982519632,
+    "max_excess_in_gap_units": -140.54601938210342,
+    "embedding_ok": true
+   }
+  },
+  "p1f_nocchp": {
+   "A|nocchp": {
+    "value": 0.457667614968661,
+    "n_pairs": 53,
+    "min_gain": 0.13011844171739995,
+    "max_excess_in_gap_units": -2.442675939454311,
+    "embedding_ok": true
+   },
+   "A+staged|nocchp": {
+    "value": 3.2883190447605695,
+    "n_pairs": 53,
+    "min_gain": 0.10249819798104909,
+    "max_excess_in_gap_units": -1.7750369543954083,
+    "embedding_ok": true
+   },
+   "B|nocchp": {
+    "value": 19.942992663543485,
+    "n_pairs": 14,
+    "min_gain": 9.09772222496872,
+    "max_excess_in_gap_units": -122.17836665309976,
+    "embedding_ok": true
+   },
+   "B+staged|nocchp": {
+    "value": 15.550820367508505,
+    "n_pairs": 14,
+    "min_gain": 3.8910507824315346,
+    "max_excess_in_gap_units": -50.282912456410386,
+    "embedding_ok": true
+   }
+  },
+  "p1f_s_capex": {
+   "A|capex_lo": {
+    "value": 0.4904119521635121,
+    "n_pairs": 53,
+    "min_gain": 0.1977279303931141,
+    "max_excess_in_gap_units": -3.9500034579318806,
+    "embedding_ok": true
+   },
+   "A|capex_hi": {
+    "value": 0.4717758122337061,
+    "n_pairs": 53,
+    "min_gain": 0.10660865208046744,
+    "max_excess_in_gap_units": -1.9392612173890338,
+    "embedding_ok": true
+   },
+   "A+staged|capex_lo": {
+    "value": 3.069637365532471,
+    "n_pairs": 53,
+    "min_gain": 0.05539789251236016,
+    "max_excess_in_gap_units": -1.0314225874944825,
+    "embedding_ok": true
+   },
+   "A+staged|capex_hi": {
+    "value": 1.986990356675209,
+    "n_pairs": 53,
+    "min_gain": 0.017785342219326594,
+    "max_excess_in_gap_units": -0.2874992108336195,
+    "embedding_ok": true
+   },
+   "B|capex_lo": {
+    "value": 17.57069406377704,
+    "n_pairs": 14,
+    "min_gain": 5.422917566382807,
+    "max_excess_in_gap_units": -75.1227314097956,
+    "embedding_ok": true
+   },
+   "B|capex_hi": {
+    "value": 17.834503789426982,
+    "n_pairs": 14,
+    "min_gain": 3.596529977255841,
+    "max_excess_in_gap_units": -45.6706306099221,
+    "embedding_ok": true
+   },
+   "B+staged|capex_lo": {
+    "value": 13.880724958354255,
+    "n_pairs": 14,
+    "min_gain": 2.880874052511899,
+    "max_excess_in_gap_units": -40.70815710709914,
+    "embedding_ok": true
+   },
+   "B+staged|capex_hi": {
+    "value": 13.673012428532694,
+    "n_pairs": 14,
+    "min_gain": 7.981220334750674,
+    "max_excess_in_gap_units": -95.9571073566263,
+    "embedding_ok": true
+   }
+  },
+  "p1f_s_co2": {
+   "A|co2_lo": {
+    "value": 0.541168777267089,
+    "n_pairs": 53,
+    "min_gain": 0.14059836155138328,
+    "max_excess_in_gap_units": -2.4530138803099906,
+    "embedding_ok": true
+   },
+   "A|co2_hi": {
+    "value": 1.3819957886175311,
+    "n_pairs": 53,
+    "min_gain": 0.11828362555206695,
+    "max_excess_in_gap_units": -1.0731632496065062,
+    "embedding_ok": true
+   },
+   "A+staged|co2_lo": {
+    "value": 3.9508217539435835,
+    "n_pairs": 53,
+    "min_gain": 0.06794344368131533,
+    "max_excess_in_gap_units": -1.0866157637975247,
+    "embedding_ok": true
+   },
+   "A+staged|co2_hi": {
+    "value": 2.7046766839037795,
+    "n_pairs": 53,
+    "min_gain": -0.031736843041244356,
+    "max_excess_in_gap_units": 0.26907289158983416,
+    "embedding_ok": true
+   },
+   "B|co2_lo": {
+    "value": 22.2640869333517,
+    "n_pairs": 14,
+    "min_gain": 10.483057517879843,
+    "max_excess_in_gap_units": -122.03160998188443,
+    "embedding_ok": true
+   },
+   "B|co2_hi": {
+    "value": 19.760423115616923,
+    "n_pairs": 14,
+    "min_gain": 3.0930166045643546,
+    "max_excess_in_gap_units": -23.77820346455177,
+    "embedding_ok": true
+   },
+   "B+staged|co2_lo": {
+    "value": 17.01246114868816,
+    "n_pairs": 14,
+    "min_gain": 3.7927608815688245,
+    "max_excess_in_gap_units": -46.67780548150362,
+    "embedding_ok": true
+   },
+   "B+staged|co2_hi": {
+    "value": 15.952862240799611,
+    "n_pairs": 14,
+    "min_gain": 3.248577750809318,
+    "max_excess_in_gap_units": -22.792254358197074,
+    "embedding_ok": true
+   }
+  },
+  "p1f_s_diesel": {
+   "A|diesel_lo": {
+    "value": 0.3521135339716982,
+    "n_pairs": 53,
+    "min_gain": 0.13010228710101046,
+    "max_excess_in_gap_units": -2.6435067660395233,
+    "embedding_ok": true
+   },
+   "A|diesel_hi": {
+    "value": 1.4529055913599302,
+    "n_pairs": 53,
+    "min_gain": 0.09169979668558881,
+    "max_excess_in_gap_units": -1.7102983080570622,
+    "embedding_ok": true
+   },
+   "A+staged|diesel_lo": {
+    "value": 0.9641582441052022,
+    "n_pairs": 53,
+    "min_gain": 0.06008775818440881,
+    "max_excess_in_gap_units": -1.0981641070359538,
+    "embedding_ok": true
+   },
+   "A+staged|diesel_hi": {
+    "value": 2.2157339416972595,
+    "n_pairs": 53,
+    "min_gain": 0.069350878417481,
+    "max_excess_in_gap_units": -1.1796820105244419,
+    "embedding_ok": true
+   },
+   "B|diesel_lo": {
+    "value": 9.614050534632906,
+    "n_pairs": 14,
+    "min_gain": 0.25401241505676353,
+    "max_excess_in_gap_units": -3.608737947137403,
+    "embedding_ok": true
+   },
+   "B|diesel_hi": {
+    "value": 19.494486490101387,
+    "n_pairs": 14,
+    "min_gain": 3.0802735019495913,
+    "max_excess_in_gap_units": -39.58204981434513,
+    "embedding_ok": true
+   },
+   "B+staged|diesel_lo": {
+    "value": 6.237382180154814,
+    "n_pairs": 14,
+    "min_gain": 5.903496436801333,
+    "max_excess_in_gap_units": -77.22362138574749,
+    "embedding_ok": true
+   },
+   "B+staged|diesel_hi": {
+    "value": 15.358591329140284,
+    "n_pairs": 14,
+    "min_gain": 3.109023797364898,
+    "max_excess_in_gap_units": -38.637559653270564,
+    "embedding_ok": true
+   }
+  },
+  "p1f_s_disc": {
+   "A|disc_lo": {
+    "value": 0.3503993270988672,
+    "n_pairs": 53,
+    "min_gain": 0.15895056804322394,
+    "max_excess_in_gap_units": -2.6885728111133718,
+    "embedding_ok": true
+   },
+   "A|disc_hi": {
+    "value": 0.42657476907229397,
+    "n_pairs": 53,
+    "min_gain": 0.06290158596556239,
+    "max_excess_in_gap_units": -1.2897020603414941,
+    "embedding_ok": true
+   },
+   "A+staged|disc_lo": {
+    "value": 3.720171255363906,
+    "n_pairs": 53,
+    "min_gain": 0.11298578857190478,
+    "max_excess_in_gap_units": -1.8702650499329192,
+    "embedding_ok": true
+   },
+   "A+staged|disc_hi": {
+    "value": 2.49893133592926,
+    "n_pairs": 53,
+    "min_gain": -0.0001354631907588555,
+    "max_excess_in_gap_units": 0.0025102874002483574,
+    "embedding_ok": true
+   },
+   "B|disc_lo": {
+    "value": 21.178305464820003,
+    "n_pairs": 14,
+    "min_gain": 7.201050488263604,
+    "max_excess_in_gap_units": -86.37609247380863,
+    "embedding_ok": true
+   },
+   "B|disc_hi": {
+    "value": 17.568758580445298,
+    "n_pairs": 14,
+    "min_gain": 5.785756137649855,
+    "max_excess_in_gap_units": -83.44517692064098,
+    "embedding_ok": true
+   },
+   "B+staged|disc_lo": {
+    "value": 16.832065785904256,
+    "n_pairs": 14,
+    "min_gain": 3.4351708497140407,
+    "max_excess_in_gap_units": -43.1441196733896,
+    "embedding_ok": true
+   },
+   "B+staged|disc_hi": {
+    "value": 12.914151677984883,
+    "n_pairs": 14,
+    "min_gain": 4.899713827597225,
+    "max_excess_in_gap_units": -67.80961699413486,
+    "embedding_ok": true
+   }
+  },
+  "p1f_s_eff": {
+   "A|eff": {
+    "value": 0.6753774693887535,
+    "n_pairs": 53,
+    "min_gain": 0.08796217033864195,
+    "max_excess_in_gap_units": -1.6656066207574591,
+    "embedding_ok": true
+   },
+   "A+staged|eff": {
+    "value": 4.365511592143899,
+    "n_pairs": 53,
+    "min_gain": 0.06798796745181335,
+    "max_excess_in_gap_units": -1.1657726662977912,
+    "embedding_ok": true
+   },
+   "B|eff": {
+    "value": 24.0160584358699,
+    "n_pairs": 14,
+    "min_gain": 9.163496210313383,
+    "max_excess_in_gap_units": -111.28113248151061,
+    "embedding_ok": true
+   },
+   "B+staged|eff": {
+    "value": 19.00737528818836,
+    "n_pairs": 14,
+    "min_gain": 3.683477997180489,
+    "max_excess_in_gap_units": -47.19884420114689,
+    "embedding_ok": true
+   }
+  },
+  "p1f_s_gas": {
+   "A|gas_lo": {
+    "value": 0.52902206074981,
+    "n_pairs": 53,
+    "min_gain": 0.1406044619241129,
+    "max_excess_in_gap_units": -2.710252929674662,
+    "embedding_ok": true
+   },
+   "A|gas_hi": {
+    "value": 0.4774281259720352,
+    "n_pairs": 53,
+    "min_gain": 0.13010497469133497,
+    "max_excess_in_gap_units": -2.4807064200501148,
+    "embedding_ok": true
+   },
+   "A+staged|gas_lo": {
+    "value": 3.831381195778158,
+    "n_pairs": 53,
+    "min_gain": 0.06936889070129837,
+    "max_excess_in_gap_units": -1.2604860364679094,
+    "embedding_ok": true
+   },
+   "A+staged|gas_hi": {
+    "value": 2.171058419612619,
+    "n_pairs": 53,
+    "min_gain": 0.059398100405587684,
+    "max_excess_in_gap_units": -0.9922997163148216,
+    "embedding_ok": true
+   },
+   "B|gas_lo": {
+    "value": 19.861783237948842,
+    "n_pairs": 14,
+    "min_gain": 6.503251033112861,
+    "max_excess_in_gap_units": -89.78119696080917,
+    "embedding_ok": true
+   },
+   "B|gas_hi": {
+    "value": 17.098033799298737,
+    "n_pairs": 14,
+    "min_gain": 5.488541159279862,
+    "max_excess_in_gap_units": -72.15579376503703,
+    "embedding_ok": true
+   },
+   "B+staged|gas_lo": {
+    "value": 15.838782257691282,
+    "n_pairs": 14,
+    "min_gain": 3.1791145844259745,
+    "max_excess_in_gap_units": -43.827356750197474,
+    "embedding_ok": true
+   },
+   "B+staged|gas_hi": {
+    "value": 14.24699013188808,
+    "n_pairs": 14,
+    "min_gain": 8.471318661444684,
+    "max_excess_in_gap_units": -100.97705627520537,
+    "embedding_ok": true
+   }
+  },
+  "p1f_s_grid": {
+   "A|grid_lo": {
+    "value": 0.5231387846482453,
+    "n_pairs": 53,
+    "min_gain": 0.14059618281027042,
+    "max_excess_in_gap_units": -3.1644324811128515,
+    "embedding_ok": true
+   },
+   "A|grid_hi": {
+    "value": 0.5244962553142554,
+    "n_pairs": 53,
+    "min_gain": 0.09927947479263821,
+    "max_excess_in_gap_units": -1.6204512141309575,
+    "embedding_ok": true
+   },
+   "A+staged|grid_lo": {
+    "value": 3.454029060498737,
+    "n_pairs": 53,
+    "min_gain": 0.07276148748019295,
+    "max_excess_in_gap_units": -1.4280507307777546,
+    "embedding_ok": true
+   },
+   "A+staged|grid_hi": {
+    "value": 1.2347110609299494,
+    "n_pairs": 53,
+    "min_gain": 0.06904889815120896,
+    "max_excess_in_gap_units": -1.0987602938395626,
+    "embedding_ok": true
+   },
+   "B|grid_lo": {
+    "value": 21.417930026678135,
+    "n_pairs": 14,
+    "min_gain": 9.882342208872046,
+    "max_excess_in_gap_units": -147.6997044994263,
+    "embedding_ok": true
+   },
+   "B|grid_hi": {
+    "value": 10.396801945093078,
+    "n_pairs": 14,
+    "min_gain": 0.694160605066827,
+    "max_excess_in_gap_units": -8.830513702339006,
+    "embedding_ok": true
+   },
+   "B+staged|grid_lo": {
+    "value": 17.26531899415577,
+    "n_pairs": 14,
+    "min_gain": 6.264004950109097,
+    "max_excess_in_gap_units": -86.51552082807916,
+    "embedding_ok": true
+   },
+   "B+staged|grid_hi": {
+    "value": 8.327575358229257,
+    "n_pairs": 14,
+    "min_gain": 0.7125207931424029,
+    "max_excess_in_gap_units": -8.967883411742985,
+    "embedding_ok": true
+   }
+  },
+  "p1f_s_life": {
+   "A|life_lo": {
+    "value": 0.5143377998857899,
+    "n_pairs": 53,
+    "min_gain": 0.15013943392114015,
+    "max_excess_in_gap_units": -2.8493821606314884,
+    "embedding_ok": true
+   },
+   "A|life_hi": {
+    "value": 0.5262716607479505,
+    "n_pairs": 53,
+    "min_gain": 0.13988789002723934,
+    "max_excess_in_gap_units": -2.7029783599593813,
+    "embedding_ok": true
+   },
+   "A+staged|life_lo": {
+    "value": 3.52981429927766,
+    "n_pairs": 53,
+    "min_gain": 0.055252705435350435,
+    "max_excess_in_gap_units": -0.9549604260354421,
+    "embedding_ok": true
+   },
+   "A+staged|life_hi": {
+    "value": 3.7427594573530354,
+    "n_pairs": 53,
+    "min_gain": 0.07391261669306459,
+    "max_excess_in_gap_units": -1.3101728357342357,
+    "embedding_ok": true
+   },
+   "B|life_lo": {
+    "value": 21.09823342993868,
+    "n_pairs": 14,
+    "min_gain": 9.355698821660098,
+    "max_excess_in_gap_units": -124.8202796695723,
+    "embedding_ok": true
+   },
+   "B|life_hi": {
+    "value": 20.94200420235859,
+    "n_pairs": 14,
+    "min_gain": 10.126477518403703,
+    "max_excess_in_gap_units": -127.6035895997785,
+    "embedding_ok": true
+   },
+   "B+staged|life_lo": {
+    "value": 15.576705916633792,
+    "n_pairs": 14,
+    "min_gain": 3.6093651663024957,
+    "max_excess_in_gap_units": -46.87099723793298,
+    "embedding_ok": true
+   },
+   "B+staged|life_hi": {
+    "value": 16.168545609726074,
+    "n_pairs": 14,
+    "min_gain": 3.5698179814820605,
+    "max_excess_in_gap_units": -47.59963773603335,
+    "embedding_ok": true
+   }
+  },
+  "p1f_s_rent": {
+   "A|rent_lo": {
+    "value": 0.4370873536020025,
+    "n_pairs": 53,
+    "min_gain": 0.09891686315813786,
+    "max_excess_in_gap_units": -1.9076286930121487,
+    "embedding_ok": true
+   },
+   "A|rent_hi": {
+    "value": 0.1859417306391083,
+    "n_pairs": 53,
+    "min_gain": 0.014936593537868248,
+    "max_excess_in_gap_units": -0.27134482762450524,
+    "embedding_ok": true
+   },
+   "A+staged|rent_lo": {
+    "value": 3.423775360162767,
+    "n_pairs": 53,
+    "min_gain": 0.01053106635504264,
+    "max_excess_in_gap_units": -0.18605356221032293,
+    "embedding_ok": true
+   },
+   "A+staged|rent_hi": {
+    "value": 2.906482941147978,
+    "n_pairs": 53,
+    "min_gain": 0.14934131243273896,
+    "max_excess_in_gap_units": -2.456267780051783,
+    "embedding_ok": true
+   },
+   "B|rent_lo": {
+    "value": 21.097753038798565,
+    "n_pairs": 14,
+    "min_gain": 8.468622136875865,
+    "max_excess_in_gap_units": -114.65393848938267,
+    "embedding_ok": true
+   },
+   "B|rent_hi": {
+    "value": 20.61092203126496,
+    "n_pairs": 14,
+    "min_gain": 10.580819017536555,
+    "max_excess_in_gap_units": -131.6995876498525,
+    "embedding_ok": true
+   },
+   "B+staged|rent_lo": {
+    "value": 16.02866050878949,
+    "n_pairs": 14,
+    "min_gain": 3.320986620498047,
+    "max_excess_in_gap_units": -43.80106667636533,
+    "embedding_ok": true
+   },
+   "B+staged|rent_hi": {
+    "value": 15.843532216624114,
+    "n_pairs": 14,
+    "min_gain": 3.6347121273647645,
+    "max_excess_in_gap_units": -47.90129312289709,
+    "embedding_ok": true
+   }
+  },
+  "p1f_size075": {
+   "A|size075": {
+    "value": 0.2615979734595191,
+    "n_pairs": 53,
+    "min_gain": 0.07495078637600727,
+    "max_excess_in_gap_units": -2.8676848148484217,
+    "embedding_ok": true
+   },
+   "A+staged|size075": {
+    "value": 1.863730971047036,
+    "n_pairs": 53,
+    "min_gain": 0.033081322701320914,
+    "max_excess_in_gap_units": -1.157368473492855,
+    "embedding_ok": true
+   },
+   "B|size075": {
+    "value": 10.259258700545985,
+    "n_pairs": 14,
+    "min_gain": 4.99845222054671,
+    "max_excess_in_gap_units": -131.11293257632474,
+    "embedding_ok": true
+   },
+   "B+staged|size075": {
+    "value": 7.877477724740341,
+    "n_pairs": 14,
+    "min_gain": 1.8514087027398887,
+    "max_excess_in_gap_units": -48.82287122215941,
+    "embedding_ok": true
+   }
+  },
+  "p1f_size300": {
+   "A|size300": {
+    "value": 1.0271733625857298,
+    "n_pairs": 53,
+    "min_gain": 0.2737925113865458,
+    "max_excess_in_gap_units": -2.62411569288392,
+    "embedding_ok": true
+   },
+   "A+staged|size300": {
+    "value": 7.454952364613814,
+    "n_pairs": 53,
+    "min_gain": 0.13226713241306243,
+    "max_excess_in_gap_units": -1.160185664926469,
+    "embedding_ok": true
+   },
+   "B|size300": {
+    "value": 41.80409437740711,
+    "n_pairs": 14,
+    "min_gain": 19.9929841174212,
+    "max_excess_in_gap_units": -133.9027208091803,
+    "embedding_ok": true
+   },
+   "B+staged|size300": {
+    "value": 31.919561568275697,
+    "n_pairs": 14,
+    "min_gain": 7.195119892248613,
+    "max_excess_in_gap_units": -47.53154862072022,
+    "embedding_ok": true
+   }
+  },
+  "p1f_tau2": {
+   "A|tau2": {
+    "value": 1.3740154671048352,
+    "n_pairs": 53,
+    "min_gain": 0.14060431378186422,
+    "max_excess_in_gap_units": -2.6933472706882773,
+    "embedding_ok": true
+   },
+   "A+staged|tau2": {
+    "value": 9.66341276628854,
+    "n_pairs": 53,
+    "min_gain": 0.11371599484959916,
+    "max_excess_in_gap_units": -1.9935968955625232,
+    "embedding_ok": true
+   },
+   "B|tau2": {
+    "value": 21.99568837980316,
+    "n_pairs": 14,
+    "min_gain": 10.707019393125847,
+    "max_excess_in_gap_units": -133.27040531517875,
+    "embedding_ok": true
+   },
+   "B+staged|tau2": {
+    "value": 16.19746554038585,
+    "n_pairs": 14,
+    "min_gain": 8.809288958586194,
+    "max_excess_in_gap_units": -110.95512520190975,
+    "embedding_ok": true
+   }
+  },
+  "p1f_tau6": {
+   "A|tau6": {
+    "value": 0.01836837307862182,
+    "n_pairs": 53,
+    "min_gain": -0.047325544801196884,
+    "max_excess_in_gap_units": 0.8696009691812236,
+    "embedding_ok": true
+   },
+   "A+staged|tau6": {
+    "value": 0.3429561083031225,
+    "n_pairs": 53,
+    "min_gain": -0.00011553646595530154,
+    "max_excess_in_gap_units": 0.001927726260461105,
+    "embedding_ok": true
+   },
+   "B|tau6": {
+    "value": 20.24406072540841,
+    "n_pairs": 14,
+    "min_gain": 0.2762261278387541,
+    "max_excess_in_gap_units": -3.727154143443996,
+    "embedding_ok": true
+   },
+   "B+staged|tau6": {
+    "value": 15.893711684030592,
+    "n_pairs": 14,
+    "min_gain": 3.1936510049898743,
+    "max_excess_in_gap_units": -42.25043975074646,
+    "embedding_ok": true
+   }
+  }
+ },
+ "note": "Planner-law values ($M): the equal-weight level mean of the p-weighted gain J_nosig - J_sig under the planner's own law. max_excess_in_gap_units = max over cells of (J_sig - J_nosig) / (1e-4 |J_nosig|); the embedding holds within the solver gap when it is <= 1."
+}

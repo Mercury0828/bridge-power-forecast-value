@@ -1,0 +1,366 @@
+{
+ "cells": [
+  {
+   "cfg": "A",
+   "level": "low",
+   "r": 7,
+   "policies": {
+    "nosig": {
+     "elec_eq": 2.842170943040401e-14,
+     "cool_eq": 0.0,
+     "heat_slack_min": 0.0,
+     "nonneg_min": 0.0,
+     "heat_rejected_MWth_max": 59.12705696873125,
+     "blocks_checked": 868
+    },
+    "sig_y0": {
+     "elec_eq": 2.842170943040401e-14,
+     "cool_eq": 0.0,
+     "heat_slack_min": 0.0,
+     "nonneg_min": 0.0,
+     "heat_rejected_MWth_max": 59.126760000000004,
+     "blocks_checked": 868
+    },
+    "sig_y1": {
+     "elec_eq": 2.842170943040401e-14,
+     "cool_eq": 1.1368683772161603e-13,
+     "heat_slack_min": 0.0,
+     "nonneg_min": 0.0,
+     "heat_rejected_MWth_max": 59.126760000000004,
+     "blocks_checked": 868
+    },
+    "sig_y2": {
+     "elec_eq": 2.842170943040401e-14,
+     "cool_eq": 0.0,
+     "heat_slack_min": 0.0,
+     "nonneg_min": 0.0,
+     "heat_rejected_MWth_max": 59.09199999999999,
+     "blocks_checked": 868
+    }
+   }
+  },
+  {
+   "cfg": "A",
+   "level": "high",
+   "r": 12,
+   "policies": {
+    "nosig": {
+     "elec_eq": 2.842170943040401e-14,
+     "cool_eq": 0.0,
+     "heat_slack_min": 0.0,
+     "nonneg_min": 0.0,
+     "heat_rejected_MWth_max": 59.12700635902232,
+     "blocks_checked": 868
+    },
+    "sig_y0": {
+     "elec_eq": 2.842170943040401e-14,
+     "cool_eq": 0.0,
+     "heat_slack_min": 0.0,
+     "nonneg_min": 0.0,
+     "heat_rejected_MWth_max": 59.126760000000004,
+     "blocks_checked": 868
+    },
+    "sig_y1": {
+     "elec_eq": 2.842170943040401e-14,
+     "cool_eq": 0.0,
+     "heat_slack_min": 0.0,
+     "nonneg_min": 0.0,
+     "heat_rejected_MWth_max": 59.126760000000004,
+     "blocks_checked": 868
+    },
+    "sig_y2": {
+     "elec_eq": 1.0163248020944593e-10,
+     "cool_eq": 1.4210854715202004e-14,
+     "heat_slack_min": -4.7151615945040246e-15,
+     "nonneg_min": -7.105427357601002e-15,
+     "heat_rejected_MWth_max": 59.09199999999999,
+     "blocks_checked": 868
+    }
+   }
+  },
+  {
+   "cfg": "A+staged",
+   "level": "low",
+   "r": 7,
+   "policies": {
+    "nosig": {
+     "elec_eq": 3.552713678800501e-14,
+     "cool_eq": 0.0,
+     "heat_slack_min": -4.263256414560601e-14,
+     "nonneg_min": 0.0,
+     "heat_rejected_MWth_max": 0.6717584488864929,
+     "blocks_checked": 868
+    },
+    "sig_y0": {
+     "elec_eq": 2.842170943040401e-14,
+     "cool_eq": 2.842170943040401e-14,
+     "heat_slack_min": -1.5631940186722204e-13,
+     "nonneg_min": 0.0,
+     "heat_rejected_MWth_max": 0.6717584488865285,
+     "blocks_checked": 868
+    },
+    "sig_y1": {
+     "elec_eq": 2.842170943040401e-14,
+     "cool_eq": 2.842170943040401e-14,
+     "heat_slack_min": -2.842170943040401e-14,
+     "nonneg_min": 0.0,
+     "heat_rejected_MWth_max": 11.960120065508448,
+     "blocks_checked": 868
+    },
+    "sig_y2": {
+     "elec_eq": 4.478794224382909e-09,
+     "cool_eq": 5.684341886080802e-14,
+     "heat_slack_min": -1.1546319456101628e-13,
+     "nonneg_min": 0.0,
+     "heat_rejected_MWth_max": 0.6717584488864929,
+     "blocks_checked": 868
+    }
+   }
+  },
+  {
+   "cfg": "A+staged",
+   "level": "high",
+   "r": 12,
+   "policies": {
+    "nosig": {
+     "elec_eq": 3.552713678800501e-14,
+     "cool_eq": 0.0,
+     "heat_slack_min": -1.7763568394002505e-14,
+     "nonneg_min": 0.0,
+     "heat_rejected_MWth_max": 0.6717584488864929,
+     "blocks_checked": 868
+    },
+    "sig_y0": {
+     "elec_eq": 2.842170943040401e-14,
+     "cool_eq": 0.0,
+     "heat_slack_min": -1.4210854715202004e-14,
+     "nonneg_min": 0.0,
+     "heat_rejected_MWth_max": 0.6717584488864929,
+     "blocks_checked": 868
+    },
+    "sig_y1": {
+     "elec_eq": 3.197442310920451e-14,
+     "cool_eq": 2.842170943040401e-14,
+     "heat_slack_min": -1.1368683772161603e-13,
+     "nonneg_min": 0.0,
+     "heat_rejected_MWth_max": 13.817008618705032,
+     "blocks_checked": 868
+    },
+    "sig_y2": {
+     "elec_eq": 1.901767632261908e-11,
+     "cool_eq": 1.92280253941135e-08,
+     "heat_slack_min": -1.1546319456101628e-13,
+     "nonneg_min": -4.2730619043140905e-10,
+     "heat_rejected_MWth_max": 0.6717584488864787,
+     "blocks_checked": 868
+    }
+   }
+  },
+  {
+   "cfg": "B",
+   "level": "low",
+   "r": 2,
+   "policies": {
+    "nosig": {
+     "elec_eq": 5.684341886080802e-14,
+     "cool_eq": 0.0,
+     "heat_slack_min": -1.4210854715202004e-14,
+     "nonneg_min": 0.0,
+     "heat_rejected_MWth_max": 0.660947714581738,
+     "blocks_checked": 868
+    },
+    "sig_y0": {
+     "elec_eq": 2.842170943040401e-14,
+     "cool_eq": 5.684341886080802e-14,
+     "heat_slack_min": -1.4210854715202004e-14,
+     "nonneg_min": 0.0,
+     "heat_rejected_MWth_max": 4.8501130579806215,
+     "blocks_checked": 868
+    },
+    "sig_y1": {
+     "elec_eq": 3.552713678800501e-14,
+     "cool_eq": 5.684341886080802e-14,
+     "heat_slack_min": -2.842170943040401e-14,
+     "nonneg_min": 0.0,
+     "heat_rejected_MWth_max": 0.4841682999113104,
+     "blocks_checked": 868
+    },
+    "sig_y2": {
+     "elec_eq": 7.001510482496087e-12,
+     "cool_eq": 1.9895196601282805e-13,
+     "heat_slack_min": -9.947598300641403e-14,
+     "nonneg_min": -2.142730437526552e-14,
+     "heat_rejected_MWth_max": 0.4841682999113104,
+     "blocks_checked": 868
+    }
+   }
+  },
+  {
+   "cfg": "B",
+   "level": "high",
+   "r": 4,
+   "policies": {
+    "nosig": {
+     "elec_eq": 5.684341886080802e-14,
+     "cool_eq": 0.0,
+     "heat_slack_min": -1.4210854715202004e-14,
+     "nonneg_min": 0.0,
+     "heat_rejected_MWth_max": 0.660947714581738,
+     "blocks_checked": 868
+    },
+    "sig_y0": {
+     "elec_eq": 2.842170943040401e-14,
+     "cool_eq": 5.684341886080802e-14,
+     "heat_slack_min": -1.4210854715202004e-14,
+     "nonneg_min": 0.0,
+     "heat_rejected_MWth_max": 4.8501130579806215,
+     "blocks_checked": 868
+    },
+    "sig_y1": {
+     "elec_eq": 3.552713678800501e-14,
+     "cool_eq": 5.684341886080802e-14,
+     "heat_slack_min": -2.842170943040401e-14,
+     "nonneg_min": 0.0,
+     "heat_rejected_MWth_max": 0.4841682999113104,
+     "blocks_checked": 868
+    },
+    "sig_y2": {
+     "elec_eq": 7.001510482496087e-12,
+     "cool_eq": 1.9895196601282805e-13,
+     "heat_slack_min": -9.947598300641403e-14,
+     "nonneg_min": -2.142730437526552e-14,
+     "heat_rejected_MWth_max": 0.4841682999113104,
+     "blocks_checked": 868
+    }
+   }
+  },
+  {
+   "cfg": "B+staged",
+   "level": "low",
+   "r": 2,
+   "policies": {
+    "nosig": {
+     "elec_eq": 2.842170943040401e-14,
+     "cool_eq": 0.0,
+     "heat_slack_min": -4.973799150320701e-14,
+     "nonneg_min": -1.4210854715202004e-14,
+     "heat_rejected_MWth_max": 11.669428571428565,
+     "blocks_checked": 868
+    },
+    "sig_y0": {
+     "elec_eq": 5.684341886080802e-14,
+     "cool_eq": 5.684341886080802e-14,
+     "heat_slack_min": -5.684341886080802e-14,
+     "nonneg_min": 0.0,
+     "heat_rejected_MWth_max": 11.669428571428565,
+     "blocks_checked": 868
+    },
+    "sig_y1": {
+     "elec_eq": 2.842170943040401e-14,
+     "cool_eq": 5.684341886080802e-14,
+     "heat_slack_min": -4.973799150320701e-14,
+     "nonneg_min": -2.141479010729657e-14,
+     "heat_rejected_MWth_max": 11.669428571428565,
+     "blocks_checked": 868
+    },
+    "sig_y2": {
+     "elec_eq": 2.0386359267376974e-11,
+     "cool_eq": 4.263256414560601e-14,
+     "heat_slack_min": -9.947598300641403e-14,
+     "nonneg_min": -1.5320304502144127e-14,
+     "heat_rejected_MWth_max": 11.669428571428565,
+     "blocks_checked": 868
+    }
+   }
+  },
+  {
+   "cfg": "B+staged",
+   "level": "high",
+   "r": 4,
+   "policies": {
+    "nosig": {
+     "elec_eq": 2.842170943040401e-14,
+     "cool_eq": 0.0,
+     "heat_slack_min": -4.973799150320701e-14,
+     "nonneg_min": -1.4210854715202004e-14,
+     "heat_rejected_MWth_max": 11.669428571428565,
+     "blocks_checked": 868
+    },
+    "sig_y0": {
+     "elec_eq": 5.684341886080802e-14,
+     "cool_eq": 5.684341886080802e-14,
+     "heat_slack_min": -5.684341886080802e-14,
+     "nonneg_min": 0.0,
+     "heat_rejected_MWth_max": 11.669428571428565,
+     "blocks_checked": 868
+    },
+    "sig_y1": {
+     "elec_eq": 2.842170943040401e-14,
+     "cool_eq": 5.684341886080802e-14,
+     "heat_slack_min": -4.973799150320701e-14,
+     "nonneg_min": -2.141479010729657e-14,
+     "heat_rejected_MWth_max": 11.669428571428565,
+     "blocks_checked": 868
+    },
+    "sig_y2": {
+     "elec_eq": 2.0386359267376974e-11,
+     "cool_eq": 4.263256414560601e-14,
+     "heat_slack_min": -9.947598300641403e-14,
+     "nonneg_min": -1.5320304502144127e-14,
+     "heat_rejected_MWth_max": 11.669428571428565,
+     "blocks_checked": 868
+    }
+   }
+  }
+ ],
+ "worst": {
+  "elec_eq": 4.478794224382909e-09,
+  "cool_eq": 1.92280253941135e-08,
+  "heat_slack_min": -1.5631940186722204e-13,
+  "nonneg_min": -4.2730619043140905e-10
+ },
+ "unit_audit": {
+  "A": {
+   "ge_electrical_eff_HHV": 0.4059971442170395,
+   "ge_recovered_heat_frac_of_fuel_HHV": 0.3848852927177534,
+   "ge_total_eff_HHV": 0.7908824369347929,
+   "dg_electrical_eff_HHV": 0.3546777546777547,
+   "abs_cop": 0.7,
+   "heat_to_cooling_per_MWh_e": 0.6636,
+   "electric_chiller_cop_range": [
+    4.5,
+    8.5
+   ],
+   "hours_per_quarter": 2191.5,
+   "checks": {
+    "ge_total_eff_below_1": true,
+    "dg_eff_below_1": true,
+    "abs_cop_below_1": true,
+    "electric_cop_above_1": true,
+    "hours_per_quarter_eq_91_3125_days": true
+   }
+  },
+  "B": {
+   "ge_electrical_eff_HHV": 0.4059971442170395,
+   "ge_recovered_heat_frac_of_fuel_HHV": 0.3848852927177534,
+   "ge_total_eff_HHV": 0.7908824369347929,
+   "dg_electrical_eff_HHV": 0.3546777546777547,
+   "abs_cop": 0.7,
+   "heat_to_cooling_per_MWh_e": 0.6636,
+   "electric_chiller_cop_range": [
+    4.5,
+    8.5
+   ],
+   "hours_per_quarter": 2191.5,
+   "checks": {
+    "ge_total_eff_below_1": true,
+    "dg_eff_below_1": true,
+    "abs_cop_below_1": true,
+    "electric_cop_above_1": true,
+    "hours_per_quarter_eq_91_3125_days": true
+   }
+  }
+ },
+ "tolerance": 1e-06,
+ "passed": true
+}

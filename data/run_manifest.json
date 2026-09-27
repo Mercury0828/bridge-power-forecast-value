@@ -1,0 +1,723 @@
+[
+ {
+  "run": "p1a_main",
+  "harness_kind": "p1a",
+  "variant": "",
+  "job_kinds": {
+   "?": 903
+  },
+  "jobs": 903,
+  "items": 903,
+  "ok": 903,
+  "repairs": {},
+  "attempts": [],
+  "fingerprint": "9c5093325f045e01"
+ },
+ {
+  "run": "p1a_salv0",
+  "harness_kind": "p1a",
+  "variant": "",
+  "job_kinds": {
+   "?": 903
+  },
+  "jobs": 903,
+  "items": 903,
+  "ok": 903,
+  "repairs": {},
+  "attempts": [],
+  "fingerprint": "9c5093325f045e01"
+ },
+ {
+  "run": "p1a_salv05",
+  "harness_kind": "p1a",
+  "variant": "",
+  "job_kinds": {
+   "?": 903
+  },
+  "jobs": 903,
+  "items": 903,
+  "ok": 903,
+  "repairs": {},
+  "attempts": [],
+  "fingerprint": "9c5093325f045e01"
+ },
+ {
+  "run": "p1c_main",
+  "harness_kind": "p1c",
+  "variant": "",
+  "job_kinds": {
+   "oracle": 200,
+   "sig": 88,
+   "nosig": 88
+  },
+  "jobs": 376,
+  "items": 376,
+  "ok": 376,
+  "repairs": {
+   "D-022": 1
+  },
+  "attempts": [
+   "attempt1",
+   "attempt2",
+   "attempt3"
+  ],
+  "fingerprint": "c5f6681e1d620f0f"
+ },
+ {
+  "run": "p1d_permit",
+  "harness_kind": "p1d",
+  "variant": "permit",
+  "job_kinds": {
+   "sig": 88,
+   "nosig": 88
+  },
+  "jobs": 176,
+  "items": 176,
+  "ok": 176,
+  "repairs": {
+   "D-022a solver rule": 1
+  },
+  "attempts": [
+   "attempt1"
+  ],
+  "fingerprint": "d1b6894e0e431bb0"
+ },
+ {
+  "run": "p1d_refurb",
+  "harness_kind": "p1d",
+  "variant": "refurb",
+  "job_kinds": {
+   "sig": 176,
+   "nosig": 176
+  },
+  "jobs": 352,
+  "items": 352,
+  "ok": 352,
+  "repairs": {
+   "D-022a solver rule": 2
+  },
+  "attempts": [
+   "attempt1"
+  ],
+  "fingerprint": "d1b6894e0e431bb0"
+ },
+ {
+  "run": "p1d_spine",
+  "harness_kind": "p1d",
+  "variant": "spine",
+  "job_kinds": {
+   "nosig": 88,
+   "sig": 88
+  },
+  "jobs": 176,
+  "items": 176,
+  "ok": 176,
+  "repairs": {},
+  "attempts": [],
+  "fingerprint": "d1b6894e0e431bb0"
+ },
+ {
+  "run": "p1d_stage",
+  "harness_kind": "p1d",
+  "variant": "stage",
+  "job_kinds": {
+   "sig": 88,
+   "nosig": 88
+  },
+  "jobs": 176,
+  "items": 176,
+  "ok": 176,
+  "repairs": {
+   "D-022a solver rule": 1
+  },
+  "attempts": [
+   "attempt1"
+  ],
+  "fingerprint": "d1b6894e0e431bb0"
+ },
+ {
+  "run": "p1d_units",
+  "harness_kind": "p1d",
+  "variant": "units",
+  "job_kinds": {
+   "units_nosig": 88,
+   "units_sig": 88
+  },
+  "jobs": 176,
+  "items": 176,
+  "ok": 176,
+  "repairs": {},
+  "attempts": [],
+  "fingerprint": "d1b6894e0e431bb0"
+ },
+ {
+  "run": "p1e_e1",
+  "harness_kind": "p1d",
+  "variant": "e1",
+  "job_kinds": {
+   "nosig": 88,
+   "sig": 88
+  },
+  "jobs": 176,
+  "items": 176,
+  "ok": 176,
+  "repairs": {
+   "escalation: the same second-stage LP solved as a pure LP with presolve off": 1
+  },
+  "attempts": [
+   "attempt1",
+   "attempt2"
+  ],
+  "fingerprint": "fc95f4ec973698b6"
+ },
+ {
+  "run": "p1e_e1s",
+  "harness_kind": "p1d",
+  "variant": "e1s",
+  "job_kinds": {
+   "sig": 70,
+   "nosig": 70
+  },
+  "jobs": 140,
+  "items": 140,
+  "ok": 140,
+  "repairs": {
+   "escalation: the same second-stage LP solved as a pure LP with presolve off": 1,
+   "D-022a solver rule": 2
+  },
+  "attempts": [
+   "attempt1",
+   "attempt2"
+  ],
+  "fingerprint": "fc95f4ec973698b6"
+ },
+ {
+  "run": "p1e_e2",
+  "harness_kind": "p1d",
+  "variant": "e2",
+  "job_kinds": {
+   "batch_nosig": 88,
+   "batch_sig": 88
+  },
+  "jobs": 176,
+  "items": 176,
+  "ok": 176,
+  "repairs": {},
+  "attempts": [],
+  "fingerprint": "f6fb0669ff65be4d"
+ },
+ {
+  "run": "p1e_e4a",
+  "harness_kind": "p1d",
+  "variant": "e4a",
+  "job_kinds": {
+   "nosig": 88,
+   "sig": 88
+  },
+  "jobs": 176,
+  "items": 176,
+  "ok": 176,
+  "repairs": {},
+  "attempts": [
+   "attempt1"
+  ],
+  "fingerprint": "f6fb0669ff65be4d"
+ },
+ {
+  "run": "p1e_e4a2",
+  "harness_kind": "p1d",
+  "variant": "e4a2",
+  "job_kinds": {
+   "batch_nosig": 88,
+   "batch_sig": 88
+  },
+  "jobs": 176,
+  "items": 176,
+  "ok": 176,
+  "repairs": {},
+  "attempts": [],
+  "fingerprint": "f6fb0669ff65be4d"
+ },
+ {
+  "run": "p1e_e4b_rsb",
+  "harness_kind": "p1d",
+  "variant": "e4b_rsb",
+  "job_kinds": {
+   "batch_nosig": 88,
+   "batch_sig": 88
+  },
+  "jobs": 176,
+  "items": 176,
+  "ok": 176,
+  "repairs": {},
+  "attempts": [],
+  "fingerprint": "f6fb0669ff65be4d"
+ },
+ {
+  "run": "p1e_e4b_spine",
+  "harness_kind": "p1d",
+  "variant": "e4b_spine",
+  "job_kinds": {
+   "batch_sig": 88,
+   "batch_nosig": 88
+  },
+  "jobs": 176,
+  "items": 176,
+  "ok": 176,
+  "repairs": {},
+  "attempts": [],
+  "fingerprint": "f6fb0669ff65be4d"
+ },
+ {
+  "run": "p1f_blocks4",
+  "harness_kind": "p1d",
+  "variant": "blocks4",
+  "job_kinds": {
+   "nosig": 88,
+   "sig": 88
+  },
+  "jobs": 176,
+  "items": 176,
+  "ok": 173,
+  "repairs": {
+   "escalation: the same second-stage LP solved as a pure LP with presolve off": 9,
+   "D-022a solver rule": 1
+  },
+  "attempts": [
+   "attempt1",
+   "attempt2"
+  ],
+  "fingerprint": "47a2f424351beecf"
+ },
+ {
+  "run": "p1f_naive",
+  "harness_kind": "p1d",
+  "variant": "naive",
+  "job_kinds": {
+   "sig": 88,
+   "nosig": 88
+  },
+  "jobs": 176,
+  "items": 176,
+  "ok": 176,
+  "repairs": {
+   "escalation: the same second-stage LP solved as a pure LP with presolve off": 2,
+   "D-022a solver rule": 1
+  },
+  "attempts": [
+   "attempt1",
+   "attempt2"
+  ],
+  "fingerprint": "47a2f424351beecf"
+ },
+ {
+  "run": "p1f_nocchp",
+  "harness_kind": "p1d",
+  "variant": "nocchp",
+  "job_kinds": {
+   "sig": 88,
+   "nosig": 88
+  },
+  "jobs": 176,
+  "items": 176,
+  "ok": 176,
+  "repairs": {},
+  "attempts": [],
+  "fingerprint": "47a2f424351beecf"
+ },
+ {
+  "run": "p1f_s_capex",
+  "harness_kind": "p1d",
+  "variant": "s_capex",
+  "job_kinds": {
+   "sig": 176,
+   "nosig": 176
+  },
+  "jobs": 352,
+  "items": 352,
+  "ok": 352,
+  "repairs": {
+   "escalation: the same second-stage LP solved as a pure LP with presolve off": 1
+  },
+  "attempts": [
+   "attempt1",
+   "attempt2"
+  ],
+  "fingerprint": "47a2f424351beecf"
+ },
+ {
+  "run": "p1f_s_co2",
+  "harness_kind": "p1d",
+  "variant": "s_co2",
+  "job_kinds": {
+   "nosig": 176,
+   "sig": 176
+  },
+  "jobs": 352,
+  "items": 352,
+  "ok": 352,
+  "repairs": {},
+  "attempts": [],
+  "fingerprint": "47a2f424351beecf"
+ },
+ {
+  "run": "p1f_s_diesel",
+  "harness_kind": "p1d",
+  "variant": "s_diesel",
+  "job_kinds": {
+   "sig": 176,
+   "nosig": 176
+  },
+  "jobs": 352,
+  "items": 352,
+  "ok": 352,
+  "repairs": {},
+  "attempts": [],
+  "fingerprint": "47a2f424351beecf"
+ },
+ {
+  "run": "p1f_s_disc",
+  "harness_kind": "p1d",
+  "variant": "s_disc",
+  "job_kinds": {
+   "sig": 176,
+   "nosig": 176
+  },
+  "jobs": 352,
+  "items": 352,
+  "ok": 352,
+  "repairs": {
+   "D-022a solver rule": 1
+  },
+  "attempts": [
+   "attempt1"
+  ],
+  "fingerprint": "47a2f424351beecf"
+ },
+ {
+  "run": "p1f_s_eff",
+  "harness_kind": "p1d",
+  "variant": "s_eff",
+  "job_kinds": {
+   "nosig": 88,
+   "sig": 88
+  },
+  "jobs": 176,
+  "items": 176,
+  "ok": 176,
+  "repairs": {},
+  "attempts": [],
+  "fingerprint": "47a2f424351beecf"
+ },
+ {
+  "run": "p1f_s_gas",
+  "harness_kind": "p1d",
+  "variant": "s_gas",
+  "job_kinds": {
+   "sig": 176,
+   "nosig": 176
+  },
+  "jobs": 352,
+  "items": 352,
+  "ok": 352,
+  "repairs": {
+   "D-022a solver rule": 2
+  },
+  "attempts": [
+   "attempt1"
+  ],
+  "fingerprint": "47a2f424351beecf"
+ },
+ {
+  "run": "p1f_s_grid",
+  "harness_kind": "p1d",
+  "variant": "s_grid",
+  "job_kinds": {
+   "nosig": 176,
+   "sig": 176
+  },
+  "jobs": 352,
+  "items": 352,
+  "ok": 352,
+  "repairs": {},
+  "attempts": [],
+  "fingerprint": "47a2f424351beecf"
+ },
+ {
+  "run": "p1f_s_life",
+  "harness_kind": "p1d",
+  "variant": "s_life",
+  "job_kinds": {
+   "nosig": 176,
+   "sig": 176
+  },
+  "jobs": 352,
+  "items": 352,
+  "ok": 352,
+  "repairs": {
+   "D-022a solver rule": 1
+  },
+  "attempts": [
+   "attempt1"
+  ],
+  "fingerprint": "47a2f424351beecf"
+ },
+ {
+  "run": "p1f_s_rent",
+  "harness_kind": "p1d",
+  "variant": "s_rent",
+  "job_kinds": {
+   "sig": 176,
+   "nosig": 176
+  },
+  "jobs": 352,
+  "items": 352,
+  "ok": 352,
+  "repairs": {
+   "D-022a solver rule": 1
+  },
+  "attempts": [
+   "attempt1"
+  ],
+  "fingerprint": "47a2f424351beecf"
+ },
+ {
+  "run": "p1f_size075",
+  "harness_kind": "p1d",
+  "variant": "size075",
+  "job_kinds": {
+   "nosig": 88,
+   "sig": 88
+  },
+  "jobs": 176,
+  "items": 176,
+  "ok": 176,
+  "repairs": {},
+  "attempts": [],
+  "fingerprint": "47a2f424351beecf"
+ },
+ {
+  "run": "p1f_size300",
+  "harness_kind": "p1d",
+  "variant": "size300",
+  "job_kinds": {
+   "nosig": 88,
+   "sig": 88
+  },
+  "jobs": 176,
+  "items": 176,
+  "ok": 176,
+  "repairs": {
+   "D-022a solver rule": 3
+  },
+  "attempts": [
+   "attempt1"
+  ],
+  "fingerprint": "47a2f424351beecf"
+ },
+ {
+  "run": "p1f_tau2",
+  "harness_kind": "p1d",
+  "variant": "tau2",
+  "job_kinds": {
+   "nosig": 88,
+   "sig": 88
+  },
+  "jobs": 176,
+  "items": 176,
+  "ok": 176,
+  "repairs": {
+   "D-022a solver rule": 1
+  },
+  "attempts": [
+   "attempt1"
+  ],
+  "fingerprint": "47a2f424351beecf"
+ },
+ {
+  "run": "p1f_tau6",
+  "harness_kind": "p1d",
+  "variant": "tau6",
+  "job_kinds": {
+   "sig": 88,
+   "nosig": 88
+  },
+  "jobs": 176,
+  "items": 176,
+  "ok": 176,
+  "repairs": {
+   "D-022a solver rule": 1
+  },
+  "attempts": [
+   "attempt1"
+  ],
+  "fingerprint": "47a2f424351beecf"
+ },
+ {
+  "run": "p1g_carry",
+  "harness_kind": "p1d",
+  "variant": "carry",
+  "job_kinds": {
+   "nosig": 44,
+   "sig": 44
+  },
+  "jobs": 88,
+  "items": 88,
+  "ok": 88,
+  "repairs": {
+   "D-022a solver rule": 1,
+   "escalation: the same second-stage LP solved as a pure LP with presolve off": 1
+  },
+  "attempts": [
+   "attempt1",
+   "attempt2"
+  ],
+  "fingerprint": "111ecf8272a41b8d"
+ },
+ {
+  "run": "p1g_gasrent_25",
+  "harness_kind": "p1d",
+  "variant": "gasrent_25",
+  "job_kinds": {
+   "nosig": 88,
+   "sig": 88
+  },
+  "jobs": 176,
+  "items": 176,
+  "ok": 176,
+  "repairs": {
+   "escalation: the same second-stage LP solved as a pure LP with presolve off": 1
+  },
+  "attempts": [
+   "attempt1",
+   "attempt2"
+  ],
+  "fingerprint": "111ecf8272a41b8d"
+ },
+ {
+  "run": "p1g_gasrent_35",
+  "harness_kind": "p1d",
+  "variant": "gasrent_35",
+  "job_kinds": {
+   "nosig": 88,
+   "sig": 88
+  },
+  "jobs": 176,
+  "items": 176,
+  "ok": 176,
+  "repairs": {
+   "D-022a solver rule": 1
+  },
+  "attempts": [
+   "attempt1"
+  ],
+  "fingerprint": "111ecf8272a41b8d"
+ },
+ {
+  "run": "p1g_gasrent_50",
+  "harness_kind": "p1d",
+  "variant": "gasrent_50",
+  "job_kinds": {
+   "sig": 88,
+   "nosig": 88
+  },
+  "jobs": 176,
+  "items": 176,
+  "ok": 176,
+  "repairs": {
+   "D-022a solver rule": 2
+  },
+  "attempts": [
+   "attempt1"
+  ],
+  "fingerprint": "111ecf8272a41b8d"
+ },
+ {
+  "run": "r2_main",
+  "harness_kind": "?",
+  "variant": "",
+  "job_kinds": {},
+  "jobs": 112,
+  "items": 112,
+  "ok": 112,
+  "repairs": {},
+  "attempts": [],
+  "fingerprint": "b0e0b0639ddd376e"
+ },
+ {
+  "run": "r2b_loro",
+  "harness_kind": "loro",
+  "variant": "",
+  "job_kinds": {},
+  "jobs": 36,
+  "items": 36,
+  "ok": 36,
+  "repairs": {},
+  "attempts": [],
+  "fingerprint": "606b6659cda3a078"
+ },
+ {
+  "run": "v4_kill",
+  "harness_kind": "?",
+  "variant": "",
+  "job_kinds": {},
+  "jobs": 16,
+  "items": 16,
+  "ok": 16,
+  "repairs": {},
+  "attempts": [],
+  "fingerprint": "423c224bfc211feb"
+ },
+ {
+  "run": "v4_max",
+  "harness_kind": "?",
+  "variant": "",
+  "job_kinds": {},
+  "jobs": 16,
+  "items": 16,
+  "ok": 16,
+  "repairs": {},
+  "attempts": [],
+  "fingerprint": "423c224bfc211feb"
+ },
+ {
+  "run": "v4_p1a_max",
+  "harness_kind": "p1a",
+  "variant": "",
+  "job_kinds": {
+   "?": 903
+  },
+  "jobs": 903,
+  "items": 3,
+  "ok": 3,
+  "repairs": {},
+  "attempts": [],
+  "fingerprint": "9eb72974af826781"
+ },
+ {
+  "run": "v4_p1a_ref",
+  "harness_kind": "p1a",
+  "variant": "",
+  "job_kinds": {
+   "?": 903
+  },
+  "jobs": 903,
+  "items": 3,
+  "ok": 3,
+  "repairs": {},
+  "attempts": [],
+  "fingerprint": "9eb72974af826781"
+ },
+ {
+  "run": "v4_ref",
+  "harness_kind": "?",
+  "variant": "",
+  "job_kinds": {},
+  "jobs": 16,
+  "items": 16,
+  "ok": 16,
+  "repairs": {},
+  "attempts": [],
+  "fingerprint": "423c224bfc211feb"
+ }
+]

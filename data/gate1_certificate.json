@@ -1,0 +1,188 @@
+{
+ "main|A": {
+  "J_CSP": 571.8153457247662,
+  "mean_dual_bound": 571.7658501384306,
+  "certificate": 0.04949558633563811,
+  "cert_rel": 8.655868840473894e-05,
+  "rules_out_threshold": true,
+  "levels": {
+   "low": {
+    "J_CSP": 566.4492875291445,
+    "status": "HighsModelStatus.kOptimal",
+    "incumbent": 566.442911929007,
+    "dual_bound": 566.4428946726359,
+    "gap": 3.046444873558899e-08,
+    "cert_gap": 0.0063928565085689115
+   },
+   "high": {
+    "J_CSP": 577.1814039203879,
+    "status": "HighsModelStatus.kOptimal",
+    "incumbent": 577.0888056042252,
+    "dual_bound": 577.0888056042252,
+    "gap": 0.0,
+    "cert_gap": 0.0925983161627073
+   }
+  },
+  "val_CSP_minus_BMIX": {
+   "mean": -3.5189527108533034e-06,
+   "max": 0.009103250524731266,
+   "min": -0.005515532357094344,
+   "n": 96
+  }
+ },
+ "main|B": {
+  "J_CSP": 801.4088476720075,
+  "mean_dual_bound": 799.4040276132014,
+  "certificate": 2.0048200588061036,
+  "cert_rel": 0.002501619572369154,
+  "rules_out_threshold": true,
+  "levels": {
+   "low": {
+    "J_CSP": 797.8291671368942,
+    "status": "HighsModelStatus.kOptimal",
+    "incumbent": 797.5395492958608,
+    "dual_bound": 797.5395348246595,
+    "gap": 1.814480701846044e-08,
+    "cert_gap": 0.28963231223463026
+   },
+   "high": {
+    "J_CSP": 804.9885282071206,
+    "status": "HighsModelStatus.kOptimal",
+    "incumbent": 801.2685204017431,
+    "dual_bound": 801.2685204017431,
+    "gap": 0.0,
+    "cert_gap": 3.7200078053774632
+   }
+  },
+  "val_CSP_minus_BMIX": {
+   "mean": -0.0005217193689794897,
+   "max": 0.0011579979685620856,
+   "min": -0.002749130276811229,
+   "n": 96
+  }
+ },
+ "salv05|A": {
+  "J_CSP": 623.5322186010552,
+  "mean_dual_bound": 622.7285432550498,
+  "certificate": 0.8036753460054342,
+  "cert_rel": 0.001288907488707712,
+  "rules_out_threshold": true,
+  "levels": {
+   "low": {
+    "J_CSP": 617.6982915385859,
+    "status": "HighsModelStatus.kOptimal",
+    "incumbent": 617.3980568382627,
+    "dual_bound": 617.3980568382627,
+    "gap": 0.0,
+    "cert_gap": 0.3002347003231307
+   },
+   "high": {
+    "J_CSP": 629.3661456635247,
+    "status": "HighsModelStatus.kOptimal",
+    "incumbent": 628.0590296718367,
+    "dual_bound": 628.0590296718367,
+    "gap": 0.0,
+    "cert_gap": 1.307115991687965
+   }
+  },
+  "val_CSP_minus_BMIX": {
+   "mean": 0.00834911901512688,
+   "max": 0.08458492147929064,
+   "min": -0.018437144082213308,
+   "n": 96
+  }
+ },
+ "salv05|B": {
+  "J_CSP": 856.8003823738575,
+  "mean_dual_bound": 855.394296828076,
+  "certificate": 1.4060855457814796,
+  "cert_rel": 0.0016410888401867522,
+  "rules_out_threshold": true,
+  "levels": {
+   "low": {
+    "J_CSP": 852.1798316085359,
+    "status": "HighsModelStatus.kOptimal",
+    "incumbent": 852.1726616887015,
+    "dual_bound": 852.1726442008969,
+    "gap": 2.0521433489252657e-08,
+    "cert_gap": 0.007187407638980403
+   },
+   "high": {
+    "J_CSP": 861.4209331391789,
+    "status": "HighsModelStatus.kOptimal",
+    "incumbent": 858.6159494552552,
+    "dual_bound": 858.6159494552552,
+    "gap": 0.0,
+    "cert_gap": 2.8049836839237514
+   }
+  },
+  "val_CSP_minus_BMIX": {
+   "mean": 0.0016174953891218518,
+   "max": 0.12934018267822012,
+   "min": -0.0005681594549287183,
+   "n": 96
+  }
+ },
+ "salv0|A": {
+  "J_CSP": 647.7783526644769,
+  "mean_dual_bound": 647.5384723719235,
+  "certificate": 0.23988029255338006,
+  "cert_rel": 0.0003703123013708184,
+  "rules_out_threshold": true,
+  "levels": {
+   "low": {
+    "J_CSP": 641.5715350373241,
+    "status": "HighsModelStatus.kOptimal",
+    "incumbent": 641.5714750130561,
+    "dual_bound": 641.5714750130561,
+    "gap": 0.0,
+    "cert_gap": 6.002426800932881e-05
+   },
+   "high": {
+    "J_CSP": 653.9851702916297,
+    "status": "HighsModelStatus.kOptimal",
+    "incumbent": 653.5054697307908,
+    "dual_bound": 653.5054697307908,
+    "gap": 0.0,
+    "cert_gap": 0.47970056083897816
+   }
+  },
+  "val_CSP_minus_BMIX": {
+   "mean": 0.001165141652123225,
+   "max": 0.11197347314566741,
+   "min": -2.9596718604807393e-05,
+   "n": 96
+  }
+ },
+ "salv0|B": {
+  "J_CSP": 912.1628658791449,
+  "mean_dual_bound": 909.754898662428,
+  "certificate": 2.4079672167168837,
+  "cert_rel": 0.0026398435046970244,
+  "rules_out_threshold": true,
+  "levels": {
+   "low": {
+    "J_CSP": 906.5848894404969,
+    "status": "HighsModelStatus.kOptimal",
+    "incumbent": 906.5852483239835,
+    "dual_bound": 906.5852483239835,
+    "gap": 0.0,
+    "cert_gap": -0.00035888348656953895
+   },
+   "high": {
+    "J_CSP": 917.7408423177927,
+    "status": "HighsModelStatus.kOptimal",
+    "incumbent": 912.9245490008725,
+    "dual_bound": 912.9245490008725,
+    "gap": 0.0,
+    "cert_gap": 4.816293316920223
+   }
+  },
+  "val_CSP_minus_BMIX": {
+   "mean": 0.01066267840689387,
+   "max": 0.34779036742941116,
+   "min": -0.00042817345217827096,
+   "n": 96
+  }
+ }
+}

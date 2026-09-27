@@ -1,0 +1,114 @@
+{
+ "A (Phase 1c)": {
+  "mean_J_nosig": 565.5191552944734,
+  "theta": 3.0
+ },
+ "A+staged (Phase 1c)": {
+  "mean_J_nosig": 632.9492047526701,
+  "theta": 3.1647460237633505
+ },
+ "B (Phase 1c)": {
+  "mean_J_nosig": 801.5766351325642,
+  "theta": 4.007883175662821
+ },
+ "B+staged (Phase 1c)": {
+  "mean_J_nosig": 792.6616183840499,
+  "theta": 3.9633080919202497
+ },
+ "A|bkdelay": {
+  "mean_J_nosig": 559.0506728640944,
+  "theta": 3.0
+ },
+ "A|cap": {
+  "mean_J_nosig": 638.3682695324391,
+  "theta": 3.191841347662195
+ },
+ "B|bkdelay": {
+  "mean_J_nosig": 794.4575604469026,
+  "theta": 3.9722878022345127
+ },
+ "B|cap": {
+  "mean_J_nosig": 799.7622153267359,
+  "theta": 3.9988110766336797
+ },
+ "A+staged|spine": {
+  "mean_J_nosig": 648.8355298349742,
+  "theta": 3.244177649174871
+ },
+ "A|spine": {
+  "mean_J_nosig": 575.8847436711173,
+  "theta": 3.0
+ },
+ "B+staged|spine": {
+  "mean_J_nosig": 816.2881028048259,
+  "theta": 4.08144051402413
+ },
+ "B|spine": {
+  "mean_J_nosig": 817.6579349822454,
+  "theta": 4.088289674911227
+ },
+ "A+staged|refurb_mod": {
+  "mean_J_nosig": 638.8520509699717,
+  "theta": 3.194260254849859
+ },
+ "A+staged|refurb_stress": {
+  "mean_J_nosig": 638.8721237322849,
+  "theta": 3.1943606186614244
+ },
+ "A|refurb_mod": {
+  "mean_J_nosig": 570.251391362184,
+  "theta": 3.0
+ },
+ "A|refurb_stress": {
+  "mean_J_nosig": 572.0827193999512,
+  "theta": 3.0
+ },
+ "B+staged|refurb_mod": {
+  "mean_J_nosig": 804.767089409519,
+  "theta": 4.023835447047595
+ },
+ "B+staged|refurb_stress": {
+  "mean_J_nosig": 804.9064912132242,
+  "theta": 4.024532456066121
+ },
+ "B|refurb_mod": {
+  "mean_J_nosig": 814.6184568102851,
+  "theta": 4.073092284051426
+ },
+ "B|refurb_stress": {
+  "mean_J_nosig": 815.9631106039412,
+  "theta": 4.079815553019706
+ },
+ "A+staged|permit": {
+  "mean_J_nosig": 630.6994658721264,
+  "theta": 3.1534973293606323
+ },
+ "A|permit": {
+  "mean_J_nosig": 562.4898183299194,
+  "theta": 3.0
+ },
+ "B+staged|permit": {
+  "mean_J_nosig": 779.5834074891181,
+  "theta": 3.8979170374455907
+ },
+ "B|permit": {
+  "mean_J_nosig": 789.6889579385972,
+  "theta": 3.9484447896929864
+ },
+ "A+staged|units": {
+  "mean_J_nosig": 639.4968727357118,
+  "theta": 3.197484363678559
+ },
+ "A|units": {
+  "mean_J_nosig": 573.3614658110182,
+  "theta": 3.0
+ },
+ "B+staged|units": {
+  "mean_J_nosig": 819.4731432731428,
+  "theta": 4.097365716365714
+ },
+ "B|units": {
+  "mean_J_nosig": 828.951545491877,
+  "theta": 4.144757727459385
+ }
+}

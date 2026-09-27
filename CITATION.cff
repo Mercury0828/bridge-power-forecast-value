@@ -1,0 +1,7 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper."
+title: "The value of grid-connection information in bridge-power planning for AI data centres: code and results"
+authors:
+  - name: "[Authors]"
+license: MIT
+date-released: 2026-09-26

@@ -1,0 +1,117 @@
+import csv
+import sys
+
+out = sys.argv[1]
+F = ["id", "source", "url", "date", "quote", "z1_region", "z2_size", "z3_stage", "stat_type", "value", "unit",
+     "primary_or_compiled", "quality_note", "used_for_centre"]
+IEA = "https://www.iea.org/reports/energy-and-ai"
+PUCT = "https://interchange.puc.texas.gov/Documents/55999_121_1495046.PDF"
+DOM = "https://www.pjm.com/-/media/DotCom/planning/res-adeq/load-forecast/dominion-documentation.pdf"
+AEP = "https://www.pjm.com/-/media/DotCom/planning/res-adeq/load-forecast/aep-documentation.pdf"
+R = [
+    ["R01", "IEA, Energy and AI (2025), Table 2.4", IEA, "2025-04",
+     "United States: average data-centre connection queue time 1-3 years",
+     "US-general", "any", "any", "time_to_connection_range", "1-3", "years",
+     "compiled (IEA from energy.gov, trade press, IEA survey)",
+     "official compilation; regional average; no stage split (lit/evidence/scan-B Q2)", "yes"],
+    ["R02", "IEA, Energy and AI (2025), Table 2.4", IEA, "2025-04", "Northern Virginia: up to 7 years",
+     "PJM-Dominion", "any", "any", "time_to_connection_upper", "<=7", "years", "compiled", "upper bound only", "yes"],
+    ["R03", "IEA, Energy and AI (2025), Table 2.4", IEA, "2025-04", "United Kingdom: 5-7 years",
+     "non-US:UK", "any", "any", "time_to_connection_range", "5-7", "years", "compiled", "",
+     "no (Phase-0 contexts are US)"],
+    ["R04", "IEA, Energy and AI (2025), Table 2.4", IEA, "2025-04", "Netherlands: up to 10 years",
+     "non-US:NL", "any", "any", "time_to_connection_upper", "<=10", "years", "compiled", "", "no"],
+    ["R05", "IEA, Energy and AI (2025), Table 2.4", IEA, "2025-04", "Ireland: in Dublin, paused until 2030",
+     "non-US:IE", "any", "any", "moratorium", "until 2030", "date", "compiled", "", "no"],
+    ["R06", "IEA, Energy and AI (2025), Table 2.4", IEA, "2025-04",
+     "California 3 yr; Germany up to 7 yr; Spain 3-5 yr; Italy <3 yr; Malaysia <3 yr; Kanto >5 yr; Queensland >2 yr",
+     "other", "any", "any", "time_to_connection_various", "see quote", "years", "compiled", "", "no"],
+    ["R07", "ERCOT, PUCT Project 55999 filing (also NERC 2025 LTRA, Texas RE-ERCOT section)", PUCT, "2025-05-01",
+     "officer-letter loads with an in-service date in 2024 only 55.4% were in-service by February 2025",
+     "ERCOT", "any (large loads)", "late: officer-letter (pre-registered level; attested, no interconnection agreement)",
+     "cohort_realization_by_calendar_date", "55.4", "% of cohort load (NERC wording: energized projects) in service by Feb 2025 (2024 in-service dates)",
+     "primary (ERCOT)", "measured; no common stated lag (requested dates span 2024) -> consistency check only", "check-only"],
+    ["R08", "ERCOT, PUCT Project 55999 filing (good-cause request; Adjusted Load Forecast)", PUCT, "2025-05-01",
+     "all new large loads that had in-service dates from 2022 through 2024 were delayed in coming in service on "
+     "average by approximately 220 days",
+     "ERCOT", "any (large loads)", "all stages", "mean_delay_vs_requested_date", "220", "days", "primary (ERCOT)",
+     "measured; mean only, no spread; ERCOT applies 180 days in planning", "yes"],
+    ["R09", "ERCOT, PUCT Project 55999 filing", PUCT, "2025-05-01",
+     "data center loads with in-service dates from 2022 to 2024 came into service with 49.8% of the requested amount",
+     "ERCOT", "any", "any", "MW_realization", "49.8", "% of requested MW", "primary (ERCOT)",
+     "size realization, not timing; not used for the T_grid centre", "no"],
+    ["R10", "ERCOT, PUCT Project 55999 filing", PUCT, "2025-05-01",
+     "contracted loads are more certain than officer-letter loads, partly because loads typically have financial "
+     "exposure in the event of delays or cancellation after executing interconnect agreements with TDSPs",
+     "ERCOT", "any", "late: contracted (signed interconnection agreement)", "qualitative_stage_contrast", "n/a", "",
+     "primary (ERCOT)", "planning assumption (no delay/discount for contracted loads); NOT a measured statistic",
+     "no"],
+    ["R11", "Dominion Energy letter to PJM Load Analysis Team (Manual 19 Att. B)", DOM, "2026-01-06",
+     "The engineering phase typically takes 9 to 12 months ... This study provides the customer with three "
+     "deliverables: the infrastructure needed, an estimated energization date, and projected costs",
+     "PJM-Dominion", "any", "early: ELOA (engineering queue)", "study_duration", "9-12", "months",
+     "primary (utility)", "", "yes"],
+    ["R12", "Dominion Energy letter to PJM", DOM, "2026-01-06",
+     "These deposits are refunded at energization, typically 3 years after the point of order.",
+     "PJM-Dominion", "any", "mid/late: CLOA (construction authorized; capacity reserved)",
+     "time_order_to_energization_typical", "3", "years", "primary (utility)", "typical value; point estimate",
+     "yes"],
+    ["R13", "Dominion Energy letter to PJM", DOM, "2026-01-06",
+     "as of July 2025, the capacity value of these contracts is 47 GW (9.8 ESA + 7.1 CLOA + 30.1 ELOA). The Company "
+     "is forecasting 16.6 GW of demand by 2046",
+     "PJM-Dominion", "any", "pipeline by stage", "stage_pipeline", "9.8/7.1/30.1", "GW ESA/CLOA/ELOA",
+     "primary (utility)", "stage shares; realization context", "no"],
+    ["R14", "AEP submission summary to PJM LAS (2026 load forecast)", AEP, "2025-09",
+     "AEP began with data center projects that had requested a formal study with a fee as of 9/8/2025 ... Load "
+     "ramps were estimated to begin in 2031",
+     "PJM-AEP Ohio", "any", "early: Central Ohio DCT study queue", "aggregate_forecast_ramp_onset", "2031",
+     "year (aggregate forecast; not a project connection date)", "primary (utility)", "aggregate ramp onset, not a project statistic; AEP is a separate z1 level", "no"],
+    ["R15", "AEP submission summary to PJM LAS", AEP, "2025-09",
+     "Within the first five years of the forecast, a project must, at a minimum, have a signed Letter of Agreement "
+     "(LOA) and an Electric Service Agreement (ESA) in progress",
+     "PJM-AEP", "any", "late: LOA+ESA", "stage_criterion_near_term", "<=5", "years (inclusion horizon)",
+     "primary (utility)", "criterion, not a delay statistic", "no"],
+    ["R16", "POWER Magazine / Utility Dive on the PUCO approval of the AEP Ohio Data Center Tariff",
+     "https://www.powermag.com/regulator-approves-aep-ohios-landmark-data-center-tariff/", "2025-07",
+     "(Central Ohio) new data center service requests frozen from March 2023; the July 2025 approval set the process "
+     "for ending the 28-month moratorium",
+     "PJM-AEP Ohio", "any", "early (new requests)", "moratorium_duration", "28", "months",
+     "secondary (trade press; primary = PUCO order, not read)", "scope is Central Ohio only; re-check against the PUCO docket before use", "no"],
+    ["R17", "Jones & Jones, Electricity 7(2):43 (2026), Table 4", "(journal)", "2026",
+     "ERCOT approval experience: <10 MW 3-6 mo; 10-40 MW 6-12 mo; 40-74 MW 12-24 mo; 75 MW+ 3-5+ yr",
+     "ERCOT", "by size band", "any", "time_to_approval_by_size", "see quote", "months/years",
+     "peer-reviewed but UNCITED in the paper", "weak provenance; z2 evidence only", "no"],
+    ["R18", "Dominion Q2 2026 earnings slides (summary by Investing.com)",
+     "https://www.investing.com/news/company-news/dominion-q2-2026-slides-data-centers-surge-offshore-wind-81-done-93CH-4828982",
+     "2026-07", "32.4 GW in Substation Engineering LOA stage, 9.4 GW in Construction LOA, 12.0 GW in ESAs",
+     "PJM-Dominion", "any", "pipeline by stage", "stage_pipeline", "32.4/9.4/12.0", "GW",
+     "secondary summary of primary slides", "re-check against the slides before use", "no"],
+    ["R19", "Georgia Power quarterly large-load report to the GA PSC (via PSC and press summaries)",
+     "https://psc.ga.gov/site/downloads/datacenterfactsheet.pdf", "2026-04",
+     "32 large-load customers committed ~15,600 MW, 21 projects under construction; 6,800 of 7,800 MW for winter "
+     "2028/29 have broken ground",
+     "Southeast (Georgia Power)", "any", "late: committed", "committed_pipeline_and_target", "2028/29",
+     "winter season target", "secondary summary; primary PSC filing not read", "not a delay statistic", "no"],
+    ["R20", "IEA, Energy and AI (2025), Ch. 2 and 5", IEA, "2025-04",
+     "around one-fifth of global data centre buildout in the Base Case is at risk of delay due to grid bottlenecks",
+     "global", "any", "any", "share_at_risk", "~20", "% of planned capacity", "IEA model output",
+     "motivation, not a context statistic", "no"],
+["R21", "AEP Ohio, Data Center Tariff load study results letter", "https://www.aepohio.com/lib/docs/ratesandtariffs/ohio/AEP-Ohio_DCT_Load_Study_Letter_25.11.7.pdf",
+     "2025-11-07", "36 sites totaling 13,022.7 MW; estimated service Q4 2031 (Clusters 1 and 3) and 2033 (Cluster 2)",
+     "PJM-AEP Ohio", "any", "early: completed load study, by queue cluster", "utility_estimated_service_date_by_cluster",
+     "Q4 2031 / 2033", "calendar dates (from Nov 2025)", "primary (utility)",
+     "conditional planning estimates; candidate for a context C (PJM-other); strengthens the regional contrast", "no"],
+    ["R22", "AEP Ohio Data Center Tariff explainer", "https://www.aepohio.com/company/about/rates/data-center-tariff/", "2025",
+     "reasonable efforts to complete studies within 60 days where regional upgrades are needed, otherwise 45 days",
+     "PJM-AEP Ohio", "any", "study stage", "procedural_target", "45-60", "days", "primary (utility)",
+     "procedural target, not an observed connection duration", "no"],
+    ["R23", "Austin Energy presentation (slide 3)", "https://services.austintexas.gov/edims/document.cfm?id=467065", "2026-02",
+     "customers often request service within 1-2 years, while transmission planning, approvals and construction can take 3-5+ years",
+     "ERCOT (Austin Energy)", "large", "any", "stated_range_contrast", "1-2 vs 3-5+", "years", "primary (municipal utility)",
+     "supporting context for ERCOT infrastructure-dependent connections; not used in centres", "no"],
+]
+with open(out, "w", newline="", encoding="utf-8") as f:
+    w = csv.writer(f)
+    w.writerow(F)
+    w.writerows(R)
+print(len(R), "records written to", out)

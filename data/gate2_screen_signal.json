@@ -1,0 +1,47 @@
+{
+ "main|A": {
+  "v0": 564.8860797018848,
+  "EVPI": -21628.91055300129,
+  "V0": {
+   "0.333": 0.0,
+   "0.600": 0.121201274578425,
+   "0.800": 0.5538759559335631,
+   "0.950": 2.646409097738456,
+   "1.000": 4.093388260370716
+  }
+ },
+ "main|B": {
+  "v0": 800.8852943862734,
+  "EVPI": -22543.608495660705,
+  "V0": {
+   "0.333": -1.1368683772161603e-13,
+   "0.600": 8.596782426243294,
+   "0.800": 17.323542562601688,
+   "0.950": 30.067230755210062,
+   "1.000": 34.81254936304174
+  }
+ },
+ "salv0|A": {
+  "v0": 639.7379622121365,
+  "EVPI": -26280.769385064472,
+  "V0": {
+   "0.333": -1.1368683772161603e-13,
+   "0.600": 0.02129917030708839,
+   "0.800": 3.7215213161695146,
+   "0.950": 7.544367189920536,
+   "1.000": 9.134869104757968
+  }
+ },
+ "salv0|B": {
+  "v0": 911.2258158136443,
+  "EVPI": -26122.330070933596,
+  "V0": {
+   "0.333": 1.1368683772161603e-13,
+   "0.600": 0.7763237447292113,
+   "0.800": 14.714211096438135,
+   "0.950": 28.48550597983808,
+   "1.000": 33.25018529066517
+  }
+ },
+ "_note_EVPI": "INVALID EVPI fields in this file (Phase 1f S4 check, 2026-09-25): experiments/gate2_screen_signal.py took the deterministic solves' objective after the tie-break stage (the uniform sum of scenario costs), not the primary objective. The EVPI values of record are in data/gate2_screen_reliability.json and data/gate2_screens.md: main|A 11.124, main|B 36.792, salv0|A 14.635, salv0|B 38.309. Every other field of this file is unaffected (the SAA solves used no tie-break)."
+}

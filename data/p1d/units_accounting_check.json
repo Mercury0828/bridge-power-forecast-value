@@ -1,0 +1,302 @@
+{
+ "total_violations": 0,
+ "max_shared_difference": 0.0,
+ "cells": [
+  {
+   "cfg": "A",
+   "level": "low",
+   "r": 7,
+   "no_signal": {
+    "status": "HighsModelStatus.kOptimal",
+    "violations": [],
+    "n_violations": 0,
+    "shortfall": 0.0,
+    "bookkeeping": 1.000444171950221e-11
+   },
+   "signal": [
+    {
+     "status": "HighsModelStatus.kOptimal",
+     "violations": [],
+     "n_violations": 0,
+     "shortfall": 0.0,
+     "bookkeeping": 1.000444171950221e-11
+    },
+    {
+     "status": "HighsModelStatus.kOptimal",
+     "violations": [],
+     "n_violations": 0,
+     "shortfall": 0.0,
+     "bookkeeping": 1.000444171950221e-11
+    },
+    {
+     "status": "HighsModelStatus.kOptimal",
+     "violations": [],
+     "n_violations": 0,
+     "shortfall": 0.0,
+     "bookkeeping": 1.0118128557223827e-11
+    }
+   ],
+   "n_shared_decisions": 76,
+   "max_rounded_difference_at_shared_nodes": 0.0
+  },
+  {
+   "cfg": "A",
+   "level": "high",
+   "r": 12,
+   "no_signal": {
+    "status": "HighsModelStatus.kOptimal",
+    "violations": [],
+    "n_violations": 0,
+    "shortfall": 0.0,
+    "bookkeeping": 1.0231815394945443e-11
+   },
+   "signal": [
+    {
+     "status": "HighsModelStatus.kOptimal",
+     "violations": [],
+     "n_violations": 0,
+     "shortfall": 0.0,
+     "bookkeeping": 1.000444171950221e-11
+    },
+    {
+     "status": "HighsModelStatus.kOptimal",
+     "violations": [],
+     "n_violations": 0,
+     "shortfall": 0.0,
+     "bookkeeping": 1.0345502232667059e-11
+    },
+    {
+     "status": "HighsModelStatus.kOptimal",
+     "violations": [],
+     "n_violations": 0,
+     "shortfall": 0.0,
+     "bookkeeping": 1.0231815394945443e-11
+    }
+   ],
+   "n_shared_decisions": 76,
+   "max_rounded_difference_at_shared_nodes": 0.0
+  },
+  {
+   "cfg": "A+staged",
+   "level": "low",
+   "r": 7,
+   "no_signal": {
+    "status": "HighsModelStatus.kOptimal",
+    "violations": [],
+    "n_violations": 0,
+    "shortfall": 0.0,
+    "bookkeeping": 7.958078640513122e-12
+   },
+   "signal": [
+    {
+     "status": "HighsModelStatus.kOptimal",
+     "violations": [],
+     "n_violations": 0,
+     "shortfall": 0.0,
+     "bookkeeping": 1.1368683772161603e-11
+    },
+    {
+     "status": "HighsModelStatus.kOptimal",
+     "violations": [],
+     "n_violations": 0,
+     "shortfall": 0.0,
+     "bookkeeping": 1.1141310096718371e-11
+    },
+    {
+     "status": "HighsModelStatus.kOptimal",
+     "violations": [],
+     "n_violations": 0,
+     "shortfall": 0.0,
+     "bookkeeping": 1.0913936421275139e-11
+    }
+   ],
+   "n_shared_decisions": 76,
+   "max_rounded_difference_at_shared_nodes": 0.0
+  },
+  {
+   "cfg": "A+staged",
+   "level": "high",
+   "r": 12,
+   "no_signal": {
+    "status": "HighsModelStatus.kOptimal",
+    "violations": [],
+    "n_violations": 0,
+    "shortfall": 0.0,
+    "bookkeeping": 1.2278178473934531e-11
+   },
+   "signal": [
+    {
+     "status": "HighsModelStatus.kOptimal",
+     "violations": [],
+     "n_violations": 0,
+     "shortfall": 0.0,
+     "bookkeeping": 1.1368683772161603e-11
+    },
+    {
+     "status": "HighsModelStatus.kOptimal",
+     "violations": [],
+     "n_violations": 0,
+     "shortfall": 0.0,
+     "bookkeeping": 9.549694368615746e-12
+    },
+    {
+     "status": "HighsModelStatus.kOptimal",
+     "violations": [],
+     "n_violations": 0,
+     "shortfall": 0.0,
+     "bookkeeping": 1.1027623258996755e-11
+    }
+   ],
+   "n_shared_decisions": 76,
+   "max_rounded_difference_at_shared_nodes": 0.0
+  },
+  {
+   "cfg": "B",
+   "level": "low",
+   "r": 2,
+   "no_signal": {
+    "status": "HighsModelStatus.kOptimal",
+    "violations": [],
+    "n_violations": 0,
+    "shortfall": 0.0,
+    "bookkeeping": 8.29913915367797e-12
+   },
+   "signal": [
+    {
+     "status": "HighsModelStatus.kOptimal",
+     "violations": [],
+     "n_violations": 0,
+     "shortfall": 0.0,
+     "bookkeeping": 9.208633855450898e-12
+    },
+    {
+     "status": "HighsModelStatus.kOptimal",
+     "violations": [],
+     "n_violations": 0,
+     "shortfall": 0.0,
+     "bookkeeping": 8.753886504564434e-12
+    },
+    {
+     "status": "HighsModelStatus.kOptimal",
+     "violations": [],
+     "n_violations": 0,
+     "shortfall": 0.0,
+     "bookkeeping": 7.844391802791506e-12
+    }
+   ],
+   "n_shared_decisions": 76,
+   "max_rounded_difference_at_shared_nodes": 0.0
+  },
+  {
+   "cfg": "B",
+   "level": "high",
+   "r": 4,
+   "no_signal": {
+    "status": "HighsModelStatus.kOptimal",
+    "violations": [],
+    "n_violations": 0,
+    "shortfall": 0.0,
+    "bookkeeping": 8.29913915367797e-12
+   },
+   "signal": [
+    {
+     "status": "HighsModelStatus.kOptimal",
+     "violations": [],
+     "n_violations": 0,
+     "shortfall": 0.0,
+     "bookkeeping": 9.208633855450898e-12
+    },
+    {
+     "status": "HighsModelStatus.kOptimal",
+     "violations": [],
+     "n_violations": 0,
+     "shortfall": 0.0,
+     "bookkeeping": 8.753886504564434e-12
+    },
+    {
+     "status": "HighsModelStatus.kOptimal",
+     "violations": [],
+     "n_violations": 0,
+     "shortfall": 0.0,
+     "bookkeeping": 7.844391802791506e-12
+    }
+   ],
+   "n_shared_decisions": 76,
+   "max_rounded_difference_at_shared_nodes": 0.0
+  },
+  {
+   "cfg": "B+staged",
+   "level": "low",
+   "r": 2,
+   "no_signal": {
+    "status": "HighsModelStatus.kOptimal",
+    "violations": [],
+    "n_violations": 0,
+    "shortfall": 0.0,
+    "bookkeeping": 7.275957614183426e-12
+   },
+   "signal": [
+    {
+     "status": "HighsModelStatus.kOptimal",
+     "violations": [],
+     "n_violations": 0,
+     "shortfall": 0.0,
+     "bookkeeping": 7.844391802791506e-12
+    },
+    {
+     "status": "HighsModelStatus.kOptimal",
+     "violations": [],
+     "n_violations": 0,
+     "shortfall": 0.0,
+     "bookkeeping": 7.16227077646181e-12
+    },
+    {
+     "status": "HighsModelStatus.kOptimal",
+     "violations": [],
+     "n_violations": 0,
+     "shortfall": 0.0,
+     "bookkeeping": 6.821210263296962e-12
+    }
+   ],
+   "n_shared_decisions": 76,
+   "max_rounded_difference_at_shared_nodes": 0.0
+  },
+  {
+   "cfg": "B+staged",
+   "level": "high",
+   "r": 4,
+   "no_signal": {
+    "status": "HighsModelStatus.kOptimal",
+    "violations": [],
+    "n_violations": 0,
+    "shortfall": 0.0,
+    "bookkeeping": 7.275957614183426e-12
+   },
+   "signal": [
+    {
+     "status": "HighsModelStatus.kOptimal",
+     "violations": [],
+     "n_violations": 0,
+     "shortfall": 0.0,
+     "bookkeeping": 7.844391802791506e-12
+    },
+    {
+     "status": "HighsModelStatus.kOptimal",
+     "violations": [],
+     "n_violations": 0,
+     "shortfall": 0.0,
+     "bookkeeping": 7.16227077646181e-12
+    },
+    {
+     "status": "HighsModelStatus.kOptimal",
+     "violations": [],
+     "n_violations": 0,
+     "shortfall": 0.0,
+     "bookkeeping": 6.821210263296962e-12
+    }
+   ],
+   "n_shared_decisions": 76,
+   "max_rounded_difference_at_shared_nodes": 0.0
+  }
+ ]
+}

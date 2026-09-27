@@ -1,0 +1,1947 @@
+{
+ "factors": {
+  "gas_t_per_MMBtu": 0.05306,
+  "diesel_t_per_MMBtu": 0.07396,
+  "diesel_MMBtu_per_gal": 0.13742857142857143,
+  "grid_t_per_MWh": {
+   "A": {
+    "eGRID2023 ERCT total": 0.33289116879999997,
+    "eGRID2023 ERCT non-baseload": 0.5636787784
+   },
+   "B": {
+    "eGRID2023 SRVC total": 0.2691614928,
+    "eGRID2023 SRVC non-baseload": 0.5836821856
+   }
+  },
+  "sweep": [
+   0.2,
+   0.4,
+   0.6,
+   0.8
+  ],
+  "loss_gross_up": false,
+  "sources": "EPA GHG Emission Factors Hub 2025; eGRID2023 summary tables rev2 (June 2025)"
+ },
+ "table": {
+  "A|sym1|continuous|eGRID2023 ERCT total": {
+   "delta_co2_kt": -2.4490254579708375,
+   "nosig_co2_kt": 2946.7663974136162,
+   "delta_rel": -0.0008310891084275812,
+   "delta_gas_MMBtu": 1803.5033745254018,
+   "delta_diesel_MMBtu": -34406.69749895836,
+   "delta_grid_MWh": -2.822565748939123e-10
+  },
+  "A|sym1|continuous|eGRID2023 ERCT non-baseload": {
+   "delta_co2_kt": -2.449025457970825,
+   "nosig_co2_kt": 4575.542364676591,
+   "delta_rel": -0.0005352426581988225,
+   "delta_gas_MMBtu": 1803.5033745254018,
+   "delta_diesel_MMBtu": -34406.69749895836,
+   "delta_grid_MWh": -2.822565748939123e-10
+  },
+  "A|sym1|continuous|sweep 0.2": {
+   "delta_co2_kt": -2.4490254579707207,
+   "nosig_co2_kt": 2008.891342604231,
+   "delta_rel": -0.001219093042033782,
+   "delta_gas_MMBtu": 1803.5033745254018,
+   "delta_diesel_MMBtu": -34406.69749895836,
+   "delta_grid_MWh": -2.822565748939123e-10
+  },
+  "A|sym1|continuous|sweep 0.4": {
+   "delta_co2_kt": -2.4490254579707083,
+   "nosig_co2_kt": 3420.384767304076,
+   "delta_rel": -0.0007160087605877785,
+   "delta_gas_MMBtu": 1803.5033745254018,
+   "delta_diesel_MMBtu": -34406.69749895836,
+   "delta_grid_MWh": -2.822565748939123e-10
+  },
+  "A|sym1|continuous|sweep 0.6": {
+   "delta_co2_kt": -2.4490254579708455,
+   "nosig_co2_kt": 4831.878192003923,
+   "delta_rel": -0.0005068475157390427,
+   "delta_gas_MMBtu": 1803.5033745254018,
+   "delta_diesel_MMBtu": -34406.69749895836,
+   "delta_grid_MWh": -2.822565748939123e-10
+  },
+  "A|sym1|continuous|sweep 0.8": {
+   "delta_co2_kt": -2.4490254579707833,
+   "nosig_co2_kt": 6243.371616703767,
+   "delta_rel": -0.000392260081302635,
+   "delta_gas_MMBtu": 1803.5033745254018,
+   "delta_diesel_MMBtu": -34406.69749895836,
+   "delta_grid_MWh": -2.822565748939123e-10
+  },
+  "A|sym1|batched|eGRID2023 ERCT total": {
+   "delta_co2_kt": -2.4490254579708375,
+   "nosig_co2_kt": 2946.7663974136162,
+   "delta_rel": -0.0008310891084275812,
+   "delta_gas_MMBtu": 1803.5033745254018,
+   "delta_diesel_MMBtu": -34406.69749895836,
+   "delta_grid_MWh": -2.822565748939123e-10
+  },
+  "A|sym1|batched|eGRID2023 ERCT non-baseload": {
+   "delta_co2_kt": -2.449025457970825,
+   "nosig_co2_kt": 4575.542364676591,
+   "delta_rel": -0.0005352426581988225,
+   "delta_gas_MMBtu": 1803.5033745254018,
+   "delta_diesel_MMBtu": -34406.69749895836,
+   "delta_grid_MWh": -2.822565748939123e-10
+  },
+  "A|sym1|batched|sweep 0.2": {
+   "delta_co2_kt": -2.4490254579707207,
+   "nosig_co2_kt": 2008.891342604231,
+   "delta_rel": -0.001219093042033782,
+   "delta_gas_MMBtu": 1803.5033745254018,
+   "delta_diesel_MMBtu": -34406.69749895836,
+   "delta_grid_MWh": -2.822565748939123e-10
+  },
+  "A|sym1|batched|sweep 0.4": {
+   "delta_co2_kt": -2.4490254579707083,
+   "nosig_co2_kt": 3420.384767304076,
+   "delta_rel": -0.0007160087605877785,
+   "delta_gas_MMBtu": 1803.5033745254018,
+   "delta_diesel_MMBtu": -34406.69749895836,
+   "delta_grid_MWh": -2.822565748939123e-10
+  },
+  "A|sym1|batched|sweep 0.6": {
+   "delta_co2_kt": -2.4490254579708455,
+   "nosig_co2_kt": 4831.878192003923,
+   "delta_rel": -0.0005068475157390427,
+   "delta_gas_MMBtu": 1803.5033745254018,
+   "delta_diesel_MMBtu": -34406.69749895836,
+   "delta_grid_MWh": -2.822565748939123e-10
+  },
+  "A|sym1|batched|sweep 0.8": {
+   "delta_co2_kt": -2.4490254579707833,
+   "nosig_co2_kt": 6243.371616703767,
+   "delta_rel": -0.000392260081302635,
+   "delta_gas_MMBtu": 1803.5033745254018,
+   "delta_diesel_MMBtu": -34406.69749895836,
+   "delta_grid_MWh": -2.822565748939123e-10
+  },
+  "A|sym2|continuous|eGRID2023 ERCT total": {
+   "delta_co2_kt": -2.6418422567689666,
+   "nosig_co2_kt": 2946.766397085631,
+   "delta_rel": -0.0008965224591205342,
+   "delta_gas_MMBtu": 32.00320748136346,
+   "delta_diesel_MMBtu": -35742.83865545832,
+   "delta_grid_MWh": 1.7899710626141252e-12
+  },
+  "A|sym2|continuous|eGRID2023 ERCT non-baseload": {
+   "delta_co2_kt": -2.6418422567689133,
+   "nosig_co2_kt": 4575.5423646140225,
+   "delta_rel": -0.000577383410806157,
+   "delta_gas_MMBtu": 32.00320748136346,
+   "delta_diesel_MMBtu": -35742.83865545832,
+   "delta_grid_MWh": 1.7899710626141252e-12
+  },
+  "A|sym2|continuous|sweep 0.2": {
+   "delta_co2_kt": -2.6418422567687214,
+   "nosig_co2_kt": 2008.8913421234145,
+   "delta_rel": -0.0013150747386746525,
+   "delta_gas_MMBtu": 32.00320748136346,
+   "delta_diesel_MMBtu": -35742.83865545832,
+   "delta_grid_MWh": 1.7899710626141252e-12
+  },
+  "A|sym2|continuous|sweep 0.4": {
+   "delta_co2_kt": -2.6418422567686113,
+   "nosig_co2_kt": 3420.3847670532687,
+   "delta_rel": -0.0007723815993498919,
+   "delta_gas_MMBtu": 32.00320748136346,
+   "delta_diesel_MMBtu": -35742.83865545832,
+   "delta_grid_MWh": 1.7899710626141252e-12
+  },
+  "A|sym2|continuous|sweep 0.6": {
+   "delta_co2_kt": -2.641842256768713,
+   "nosig_co2_kt": 4831.878191983123,
+   "delta_rel": -0.0005467526605186286,
+   "delta_gas_MMBtu": 32.00320748136346,
+   "delta_diesel_MMBtu": -35742.83865545832,
+   "delta_grid_MWh": 1.7899710626141252e-12
+  },
+  "A|sym2|continuous|sweep 0.8": {
+   "delta_co2_kt": -2.641842256768432,
+   "nosig_co2_kt": 6243.3716169129775,
+   "delta_rel": -0.00042314352226156376,
+   "delta_gas_MMBtu": 32.00320748136346,
+   "delta_diesel_MMBtu": -35742.83865545832,
+   "delta_grid_MWh": 1.7899710626141252e-12
+  },
+  "A|sym2|batched|eGRID2023 ERCT total": {
+   "delta_co2_kt": -2.6418422567689666,
+   "nosig_co2_kt": 2946.766397085631,
+   "delta_rel": -0.0008965224591205342,
+   "delta_gas_MMBtu": 32.00320748136346,
+   "delta_diesel_MMBtu": -35742.83865545832,
+   "delta_grid_MWh": 1.7899710626141252e-12
+  },
+  "A|sym2|batched|eGRID2023 ERCT non-baseload": {
+   "delta_co2_kt": -2.6418422567689133,
+   "nosig_co2_kt": 4575.5423646140225,
+   "delta_rel": -0.000577383410806157,
+   "delta_gas_MMBtu": 32.00320748136346,
+   "delta_diesel_MMBtu": -35742.83865545832,
+   "delta_grid_MWh": 1.7899710626141252e-12
+  },
+  "A|sym2|batched|sweep 0.2": {
+   "delta_co2_kt": -2.6418422567687214,
+   "nosig_co2_kt": 2008.8913421234145,
+   "delta_rel": -0.0013150747386746525,
+   "delta_gas_MMBtu": 32.00320748136346,
+   "delta_diesel_MMBtu": -35742.83865545832,
+   "delta_grid_MWh": 1.7899710626141252e-12
+  },
+  "A|sym2|batched|sweep 0.4": {
+   "delta_co2_kt": -2.6418422567686113,
+   "nosig_co2_kt": 3420.3847670532687,
+   "delta_rel": -0.0007723815993498919,
+   "delta_gas_MMBtu": 32.00320748136346,
+   "delta_diesel_MMBtu": -35742.83865545832,
+   "delta_grid_MWh": 1.7899710626141252e-12
+  },
+  "A|sym2|batched|sweep 0.6": {
+   "delta_co2_kt": -2.641842256768713,
+   "nosig_co2_kt": 4831.878191983123,
+   "delta_rel": -0.0005467526605186286,
+   "delta_gas_MMBtu": 32.00320748136346,
+   "delta_diesel_MMBtu": -35742.83865545832,
+   "delta_grid_MWh": 1.7899710626141252e-12
+  },
+  "A|sym2|batched|sweep 0.8": {
+   "delta_co2_kt": -2.641842256768432,
+   "nosig_co2_kt": 6243.3716169129775,
+   "delta_rel": -0.00042314352226156376,
+   "delta_gas_MMBtu": 32.00320748136346,
+   "delta_diesel_MMBtu": -35742.83865545832,
+   "delta_grid_MWh": 1.7899710626141252e-12
+  },
+  "A|sym4|continuous|eGRID2023 ERCT total": {
+   "delta_co2_kt": -2.8315238544385872,
+   "nosig_co2_kt": 2946.76639730876,
+   "delta_rel": -0.000960891863374232,
+   "delta_gas_MMBtu": -2856.9842001174266,
+   "delta_diesel_MMBtu": -36234.887409149254,
+   "delta_grid_MWh": 5.485282262969375e-10
+  },
+  "A|sym4|continuous|eGRID2023 ERCT non-baseload": {
+   "delta_co2_kt": -2.831523854438358,
+   "nosig_co2_kt": 4575.542364652361,
+   "delta_rel": -0.000618838954768041,
+   "delta_gas_MMBtu": -2856.9842001174266,
+   "delta_diesel_MMBtu": -36234.887409149254,
+   "delta_grid_MWh": 5.485282262969375e-10
+  },
+  "A|sym4|continuous|sweep 0.2": {
+   "delta_co2_kt": -2.83152385443875,
+   "nosig_co2_kt": 2008.8913424529499,
+   "delta_rel": -0.001409495772420089,
+   "delta_gas_MMBtu": -2856.9842001174266,
+   "delta_diesel_MMBtu": -36234.887409149254,
+   "delta_grid_MWh": 5.485282262969375e-10
+  },
+  "A|sym4|continuous|sweep 0.4": {
+   "delta_co2_kt": -2.831523854438698,
+   "nosig_co2_kt": 3420.3847672226652,
+   "delta_rel": -0.0008278378156671188,
+   "delta_gas_MMBtu": -2856.9842001174266,
+   "delta_diesel_MMBtu": -36234.887409149254,
+   "delta_grid_MWh": 5.485282262969375e-10
+  },
+  "A|sym4|continuous|sweep 0.6": {
+   "delta_co2_kt": -2.831523854438726,
+   "nosig_co2_kt": 4831.878191992379,
+   "delta_rel": -0.0005860089476450924,
+   "delta_gas_MMBtu": -2856.9842001174266,
+   "delta_diesel_MMBtu": -36234.887409149254,
+   "delta_grid_MWh": 5.485282262969375e-10
+  },
+  "A|sym4|continuous|sweep 0.8": {
+   "delta_co2_kt": -2.8315238544384083,
+   "nosig_co2_kt": 6243.371616762094,
+   "delta_rel": -0.00045352479849771924,
+   "delta_gas_MMBtu": -2856.9842001174266,
+   "delta_diesel_MMBtu": -36234.887409149254,
+   "delta_grid_MWh": 5.485282262969375e-10
+  },
+  "A|sym4|batched|eGRID2023 ERCT total": {
+   "delta_co2_kt": -2.8315238544385872,
+   "nosig_co2_kt": 2946.76639730876,
+   "delta_rel": -0.000960891863374232,
+   "delta_gas_MMBtu": -2856.9842001174266,
+   "delta_diesel_MMBtu": -36234.887409149254,
+   "delta_grid_MWh": 5.485263166445023e-10
+  },
+  "A|sym4|batched|eGRID2023 ERCT non-baseload": {
+   "delta_co2_kt": -2.831523854438358,
+   "nosig_co2_kt": 4575.542364652361,
+   "delta_rel": -0.000618838954768041,
+   "delta_gas_MMBtu": -2856.9842001174266,
+   "delta_diesel_MMBtu": -36234.887409149254,
+   "delta_grid_MWh": 5.485263166445023e-10
+  },
+  "A|sym4|batched|sweep 0.2": {
+   "delta_co2_kt": -2.83152385443875,
+   "nosig_co2_kt": 2008.8913424529499,
+   "delta_rel": -0.001409495772420089,
+   "delta_gas_MMBtu": -2856.9842001174266,
+   "delta_diesel_MMBtu": -36234.887409149254,
+   "delta_grid_MWh": 5.485263166445023e-10
+  },
+  "A|sym4|batched|sweep 0.4": {
+   "delta_co2_kt": -2.831523854438698,
+   "nosig_co2_kt": 3420.3847672226652,
+   "delta_rel": -0.0008278378156671188,
+   "delta_gas_MMBtu": -2856.9842001174266,
+   "delta_diesel_MMBtu": -36234.887409149254,
+   "delta_grid_MWh": 5.485263166445023e-10
+  },
+  "A|sym4|batched|sweep 0.6": {
+   "delta_co2_kt": -2.831523854438726,
+   "nosig_co2_kt": 4831.878191992379,
+   "delta_rel": -0.0005860089476450924,
+   "delta_gas_MMBtu": -2856.9842001174266,
+   "delta_diesel_MMBtu": -36234.887409149254,
+   "delta_grid_MWh": 5.485263166445023e-10
+  },
+  "A|sym4|batched|sweep 0.8": {
+   "delta_co2_kt": -2.8315238544384083,
+   "nosig_co2_kt": 6243.371616762094,
+   "delta_rel": -0.00045352479849771924,
+   "delta_gas_MMBtu": -2856.9842001174266,
+   "delta_diesel_MMBtu": -36234.887409149254,
+   "delta_grid_MWh": 5.485263166445023e-10
+  },
+  "A|opt2|continuous|eGRID2023 ERCT total": {
+   "delta_co2_kt": -1.3661765715912246,
+   "nosig_co2_kt": 2946.7663963762,
+   "delta_rel": -0.000463618891973007,
+   "delta_gas_MMBtu": 1071.7346289444308,
+   "delta_diesel_MMBtu": -19240.708639843142,
+   "delta_grid_MWh": -5.589529830165441e-11
+  },
+  "A|opt2|continuous|eGRID2023 ERCT non-baseload": {
+   "delta_co2_kt": -1.3661765715907637,
+   "nosig_co2_kt": 4575.542364482145,
+   "delta_rel": -0.0002985824330238468,
+   "delta_gas_MMBtu": 1071.7346289444308,
+   "delta_diesel_MMBtu": -19240.708639843142,
+   "delta_grid_MWh": -5.589529830165441e-11
+  },
+  "A|opt2|continuous|sweep 0.2": {
+   "delta_co2_kt": -1.3661765715911207,
+   "nosig_co2_kt": 2008.8913410814187,
+   "delta_rel": -0.0006800649411210493,
+   "delta_gas_MMBtu": 1071.7346289444308,
+   "delta_diesel_MMBtu": -19240.708639843142,
+   "delta_grid_MWh": -5.589529830165441e-11
+  },
+  "A|opt2|continuous|sweep 0.4": {
+   "delta_co2_kt": -1.3661765715913075,
+   "nosig_co2_kt": 3420.3847665117796,
+   "delta_rel": -0.00039942189690681467,
+   "delta_gas_MMBtu": 1071.7346289444308,
+   "delta_diesel_MMBtu": -19240.708639843142,
+   "delta_grid_MWh": -5.589529830165441e-11
+  },
+  "A|opt2|continuous|sweep 0.6": {
+   "delta_co2_kt": -1.3661765715909602,
+   "nosig_co2_kt": 4831.878191942141,
+   "delta_rel": -0.00028274234517526917,
+   "delta_gas_MMBtu": 1071.7346289444308,
+   "delta_diesel_MMBtu": -19240.708639843142,
+   "delta_grid_MWh": -5.589529830165441e-11
+  },
+  "A|opt2|continuous|sweep 0.8": {
+   "delta_co2_kt": -1.3661765715914476,
+   "nosig_co2_kt": 6243.3716173725015,
+   "delta_rel": -0.000218820319423241,
+   "delta_gas_MMBtu": 1071.7346289444308,
+   "delta_diesel_MMBtu": -19240.708639843142,
+   "delta_grid_MWh": -5.589529830165441e-11
+  },
+  "A|opt2|batched|eGRID2023 ERCT total": {
+   "delta_co2_kt": -1.3661765715912246,
+   "nosig_co2_kt": 2946.7663963762,
+   "delta_rel": -0.000463618891973007,
+   "delta_gas_MMBtu": 1071.7346289444308,
+   "delta_diesel_MMBtu": -19240.708639843142,
+   "delta_grid_MWh": -5.589529830165441e-11
+  },
+  "A|opt2|batched|eGRID2023 ERCT non-baseload": {
+   "delta_co2_kt": -1.3661765715907637,
+   "nosig_co2_kt": 4575.542364482145,
+   "delta_rel": -0.0002985824330238468,
+   "delta_gas_MMBtu": 1071.7346289444308,
+   "delta_diesel_MMBtu": -19240.708639843142,
+   "delta_grid_MWh": -5.589529830165441e-11
+  },
+  "A|opt2|batched|sweep 0.2": {
+   "delta_co2_kt": -1.3661765715911207,
+   "nosig_co2_kt": 2008.8913410814187,
+   "delta_rel": -0.0006800649411210493,
+   "delta_gas_MMBtu": 1071.7346289444308,
+   "delta_diesel_MMBtu": -19240.708639843142,
+   "delta_grid_MWh": -5.589529830165441e-11
+  },
+  "A|opt2|batched|sweep 0.4": {
+   "delta_co2_kt": -1.3661765715913075,
+   "nosig_co2_kt": 3420.3847665117796,
+   "delta_rel": -0.00039942189690681467,
+   "delta_gas_MMBtu": 1071.7346289444308,
+   "delta_diesel_MMBtu": -19240.708639843142,
+   "delta_grid_MWh": -5.589529830165441e-11
+  },
+  "A|opt2|batched|sweep 0.6": {
+   "delta_co2_kt": -1.3661765715909602,
+   "nosig_co2_kt": 4831.878191942141,
+   "delta_rel": -0.00028274234517526917,
+   "delta_gas_MMBtu": 1071.7346289444308,
+   "delta_diesel_MMBtu": -19240.708639843142,
+   "delta_grid_MWh": -5.589529830165441e-11
+  },
+  "A|opt2|batched|sweep 0.8": {
+   "delta_co2_kt": -1.3661765715914476,
+   "nosig_co2_kt": 6243.3716173725015,
+   "delta_rel": -0.000218820319423241,
+   "delta_gas_MMBtu": 1071.7346289444308,
+   "delta_diesel_MMBtu": -19240.708639843142,
+   "delta_grid_MWh": -5.589529830165441e-11
+  },
+  "A|uninf|continuous|eGRID2023 ERCT total": {
+   "delta_co2_kt": -1.6563861372059705,
+   "nosig_co2_kt": 2946.766396083302,
+   "delta_rel": -0.0005621029679880829,
+   "delta_gas_MMBtu": -6565.822415263865,
+   "delta_diesel_MMBtu": -17685.28393526262,
+   "delta_grid_MWh": -6.156931192017556e-10
+  },
+  "A|uninf|continuous|eGRID2023 ERCT non-baseload": {
+   "delta_co2_kt": -1.6563861372062507,
+   "nosig_co2_kt": 4575.542364418487,
+   "delta_rel": -0.0003620086987035827,
+   "delta_gas_MMBtu": -6565.822415263865,
+   "delta_diesel_MMBtu": -17685.28393526262,
+   "delta_grid_MWh": -6.156931192017556e-10
+  },
+  "A|uninf|continuous|sweep 0.2": {
+   "delta_co2_kt": -1.65638613720596,
+   "nosig_co2_kt": 2008.8913406565212,
+   "delta_rel": -0.0008245274912005148,
+   "delta_gas_MMBtu": -6565.822415263865,
+   "delta_diesel_MMBtu": -17685.28393526262,
+   "delta_grid_MWh": -6.156931192017556e-10
+  },
+  "A|uninf|continuous|sweep 0.4": {
+   "delta_co2_kt": -1.6563861372060231,
+   "nosig_co2_kt": 3420.3847662855414,
+   "delta_rel": -0.00048426894936876355,
+   "delta_gas_MMBtu": -6565.822415263865,
+   "delta_diesel_MMBtu": -17685.28393526262,
+   "delta_grid_MWh": -6.156931192017556e-10
+  },
+  "A|uninf|continuous|sweep 0.6": {
+   "delta_co2_kt": -1.6563861372067055,
+   "nosig_co2_kt": 4831.878191914561,
+   "delta_rel": -0.0003428037859022242,
+   "delta_gas_MMBtu": -6565.822415263865,
+   "delta_diesel_MMBtu": -17685.28393526262,
+   "delta_grid_MWh": -6.156931192017556e-10
+  },
+  "A|uninf|continuous|sweep 0.8": {
+   "delta_co2_kt": -1.6563861372062019,
+   "nosig_co2_kt": 6243.371617543581,
+   "delta_rel": -0.00026530314686888646,
+   "delta_gas_MMBtu": -6565.822415263865,
+   "delta_diesel_MMBtu": -17685.28393526262,
+   "delta_grid_MWh": -6.156931192017556e-10
+  },
+  "A|uninf|batched|eGRID2023 ERCT total": {
+   "delta_co2_kt": -1.6563861372059705,
+   "nosig_co2_kt": 2946.766396083302,
+   "delta_rel": -0.0005621029679880829,
+   "delta_gas_MMBtu": -6565.822415263865,
+   "delta_diesel_MMBtu": -17685.28393526262,
+   "delta_grid_MWh": -6.156931192017556e-10
+  },
+  "A|uninf|batched|eGRID2023 ERCT non-baseload": {
+   "delta_co2_kt": -1.6563861372062507,
+   "nosig_co2_kt": 4575.542364418487,
+   "delta_rel": -0.0003620086987035827,
+   "delta_gas_MMBtu": -6565.822415263865,
+   "delta_diesel_MMBtu": -17685.28393526262,
+   "delta_grid_MWh": -6.156931192017556e-10
+  },
+  "A|uninf|batched|sweep 0.2": {
+   "delta_co2_kt": -1.65638613720596,
+   "nosig_co2_kt": 2008.8913406565212,
+   "delta_rel": -0.0008245274912005148,
+   "delta_gas_MMBtu": -6565.822415263865,
+   "delta_diesel_MMBtu": -17685.28393526262,
+   "delta_grid_MWh": -6.156931192017556e-10
+  },
+  "A|uninf|batched|sweep 0.4": {
+   "delta_co2_kt": -1.6563861372060231,
+   "nosig_co2_kt": 3420.3847662855414,
+   "delta_rel": -0.00048426894936876355,
+   "delta_gas_MMBtu": -6565.822415263865,
+   "delta_diesel_MMBtu": -17685.28393526262,
+   "delta_grid_MWh": -6.156931192017556e-10
+  },
+  "A|uninf|batched|sweep 0.6": {
+   "delta_co2_kt": -1.6563861372067055,
+   "nosig_co2_kt": 4831.878191914561,
+   "delta_rel": -0.0003428037859022242,
+   "delta_gas_MMBtu": -6565.822415263865,
+   "delta_diesel_MMBtu": -17685.28393526262,
+   "delta_grid_MWh": -6.156931192017556e-10
+  },
+  "A|uninf|batched|sweep 0.8": {
+   "delta_co2_kt": -1.6563861372062019,
+   "nosig_co2_kt": 6243.371617543581,
+   "delta_rel": -0.00026530314686888646,
+   "delta_gas_MMBtu": -6565.822415263865,
+   "delta_diesel_MMBtu": -17685.28393526262,
+   "delta_grid_MWh": -6.156931192017556e-10
+  },
+  "A+staged|sym1|continuous|eGRID2023 ERCT total": {
+   "delta_co2_kt": -15.391921495142684,
+   "nosig_co2_kt": 3191.765772506656,
+   "delta_rel": -0.004822384407943138,
+   "delta_gas_MMBtu": 1212855.6458942355,
+   "delta_diesel_MMBtu": -675500.4773827831,
+   "delta_grid_MWh": -89476.770640784
+  },
+  "A+staged|sym1|continuous|eGRID2023 ERCT non-baseload": {
+   "delta_co2_kt": -36.04205150605656,
+   "nosig_co2_kt": 4031.087080903248,
+   "delta_rel": -0.008941025282435873,
+   "delta_gas_MMBtu": 1212855.6458942355,
+   "delta_diesel_MMBtu": -675500.4773827831,
+   "delta_grid_MWh": -89476.770640784
+  },
+  "A+staged|sym1|continuous|sweep 0.2": {
+   "delta_co2_kt": -3.5012488642393738,
+   "nosig_co2_kt": 2708.471240946292,
+   "delta_rel": -0.0012927029873191858,
+   "delta_gas_MMBtu": 1212855.6458942355,
+   "delta_diesel_MMBtu": -675500.4773827831,
+   "delta_grid_MWh": -89476.770640784
+  },
+  "A+staged|sym1|continuous|sweep 0.4": {
+   "delta_co2_kt": -21.396602992396087,
+   "nosig_co2_kt": 3435.825113930461,
+   "delta_rel": -0.006227500609866355,
+   "delta_gas_MMBtu": 1212855.6458942355,
+   "delta_diesel_MMBtu": -675500.4773827831,
+   "delta_grid_MWh": -89476.770640784
+  },
+  "A+staged|sym1|continuous|sweep 0.6": {
+   "delta_co2_kt": -39.291957120553064,
+   "nosig_co2_kt": 4163.1789869146305,
+   "delta_rel": -0.009437969696727522,
+   "delta_gas_MMBtu": 1212855.6458942355,
+   "delta_diesel_MMBtu": -675500.4773827831,
+   "delta_grid_MWh": -89476.770640784
+  },
+  "A+staged|sym1|continuous|sweep 0.8": {
+   "delta_co2_kt": -57.18731124870959,
+   "nosig_co2_kt": 4890.532859898798,
+   "delta_rel": -0.011693472447068476,
+   "delta_gas_MMBtu": 1212855.6458942355,
+   "delta_diesel_MMBtu": -675500.4773827831,
+   "delta_grid_MWh": -89476.770640784
+  },
+  "A+staged|sym1|batched|eGRID2023 ERCT total": {
+   "delta_co2_kt": -13.830800811769167,
+   "nosig_co2_kt": 3196.0890446246335,
+   "delta_rel": -0.004327414104757376,
+   "delta_gas_MMBtu": 1484067.9656160278,
+   "delta_diesel_MMBtu": -722068.0305993743,
+   "delta_grid_MWh": -117669.97504148212
+  },
+  "A+staged|sym1|batched|eGRID2023 ERCT non-baseload": {
+   "delta_co2_kt": -40.98757307328455,
+   "nosig_co2_kt": 4016.834429447734,
+   "delta_rel": -0.010203948854053176,
+   "delta_gas_MMBtu": 1484067.9656160278,
+   "delta_diesel_MMBtu": -722068.0305993743,
+   "delta_grid_MWh": -117669.97504148212
+  },
+  "A+staged|sym1|batched|sweep 0.2": {
+   "delta_co2_kt": 1.8064997041601965,
+   "nosig_co2_kt": 2723.4908247055196,
+   "delta_rel": 0.0006633030255776706,
+   "delta_gas_MMBtu": 1484067.9656160278,
+   "delta_diesel_MMBtu": -722068.0305993743,
+   "delta_grid_MWh": -117669.97504148212
+  },
+  "A+staged|sym1|batched|sweep 0.4": {
+   "delta_co2_kt": -21.727495304136202,
+   "nosig_co2_kt": 3434.746845984662,
+   "delta_rel": -0.006325792344648746,
+   "delta_gas_MMBtu": 1484067.9656160278,
+   "delta_diesel_MMBtu": -722068.0305993743,
+   "delta_grid_MWh": -117669.97504148212
+  },
+  "A+staged|sym1|batched|sweep 0.6": {
+   "delta_co2_kt": -45.26149031243257,
+   "nosig_co2_kt": 4146.002867263805,
+   "delta_rel": -0.010916897976557198,
+   "delta_gas_MMBtu": 1484067.9656160278,
+   "delta_diesel_MMBtu": -722068.0305993743,
+   "delta_grid_MWh": -117669.97504148212
+  },
+  "A+staged|sym1|batched|sweep 0.8": {
+   "delta_co2_kt": -68.79548532072909,
+   "nosig_co2_kt": 4857.258888542949,
+   "delta_rel": -0.01416343804177297,
+   "delta_gas_MMBtu": 1484067.9656160278,
+   "delta_diesel_MMBtu": -722068.0305993743,
+   "delta_grid_MWh": -117669.97504148212
+  },
+  "A+staged|sym2|continuous|eGRID2023 ERCT total": {
+   "delta_co2_kt": -10.10528591729777,
+   "nosig_co2_kt": 3191.765772260472,
+   "delta_rel": -0.0031660487135749325,
+   "delta_gas_MMBtu": 1758310.072269455,
+   "delta_diesel_MMBtu": -669067.9573422458,
+   "delta_grid_MWh": -161965.7031492947
+  },
+  "A+staged|sym2|continuous|eGRID2023 ERCT non-baseload": {
+   "delta_co2_kt": -47.48496338430673,
+   "nosig_co2_kt": 4031.0870808054174,
+   "delta_rel": -0.011779691788454037,
+   "delta_gas_MMBtu": 1758310.072269455,
+   "delta_diesel_MMBtu": -669067.9573422458,
+   "delta_grid_MWh": -161965.7031492947
+  },
+  "A+staged|sym2|continuous|sweep 0.2": {
+   "delta_co2_kt": 11.41852567972587,
+   "nosig_co2_kt": 2708.471240614684,
+   "delta_rel": 0.004215856350438652,
+   "delta_gas_MMBtu": 1758310.072269455,
+   "delta_diesel_MMBtu": -669067.9573422458,
+   "delta_grid_MWh": -161965.7031492947
+  },
+  "A+staged|sym2|continuous|sweep 0.4": {
+   "delta_co2_kt": -20.97461495013299,
+   "nosig_co2_kt": 3435.825113727415,
+   "delta_rel": -0.006104680609711918,
+   "delta_gas_MMBtu": 1758310.072269455,
+   "delta_diesel_MMBtu": -669067.9573422458,
+   "delta_grid_MWh": -161965.7031492947
+  },
+  "A+staged|sym2|continuous|sweep 0.6": {
+   "delta_co2_kt": -53.367755579992085,
+   "nosig_co2_kt": 4163.178986840146,
+   "delta_rel": -0.012818991388236767,
+   "delta_gas_MMBtu": 1758310.072269455,
+   "delta_diesel_MMBtu": -669067.9573422458,
+   "delta_grid_MWh": -161965.7031492947
+  },
+  "A+staged|sym2|continuous|sweep 0.8": {
+   "delta_co2_kt": -85.7608962098511,
+   "nosig_co2_kt": 4890.532859952878,
+   "delta_rel": -0.017536104687511992,
+   "delta_gas_MMBtu": 1758310.072269455,
+   "delta_diesel_MMBtu": -669067.9573422458,
+   "delta_grid_MWh": -161965.7031492947
+  },
+  "A+staged|sym2|batched|eGRID2023 ERCT total": {
+   "delta_co2_kt": -8.772548230477161,
+   "nosig_co2_kt": 3196.089044379778,
+   "delta_rel": -0.0027447759147710264,
+   "delta_gas_MMBtu": 2013289.0722617602,
+   "delta_diesel_MMBtu": -712426.3917007631,
+   "delta_grid_MWh": -188970.49958177708
+  },
+  "A+staged|sym2|batched|eGRID2023 ERCT non-baseload": {
+   "delta_co2_kt": -52.38459811387331,
+   "nosig_co2_kt": 4016.8344293483897,
+   "delta_rel": -0.01304126396924235,
+   "delta_gas_MMBtu": 2013289.0722617602,
+   "delta_diesel_MMBtu": -712426.3917007631,
+   "delta_grid_MWh": -188970.49958177708
+  },
+  "A+staged|sym2|batched|sweep 0.2": {
+   "delta_co2_kt": 16.339962327664974,
+   "nosig_co2_kt": 2723.4908243768755,
+   "delta_rel": 0.005999639206202759,
+   "delta_gas_MMBtu": 2013289.0722617602,
+   "delta_diesel_MMBtu": -712426.3917007631,
+   "delta_grid_MWh": -188970.49958177708
+  },
+  "A+staged|sym2|batched|sweep 0.4": {
+   "delta_co2_kt": -21.454137588690323,
+   "nosig_co2_kt": 3434.7468457821187,
+   "delta_rel": -0.006246206358712019,
+   "delta_gas_MMBtu": 2013289.0722617602,
+   "delta_diesel_MMBtu": -712426.3917007631,
+   "delta_grid_MWh": -188970.49958177708
+  },
+  "A+staged|sym2|batched|sweep 0.6": {
+   "delta_co2_kt": -59.248237505045694,
+   "nosig_co2_kt": 4146.002867187361,
+   "delta_rel": -0.014290447788628658,
+   "delta_gas_MMBtu": 2013289.0722617602,
+   "delta_diesel_MMBtu": -712426.3917007631,
+   "delta_grid_MWh": -188970.49958177708
+  },
+  "A+staged|sym2|batched|sweep 0.8": {
+   "delta_co2_kt": -97.04233742140109,
+   "nosig_co2_kt": 4857.2588885926025,
+   "delta_rel": -0.01997882749245825,
+   "delta_gas_MMBtu": 2013289.0722617602,
+   "delta_diesel_MMBtu": -712426.3917007631,
+   "delta_grid_MWh": -188970.49958177708
+  },
+  "A+staged|sym4|continuous|eGRID2023 ERCT total": {
+   "delta_co2_kt": -4.586679126191074,
+   "nosig_co2_kt": 3191.765772438622,
+   "delta_rel": -0.001437034999810368,
+   "delta_gas_MMBtu": 2190479.135950356,
+   "delta_diesel_MMBtu": -630221.4449250366,
+   "delta_grid_MWh": -222902.65097913076
+  },
+  "A+staged|sym4|continuous|eGRID2023 ERCT non-baseload": {
+   "delta_co2_kt": -56.02984911916783,
+   "nosig_co2_kt": 4031.0870808699074,
+   "delta_rel": -0.013899439033471983,
+   "delta_gas_MMBtu": 2190479.135950356,
+   "delta_diesel_MMBtu": -630221.4449250366,
+   "delta_grid_MWh": -222902.65097913076
+  },
+  "A+staged|sym4|continuous|sweep 0.2": {
+   "delta_co2_kt": 25.035114691044022,
+   "nosig_co2_kt": 2708.471240858282,
+   "delta_rel": 0.009243263990911233,
+   "delta_gas_MMBtu": 2190479.135950356,
+   "delta_diesel_MMBtu": -630221.4449250366,
+   "delta_grid_MWh": -222902.65097913076
+  },
+  "A+staged|sym4|continuous|sweep 0.4": {
+   "delta_co2_kt": -19.545415504782063,
+   "nosig_co2_kt": 3435.825113872515,
+   "delta_rel": -0.005688710821125714,
+   "delta_gas_MMBtu": 2190479.135950356,
+   "delta_diesel_MMBtu": -630221.4449250366,
+   "delta_grid_MWh": -222902.65097913076
+  },
+  "A+staged|sym4|continuous|sweep 0.6": {
+   "delta_co2_kt": -64.12594570060831,
+   "nosig_co2_kt": 4163.178986886748,
+   "delta_rel": -0.015403120044224212,
+   "delta_gas_MMBtu": 2190479.135950356,
+   "delta_diesel_MMBtu": -630221.4449250366,
+   "delta_grid_MWh": -222902.65097913076
+  },
+  "A+staged|sym4|continuous|sweep 0.8": {
+   "delta_co2_kt": -108.70647589643436,
+   "nosig_co2_kt": 4890.532859900982,
+   "delta_rel": -0.02222794100572413,
+   "delta_gas_MMBtu": 2190479.135950356,
+   "delta_diesel_MMBtu": -630221.4449250366,
+   "delta_grid_MWh": -222902.65097913076
+  },
+  "A+staged|sym4|batched|eGRID2023 ERCT total": {
+   "delta_co2_kt": -3.5356515590733117,
+   "nosig_co2_kt": 3196.0890445559107,
+   "delta_rel": -0.0011062431333369132,
+   "delta_gas_MMBtu": 2422992.4342440255,
+   "delta_diesel_MMBtu": -670343.9710683343,
+   "delta_grid_MWh": -247891.79694167746
+  },
+  "A+staged|sym4|batched|eGRID2023 ERCT non-baseload": {
+   "delta_co2_kt": -60.746006814691604,
+   "nosig_co2_kt": 4016.834429414185,
+   "delta_rel": -0.015122855542629573,
+   "delta_gas_MMBtu": 2422992.4342440255,
+   "delta_diesel_MMBtu": -670343.9710683343,
+   "delta_grid_MWh": -247891.79694167746
+  },
+  "A+staged|sym4|batched|sweep 0.2": {
+   "delta_co2_kt": 29.406979072438432,
+   "nosig_co2_kt": 2723.490824616542,
+   "delta_rel": 0.010797531905244745,
+   "delta_gas_MMBtu": 2422992.4342440255,
+   "delta_diesel_MMBtu": -670343.9710683343,
+   "delta_grid_MWh": -247891.79694167746
+  },
+  "A+staged|sym4|batched|sweep 0.4": {
+   "delta_co2_kt": -20.171380315896936,
+   "nosig_co2_kt": 3434.7468459261654,
+   "delta_rel": -0.005872741491799173,
+   "delta_gas_MMBtu": 2422992.4342440255,
+   "delta_diesel_MMBtu": -670343.9710683343,
+   "delta_grid_MWh": -247891.79694167746
+  },
+  "A+staged|sym4|batched|sweep 0.6": {
+   "delta_co2_kt": -69.7497397042325,
+   "nosig_co2_kt": 4146.002867235792,
+   "delta_rel": -0.01682336986677865,
+   "delta_gas_MMBtu": 2422992.4342440255,
+   "delta_diesel_MMBtu": -670343.9710683343,
+   "delta_grid_MWh": -247891.79694167746
+  },
+  "A+staged|sym4|batched|sweep 0.8": {
+   "delta_co2_kt": -119.32809909256784,
+   "nosig_co2_kt": 4857.258888545416,
+   "delta_rel": -0.02456696293746503,
+   "delta_gas_MMBtu": 2422992.4342440255,
+   "delta_diesel_MMBtu": -670343.9710683343,
+   "delta_grid_MWh": -247891.79694167746
+  },
+  "A+staged|opt2|continuous|eGRID2023 ERCT total": {
+   "delta_co2_kt": -7.2707414988944254,
+   "nosig_co2_kt": 3191.7657716947588,
+   "delta_rel": -0.002277968378310486,
+   "delta_gas_MMBtu": -446857.6098782171,
+   "delta_diesel_MMBtu": -82636.71513760113,
+   "delta_grid_MWh": 67743.86600315453
+  },
+  "A+staged|opt2|continuous|eGRID2023 ERCT non-baseload": {
+   "delta_co2_kt": 8.363703401036222,
+   "nosig_co2_kt": 4031.087080592201,
+   "delta_rel": 0.0020748009739862835,
+   "delta_gas_MMBtu": -446857.6098782171,
+   "delta_diesel_MMBtu": -82636.71513760113,
+   "delta_grid_MWh": 67743.86600315453
+  },
+  "A+staged|opt2|continuous|sweep 0.2": {
+   "delta_co2_kt": -16.273303031084346,
+   "nosig_co2_kt": 2708.471239845997,
+   "delta_rel": -0.006008298257584469,
+   "delta_gas_MMBtu": -446857.6098782171,
+   "delta_diesel_MMBtu": -82636.71513760113,
+   "delta_grid_MWh": 67743.86600315453
+  },
+  "A+staged|opt2|continuous|sweep 0.4": {
+   "delta_co2_kt": -2.7245298304533545,
+   "nosig_co2_kt": 3435.825113264201,
+   "delta_rel": -0.0007929768660037876,
+   "delta_gas_MMBtu": -446857.6098782171,
+   "delta_diesel_MMBtu": -82636.71513760113,
+   "delta_grid_MWh": 67743.86600315453
+  },
+  "A+staged|opt2|continuous|sweep 0.6": {
+   "delta_co2_kt": 10.82424337017747,
+   "nosig_co2_kt": 4163.178986682406,
+   "delta_rel": 0.0025999947167304467,
+   "delta_gas_MMBtu": -446857.6098782171,
+   "delta_diesel_MMBtu": -82636.71513760113,
+   "delta_grid_MWh": 67743.86600315453
+  },
+  "A+staged|opt2|continuous|sweep 0.8": {
+   "delta_co2_kt": 24.373016570808417,
+   "nosig_co2_kt": 4890.53286010061,
+   "delta_rel": 0.004983713895403006,
+   "delta_gas_MMBtu": -446857.6098782171,
+   "delta_diesel_MMBtu": -82636.71513760113,
+   "delta_grid_MWh": 67743.86600315453
+  },
+  "A+staged|opt2|batched|eGRID2023 ERCT total": {
+   "delta_co2_kt": -5.230900073811195,
+   "nosig_co2_kt": 3196.0890438193114,
+   "delta_rel": -0.001636656551833829,
+   "delta_gas_MMBtu": -176604.52439336627,
+   "delta_diesel_MMBtu": -127854.65537182923,
+   "delta_grid_MWh": 40841.77525889712
+  },
+  "A+staged|opt2|batched|eGRID2023 ERCT non-baseload": {
+   "delta_co2_kt": 4.194875610010088,
+   "nosig_co2_kt": 4016.8344291309163,
+   "delta_rel": 0.0010443237539461373,
+   "delta_gas_MMBtu": -176604.52439336627,
+   "delta_diesel_MMBtu": -127854.65537182923,
+   "delta_grid_MWh": 40841.77525889712
+  },
+  "A+staged|opt2|batched|sweep 0.2": {
+   "delta_co2_kt": -10.658411323833112,
+   "nosig_co2_kt": 2723.4908236189085,
+   "delta_rel": -0.003913511009987716,
+   "delta_gas_MMBtu": -176604.52439336627,
+   "delta_diesel_MMBtu": -127854.65537182923,
+   "delta_grid_MWh": 40841.77525889712
+  },
+  "A+staged|opt2|batched|sweep 0.4": {
+   "delta_co2_kt": -2.4900562720536574,
+   "nosig_co2_kt": 3434.7468453213874,
+   "delta_rel": -0.0007249606402420799,
+   "delta_gas_MMBtu": -176604.52439336627,
+   "delta_diesel_MMBtu": -127854.65537182923,
+   "delta_grid_MWh": 40841.77525889712
+  },
+  "A+staged|opt2|batched|sweep 0.6": {
+   "delta_co2_kt": 5.678298779725877,
+   "nosig_co2_kt": 4146.002867023865,
+   "delta_rel": 0.0013695839008914972,
+   "delta_gas_MMBtu": -176604.52439336627,
+   "delta_diesel_MMBtu": -127854.65537182923,
+   "delta_grid_MWh": 40841.77525889712
+  },
+  "A+staged|opt2|batched|sweep 0.8": {
+   "delta_co2_kt": 13.846653831505426,
+   "nosig_co2_kt": 4857.258888726345,
+   "delta_rel": 0.0028507135709079433,
+   "delta_gas_MMBtu": -176604.52439336627,
+   "delta_diesel_MMBtu": -127854.65537182923,
+   "delta_grid_MWh": 40841.77525889712
+  },
+  "A+staged|uninf|continuous|eGRID2023 ERCT total": {
+   "delta_co2_kt": 5.065230557377017,
+   "nosig_co2_kt": 3191.76577150823,
+   "delta_rel": 0.0015869681298648379,
+   "delta_gas_MMBtu": 1203092.7004689656,
+   "delta_diesel_MMBtu": -154097.66388872164,
+   "delta_grid_MWh": -142310.18827885616
+  },
+  "A+staged|uninf|continuous|eGRID2023 ERCT non-baseload": {
+   "delta_co2_kt": -27.77819761722626,
+   "nosig_co2_kt": 4031.0870805083505,
+   "delta_rel": -0.006890994181580226,
+   "delta_gas_MMBtu": 1203092.7004689656,
+   "delta_diesel_MMBtu": -154097.66388872164,
+   "delta_grid_MWh": -142310.18827885616
+  },
+  "A+staged|uninf|continuous|sweep 0.2": {
+   "delta_co2_kt": 23.97699780990227,
+   "nosig_co2_kt": 2708.4712396003447,
+   "delta_rel": 0.008852594577832865,
+   "delta_gas_MMBtu": 1203092.7004689656,
+   "delta_diesel_MMBtu": -154097.66388872164,
+   "delta_grid_MWh": -142310.18827885616
+  },
+  "A+staged|uninf|continuous|sweep 0.4": {
+   "delta_co2_kt": -4.485039845868914,
+   "nosig_co2_kt": 3435.8251131075294,
+   "delta_rel": -0.0013053748948858527,
+   "delta_gas_MMBtu": 1203092.7004689656,
+   "delta_diesel_MMBtu": -154097.66388872164,
+   "delta_grid_MWh": -142310.18827885616
+  },
+  "A+staged|uninf|continuous|sweep 0.6": {
+   "delta_co2_kt": -32.947077501640145,
+   "nosig_co2_kt": 4163.178986614715,
+   "delta_rel": -0.007913922895837595,
+   "delta_gas_MMBtu": 1203092.7004689656,
+   "delta_diesel_MMBtu": -154097.66388872164,
+   "delta_grid_MWh": -142310.18827885616
+  },
+  "A+staged|uninf|continuous|sweep 0.8": {
+   "delta_co2_kt": -61.40911515741129,
+   "nosig_co2_kt": 4890.5328601219,
+   "delta_rel": -0.012556732960154495,
+   "delta_gas_MMBtu": 1203092.7004689656,
+   "delta_diesel_MMBtu": -154097.66388872164,
+   "delta_grid_MWh": -142310.18827885616
+  },
+  "A+staged|uninf|batched|eGRID2023 ERCT total": {
+   "delta_co2_kt": 6.181295874274996,
+   "nosig_co2_kt": 3196.089043630787,
+   "delta_rel": 0.0019340186677818546,
+   "delta_gas_MMBtu": 1427319.5285554777,
+   "delta_diesel_MMBtu": -192643.07875603926,
+   "delta_grid_MWh": -166133.5637272752
+  },
+  "A+staged|uninf|batched|eGRID2023 ERCT non-baseload": {
+   "delta_co2_kt": -32.16027217267215,
+   "nosig_co2_kt": 4016.8344290456166,
+   "delta_rel": -0.008006372366289765,
+   "delta_gas_MMBtu": 1427319.5285554777,
+   "delta_diesel_MMBtu": -192643.07875603926,
+   "delta_grid_MWh": -166133.5637272752
+  },
+  "A+staged|uninf|batched|sweep 0.2": {
+   "delta_co2_kt": 28.258979334901888,
+   "nosig_co2_kt": 2723.490823370945,
+   "delta_rel": 0.0103760141552175,
+   "delta_gas_MMBtu": 1427319.5285554777,
+   "delta_diesel_MMBtu": -192643.07875603926,
+   "delta_grid_MWh": -166133.5637272752
+  },
+  "A+staged|uninf|batched|sweep 0.4": {
+   "delta_co2_kt": -4.967733410553023,
+   "nosig_co2_kt": 3434.746845162879,
+   "delta_rel": -0.0014463171914835687,
+   "delta_gas_MMBtu": 1427319.5285554777,
+   "delta_diesel_MMBtu": -192643.07875603926,
+   "delta_grid_MWh": -166133.5637272752
+  },
+  "A+staged|uninf|batched|sweep 0.6": {
+   "delta_co2_kt": -38.194446156008226,
+   "nosig_co2_kt": 4146.002866954814,
+   "delta_rel": -0.009212354014617834,
+   "delta_gas_MMBtu": 1427319.5285554777,
+   "delta_diesel_MMBtu": -192643.07875603926,
+   "delta_grid_MWh": -166133.5637272752
+  },
+  "A+staged|uninf|batched|sweep 0.8": {
+   "delta_co2_kt": -71.42115890146327,
+   "nosig_co2_kt": 4857.258888746748,
+   "delta_rel": -0.014704004982507964,
+   "delta_gas_MMBtu": 1427319.5285554777,
+   "delta_diesel_MMBtu": -192643.07875603926,
+   "delta_grid_MWh": -166133.5637272752
+  },
+  "B|sym1|continuous|eGRID2023 SRVC total": {
+   "delta_co2_kt": -77.5984898080979,
+   "nosig_co2_kt": 3259.30076385918,
+   "delta_rel": -0.023808324370843667,
+   "delta_gas_MMBtu": 342618.09462460387,
+   "delta_diesel_MMBtu": -1827427.0800840775,
+   "delta_grid_MWh": 146301.39149733156
+  },
+  "B|sym1|continuous|eGRID2023 SRVC non-baseload": {
+   "delta_co2_kt": -31.583674796752724,
+   "nosig_co2_kt": 3699.593890096543,
+   "delta_rel": -0.008537065346901775,
+   "delta_gas_MMBtu": 342618.09462460387,
+   "delta_diesel_MMBtu": -1827427.0800840775,
+   "delta_grid_MWh": 146301.39149733156
+  },
+  "B|sym1|continuous|sweep 0.2": {
+   "delta_co2_kt": -87.71691244277064,
+   "nosig_co2_kt": 3162.482555781791,
+   "delta_rel": -0.02773672609905869,
+   "delta_gas_MMBtu": 342618.09462460387,
+   "delta_diesel_MMBtu": -1827427.0800840775,
+   "delta_grid_MWh": 146301.39149733156
+  },
+  "B|sym1|continuous|sweep 0.4": {
+   "delta_co2_kt": -58.45663414330408,
+   "nosig_co2_kt": 3442.4597632066393,
+   "delta_rel": -0.0169810653324389,
+   "delta_gas_MMBtu": 342618.09462460387,
+   "delta_diesel_MMBtu": -1827427.0800840775,
+   "delta_grid_MWh": 146301.39149733156
+  },
+  "B|sym1|continuous|sweep 0.6": {
+   "delta_co2_kt": -29.19635584383751,
+   "nosig_co2_kt": 3722.436970631488,
+   "delta_rel": -0.00784334458156978,
+   "delta_gas_MMBtu": 342618.09462460387,
+   "delta_diesel_MMBtu": -1827427.0800840775,
+   "delta_grid_MWh": 146301.39149733156
+  },
+  "B|sym1|continuous|sweep 0.8": {
+   "delta_co2_kt": 0.0639224556281406,
+   "nosig_co2_kt": 4002.414178056337,
+   "delta_rel": 1.5970974712862622e-05,
+   "delta_gas_MMBtu": 342618.09462460387,
+   "delta_diesel_MMBtu": -1827427.0800840775,
+   "delta_grid_MWh": 146301.39149733156
+  },
+  "B|sym1|batched|eGRID2023 SRVC total": {
+   "delta_co2_kt": -59.25492216762166,
+   "nosig_co2_kt": 3252.734630200059,
+   "delta_rel": -0.018216955547946802,
+   "delta_gas_MMBtu": 1384230.2965550914,
+   "delta_diesel_MMBtu": -1827427.0800840775,
+   "delta_grid_MWh": 9118.411087158991
+  },
+  "B|sym1|batched|eGRID2023 SRVC non-baseload": {
+   "delta_co2_kt": -56.38699319525311,
+   "nosig_co2_kt": 3708.864176065133,
+   "delta_rel": -0.015203304979228465,
+   "delta_gas_MMBtu": 1384230.2965550914,
+   "delta_diesel_MMBtu": -1827427.0800840775,
+   "delta_grid_MWh": 9118.411087158991
+  },
+  "B|sym1|batched|sweep 0.2": {
+   "delta_co2_kt": -59.885565090373305,
+   "nosig_co2_kt": 3152.4340743880616,
+   "delta_rel": -0.01899661140479141,
+   "delta_gas_MMBtu": 1384230.2965550914,
+   "delta_diesel_MMBtu": -1827427.0800840775,
+   "delta_grid_MWh": 9118.411087158991
+  },
+  "B|sym1|batched|sweep 0.4": {
+   "delta_co2_kt": -58.061882872941744,
+   "nosig_co2_kt": 3442.481474325033,
+   "delta_rel": -0.016866287678229536,
+   "delta_gas_MMBtu": 1384230.2965550914,
+   "delta_diesel_MMBtu": -1827427.0800840775,
+   "delta_grid_MWh": 9118.411087158991
+  },
+  "B|sym1|batched|sweep 0.6": {
+   "delta_co2_kt": -56.238200655510155,
+   "nosig_co2_kt": 3732.5288742620037,
+   "delta_rel": -0.015067050396664268,
+   "delta_gas_MMBtu": 1384230.2965550914,
+   "delta_diesel_MMBtu": -1827427.0800840775,
+   "delta_grid_MWh": 9118.411087158991
+  },
+  "B|sym1|batched|sweep 0.8": {
+   "delta_co2_kt": -54.41451843807798,
+   "nosig_co2_kt": 4022.5762741989743,
+   "delta_rel": -0.013527280709901187,
+   "delta_gas_MMBtu": 1384230.2965550914,
+   "delta_diesel_MMBtu": -1827427.0800840775,
+   "delta_grid_MWh": 9118.411087158991
+  },
+  "B|sym2|continuous|eGRID2023 SRVC total": {
+   "delta_co2_kt": -72.1427419715492,
+   "nosig_co2_kt": 3259.300763677778,
+   "delta_rel": -0.022134423056479058,
+   "delta_gas_MMBtu": 605411.0274560602,
+   "delta_diesel_MMBtu": -1810836.9021992595,
+   "delta_grid_MWh": 110207.61510016977
+  },
+  "B|sym2|continuous|eGRID2023 SRVC non-baseload": {
+   "delta_co2_kt": -37.48016651840781,
+   "nosig_co2_kt": 3699.5938900257647,
+   "delta_rel": -0.01013088669528179,
+   "delta_gas_MMBtu": 605411.0274560602,
+   "delta_diesel_MMBtu": -1810836.9021992595,
+   "delta_grid_MWh": 110207.61510016977
+  },
+  "B|sym2|continuous|sweep 0.2": {
+   "delta_co2_kt": -79.76486514980472,
+   "nosig_co2_kt": 3162.4825555760635,
+   "delta_rel": -0.025222230873388995,
+   "delta_gas_MMBtu": 605411.0274560602,
+   "delta_diesel_MMBtu": -1810836.9021992595,
+   "delta_grid_MWh": 110207.61510016977
+  },
+  "B|sym2|continuous|sweep 0.4": {
+   "delta_co2_kt": -57.72334212977087,
+   "nosig_co2_kt": 3442.459763071256,
+   "delta_rel": -0.016768051365187747,
+   "delta_gas_MMBtu": 605411.0274560602,
+   "delta_diesel_MMBtu": -1810836.9021992595,
+   "delta_grid_MWh": 110207.61510016977
+  },
+  "B|sym2|continuous|sweep 0.6": {
+   "delta_co2_kt": -35.68181910973674,
+   "nosig_co2_kt": 3722.436970566449,
+   "delta_rel": -0.00958560732978831,
+   "delta_gas_MMBtu": 605411.0274560602,
+   "delta_diesel_MMBtu": -1810836.9021992595,
+   "delta_grid_MWh": 110207.61510016977
+  },
+  "B|sym2|continuous|sweep 0.8": {
+   "delta_co2_kt": -13.640296089703089,
+   "nosig_co2_kt": 4002.414178061642,
+   "delta_rel": -0.003408017132377101,
+   "delta_gas_MMBtu": 605411.0274560602,
+   "delta_diesel_MMBtu": -1810836.9021992595,
+   "delta_grid_MWh": 110207.61510016977
+  },
+  "B|sym2|batched|eGRID2023 SRVC total": {
+   "delta_co2_kt": -54.19284391261124,
+   "nosig_co2_kt": 3252.7346300162653,
+   "delta_rel": -0.016660702478621885,
+   "delta_gas_MMBtu": 1624047.8330351782,
+   "delta_diesel_MMBtu": -1810836.9021992595,
+   "delta_grid_MWh": -23908.786430985667
+  },
+  "B|sym2|batched|eGRID2023 SRVC non-baseload": {
+   "delta_co2_kt": -61.71265198489194,
+   "nosig_co2_kt": 3708.8641759974603,
+   "delta_rel": -0.016639232135885636,
+   "delta_gas_MMBtu": 1624047.8330351782,
+   "delta_diesel_MMBtu": -1810836.9021992595,
+   "delta_grid_MWh": -23908.786430985667
+  },
+  "B|sym2|batched|sweep 0.2": {
+   "delta_co2_kt": -52.53927655200793,
+   "nosig_co2_kt": 3152.434074178733,
+   "delta_rel": -0.016666257030512326,
+   "delta_gas_MMBtu": 1624047.8330351782,
+   "delta_diesel_MMBtu": -1810836.9021992595,
+   "delta_grid_MWh": -23908.786430985667
+  },
+  "B|sym2|batched|sweep 0.4": {
+   "delta_co2_kt": -57.32103383820498,
+   "nosig_co2_kt": 3442.4814741895443,
+   "delta_rel": -0.016651079829470963,
+   "delta_gas_MMBtu": 1624047.8330351782,
+   "delta_diesel_MMBtu": -1810836.9021992595,
+   "delta_grid_MWh": -23908.786430985667
+  },
+  "B|sym2|batched|sweep 0.6": {
+   "delta_co2_kt": -62.102791124401804,
+   "nosig_co2_kt": 3732.5288742003554,
+   "delta_rel": -0.01663826140868274,
+   "delta_gas_MMBtu": 1624047.8330351782,
+   "delta_diesel_MMBtu": -1810836.9021992595,
+   "delta_grid_MWh": -23908.786430985667
+  },
+  "B|sym2|batched|sweep 0.8": {
+   "delta_co2_kt": -66.88454841059911,
+   "nosig_co2_kt": 4022.5762742111674,
+   "delta_rel": -0.016627291529410528,
+   "delta_gas_MMBtu": 1624047.8330351782,
+   "delta_diesel_MMBtu": -1810836.9021992595,
+   "delta_grid_MWh": -23908.786430985667
+  },
+  "B|sym4|continuous|eGRID2023 SRVC total": {
+   "delta_co2_kt": -56.69538149901057,
+   "nosig_co2_kt": 3259.300764149705,
+   "delta_rel": -0.01739495235377623,
+   "delta_gas_MMBtu": 1207029.4879113273,
+   "delta_diesel_MMBtu": -1708818.0666743952,
+   "delta_grid_MWh": 20968.14824788537
+  },
+  "B|sym4|continuous|eGRID2023 SRVC non-baseload": {
+   "delta_co2_kt": -50.10046498535228,
+   "nosig_co2_kt": 3699.593889921632,
+   "delta_rel": -0.013542152591892606,
+   "delta_gas_MMBtu": 1207029.4879113273,
+   "delta_diesel_MMBtu": -1708818.0666743952,
+   "delta_grid_MWh": 20968.14824788537
+  },
+  "B|sym4|continuous|sweep 0.2": {
+   "delta_co2_kt": -58.14556993308619,
+   "nosig_co2_kt": 3162.4825561746634,
+   "delta_rel": -0.018386052381398437,
+   "delta_gas_MMBtu": 1207029.4879113273,
+   "delta_diesel_MMBtu": -1708818.0666743952,
+   "delta_grid_MWh": 20968.14824788537
+  },
+  "B|sym4|continuous|sweep 0.4": {
+   "delta_co2_kt": -53.951940283508854,
+   "nosig_co2_kt": 3442.4597633035464,
+   "delta_rel": -0.015672496991434415,
+   "delta_gas_MMBtu": 1207029.4879113273,
+   "delta_diesel_MMBtu": -1708818.0666743952,
+   "delta_grid_MWh": 20968.14824788537
+  },
+  "B|sym4|continuous|sweep 0.6": {
+   "delta_co2_kt": -49.75831063393174,
+   "nosig_co2_kt": 3722.4369704324286,
+   "delta_rel": -0.013367133152062859,
+   "delta_gas_MMBtu": 1207029.4879113273,
+   "delta_diesel_MMBtu": -1708818.0666743952,
+   "delta_grid_MWh": 20968.14824788537
+  },
+  "B|sym4|continuous|sweep 0.8": {
+   "delta_co2_kt": -45.564680984354446,
+   "nosig_co2_kt": 4002.4141775613125,
+   "delta_rel": -0.011384299316098564,
+   "delta_gas_MMBtu": 1207029.4879113273,
+   "delta_diesel_MMBtu": -1708818.0666743952,
+   "delta_grid_MWh": 20968.14824788537
+  },
+  "B|sym4|batched|eGRID2023 SRVC total": {
+   "delta_co2_kt": -39.860171811882815,
+   "nosig_co2_kt": 3252.7346304872935,
+   "delta_rel": -0.012254357130237627,
+   "delta_gas_MMBtu": 2160804.1719876714,
+   "delta_diesel_MMBtu": -1708818.0666743952,
+   "delta_grid_MWh": -104503.27301168372
+  },
+  "B|sym4|batched|eGRID2023 SRVC non-baseload": {
+   "delta_co2_kt": -72.72861363938502,
+   "nosig_co2_kt": 3708.8641758949852,
+   "delta_rel": -0.019609403361835132,
+   "delta_gas_MMBtu": 2160804.1719876714,
+   "delta_diesel_MMBtu": -1708818.0666743952,
+   "delta_grid_MWh": -104503.27301168372
+  },
+  "B|sym4|batched|sweep 0.2": {
+   "delta_co2_kt": -32.63256944790909,
+   "nosig_co2_kt": 3152.434074775872,
+   "delta_rel": -0.01035154698682451,
+   "delta_gas_MMBtu": 2160804.1719876714,
+   "delta_diesel_MMBtu": -1708818.0666743952,
+   "delta_grid_MWh": -104503.27301168372
+  },
+  "B|sym4|batched|sweep 0.4": {
+   "delta_co2_kt": -53.53322405024558,
+   "nosig_co2_kt": 3442.4814744219984,
+   "delta_rel": -0.015550766052919412,
+   "delta_gas_MMBtu": 2160804.1719876714,
+   "delta_diesel_MMBtu": -1708818.0666743952,
+   "delta_grid_MWh": -104503.27301168372
+  },
+  "B|sym4|batched|sweep 0.6": {
+   "delta_co2_kt": -74.4338786525823,
+   "nosig_co2_kt": 3732.5288740681262,
+   "delta_rel": -0.01994194316076541,
+   "delta_gas_MMBtu": 2160804.1719876714,
+   "delta_diesel_MMBtu": -1708818.0666743952,
+   "delta_grid_MWh": -104503.27301168372
+  },
+  "B|sym4|batched|sweep 0.8": {
+   "delta_co2_kt": -95.3345332549192,
+   "nosig_co2_kt": 4022.576273714253,
+   "delta_rel": -0.023699869627802454,
+   "delta_gas_MMBtu": 2160804.1719876714,
+   "delta_diesel_MMBtu": -1708818.0666743952,
+   "delta_grid_MWh": -104503.27301168372
+  },
+  "B|opt2|continuous|eGRID2023 SRVC total": {
+   "delta_co2_kt": -70.73050910891686,
+   "nosig_co2_kt": 3259.3007641576546,
+   "delta_rel": -0.021701129851757237,
+   "delta_gas_MMBtu": -1632316.350776738,
+   "delta_diesel_MMBtu": -929832.3626201323,
+   "delta_grid_MWh": 314497.4309738326
+  },
+  "B|opt2|continuous|eGRID2023 SRVC non-baseload": {
+   "delta_co2_kt": 28.18544076479299,
+   "nosig_co2_kt": 3699.59388995038,
+   "delta_rel": 0.007618522898244657,
+   "delta_gas_MMBtu": -1632316.350776738,
+   "delta_diesel_MMBtu": -929832.3626201323,
+   "delta_grid_MWh": 314497.4309738326
+  },
+  "B|opt2|continuous|sweep 0.2": {
+   "delta_co2_kt": -92.48162091683201,
+   "nosig_co2_kt": 3162.4825561780394,
+   "delta_rel": -0.029243361591407162,
+   "delta_gas_MMBtu": -1632316.350776738,
+   "delta_diesel_MMBtu": -929832.3626201323,
+   "delta_grid_MWh": 314497.4309738326
+  },
+  "B|opt2|continuous|sweep 0.4": {
+   "delta_co2_kt": -29.582134722065504,
+   "nosig_co2_kt": 3442.459763320148,
+   "delta_rel": -0.008593313141163466,
+   "delta_gas_MMBtu": -1632316.350776738,
+   "delta_diesel_MMBtu": -929832.3626201323,
+   "delta_grid_MWh": 314497.4309738326
+  },
+  "B|opt2|continuous|sweep 0.6": {
+   "delta_co2_kt": 33.31735147270123,
+   "nosig_co2_kt": 3722.436970462256,
+   "delta_rel": 0.008950413865184626,
+   "delta_gas_MMBtu": -1632316.350776738,
+   "delta_diesel_MMBtu": -929832.3626201323,
+   "delta_grid_MWh": 314497.4309738326
+  },
+  "B|opt2|continuous|sweep 0.8": {
+   "delta_co2_kt": 96.21683766746796,
+   "nosig_co2_kt": 4002.4141776043643,
+   "delta_rel": 0.02403970039029252,
+   "delta_gas_MMBtu": -1632316.350776738,
+   "delta_diesel_MMBtu": -929832.3626201323,
+   "delta_grid_MWh": 314497.4309738326
+  },
+  "B|opt2|batched|eGRID2023 SRVC total": {
+   "delta_co2_kt": -49.09259037536917,
+   "nosig_co2_kt": 3252.7346304956914,
+   "delta_rel": -0.01509271304062325,
+   "delta_gas_MMBtu": -403173.80843128666,
+   "delta_diesel_MMBtu": -929832.3626201323,
+   "delta_grid_MWh": 152585.76927977253
+  },
+  "B|opt2|batched|eGRID2023 SRVC non-baseload": {
+   "delta_co2_kt": -1.1012085100740878,
+   "nosig_co2_kt": 3708.864175923128,
+   "delta_rel": -0.0002969126012278407,
+   "delta_gas_MMBtu": -403173.80843128666,
+   "delta_diesel_MMBtu": -929832.3626201323,
+   "delta_grid_MWh": 152585.76927977253
+  },
+  "B|opt2|batched|sweep 0.2": {
+   "delta_co2_kt": -59.6456499587946,
+   "nosig_co2_kt": 3152.434074779928,
+   "delta_rel": -0.01892050667640321,
+   "delta_gas_MMBtu": -403173.80843128666,
+   "delta_diesel_MMBtu": -929832.3626201323,
+   "delta_grid_MWh": 152585.76927977253
+  },
+  "B|opt2|batched|sweep 0.4": {
+   "delta_co2_kt": -29.128496102840202,
+   "nosig_co2_kt": 3442.4814744386103,
+   "delta_rel": -0.008461482311270939,
+   "delta_gas_MMBtu": -403173.80843128666,
+   "delta_diesel_MMBtu": -929832.3626201323,
+   "delta_grid_MWh": 152585.76927977253
+  },
+  "B|opt2|batched|sweep 0.6": {
+   "delta_co2_kt": 1.388657753114454,
+   "nosig_co2_kt": 3732.5288740972933,
+   "delta_rel": 0.0003720420658367442,
+   "delta_gas_MMBtu": -403173.80843128666,
+   "delta_diesel_MMBtu": -929832.3626201323,
+   "delta_grid_MWh": 152585.76927977253
+  },
+  "B|opt2|batched|sweep 0.8": {
+   "delta_co2_kt": 31.905811609068856,
+   "nosig_co2_kt": 4022.576273755977,
+   "delta_rel": 0.007931685924075126,
+   "delta_gas_MMBtu": -403173.80843128666,
+   "delta_diesel_MMBtu": -929832.3626201323,
+   "delta_grid_MWh": 152585.76927977253
+  },
+  "B|uninf|continuous|eGRID2023 SRVC total": {
+   "delta_co2_kt": -7.0108449322294115,
+   "nosig_co2_kt": 3259.3007644321156,
+   "delta_rel": -0.002151027302769018,
+   "delta_gas_MMBtu": 66289.53294578148,
+   "delta_diesel_MMBtu": -197663.97184078943,
+   "delta_grid_MWh": 15199.275960517789
+  },
+  "B|uninf|continuous|eGRID2023 SRVC non-baseload": {
+   "delta_co2_kt": -2.2303581270691195,
+   "nosig_co2_kt": 3699.5938897124415,
+   "delta_rel": -0.0006028656640587322,
+   "delta_gas_MMBtu": 66289.53294578148,
+   "delta_diesel_MMBtu": -197663.97184078943,
+   "delta_grid_MWh": 15199.275960517789
+  },
+  "B|uninf|continuous|sweep 0.2": {
+   "delta_co2_kt": -8.0620495471379,
+   "nosig_co2_kt": 3162.4825565651736,
+   "delta_rel": -0.002549278740020698,
+   "delta_gas_MMBtu": 66289.53294578148,
+   "delta_diesel_MMBtu": -197663.97184078943,
+   "delta_grid_MWh": 15199.275960517789
+  },
+  "B|uninf|continuous|sweep 0.4": {
+   "delta_co2_kt": -5.022194355034472,
+   "nosig_co2_kt": 3442.459763381454,
+   "delta_rel": -0.0014588970388142689,
+   "delta_gas_MMBtu": 66289.53294578148,
+   "delta_diesel_MMBtu": -197663.97184078943,
+   "delta_grid_MWh": 15199.275960517789
+  },
+  "B|uninf|continuous|sweep 0.6": {
+   "delta_co2_kt": -1.982339162930818,
+   "nosig_co2_kt": 3722.436970197734,
+   "delta_rel": -0.0005325380063656302,
+   "delta_gas_MMBtu": 66289.53294578148,
+   "delta_diesel_MMBtu": -197663.97184078943,
+   "delta_grid_MWh": 15199.275960517789
+  },
+  "B|uninf|continuous|sweep 0.8": {
+   "delta_co2_kt": 1.0575160291723642,
+   "nosig_co2_kt": 4002.4141770140145,
+   "delta_rel": 0.00026421953910859864,
+   "delta_gas_MMBtu": 66289.53294578148,
+   "delta_diesel_MMBtu": -197663.97184078943,
+   "delta_grid_MWh": 15199.275960517789
+  },
+  "B|uninf|batched|eGRID2023 SRVC total": {
+   "delta_co2_kt": 8.074786506168312,
+   "nosig_co2_kt": 3252.734630760072,
+   "delta_rel": 0.0024824608899255527,
+   "delta_gas_MMBtu": 921258.0234793616,
+   "delta_diesel_MMBtu": -197663.97184078943,
+   "delta_grid_MWh": -97294.5148649512
+  },
+  "B|uninf|batched|eGRID2023 SRVC non-baseload": {
+   "delta_co2_kt": -22.526351714796263,
+   "nosig_co2_kt": 3708.864175698897,
+   "delta_rel": -0.006073652376485695,
+   "delta_gas_MMBtu": 921258.0234793616,
+   "delta_diesel_MMBtu": -197663.97184078943,
+   "delta_grid_MWh": -97294.5148649512
+  },
+  "B|uninf|batched|sweep 0.2": {
+   "delta_co2_kt": 14.803820395480056,
+   "nosig_co2_kt": 3152.4340751517507,
+   "delta_rel": 0.004695996821049282,
+   "delta_gas_MMBtu": 921258.0234793616,
+   "delta_diesel_MMBtu": -197663.97184078943,
+   "delta_grid_MWh": -97294.5148649512
+  },
+  "B|uninf|batched|sweep 0.4": {
+   "delta_co2_kt": -4.655082577510268,
+   "nosig_co2_kt": 3442.4814744997307,
+   "delta_rel": -0.0013522462247053213,
+   "delta_gas_MMBtu": 921258.0234793616,
+   "delta_diesel_MMBtu": -197663.97184078943,
+   "delta_grid_MWh": -97294.5148649512
+  },
+  "B|uninf|batched|sweep 0.6": {
+   "delta_co2_kt": -24.11398555050036,
+   "nosig_co2_kt": 3732.5288738477116,
+   "delta_rel": -0.006460495381417435,
+   "delta_gas_MMBtu": 921258.0234793616,
+   "delta_diesel_MMBtu": -197663.97184078943,
+   "delta_grid_MWh": -97294.5148649512
+  },
+  "B|uninf|batched|sweep 0.8": {
+   "delta_co2_kt": -43.5728885234907,
+   "nosig_co2_kt": 4022.5762731956925,
+   "delta_rel": -0.010832085102733102,
+   "delta_gas_MMBtu": 921258.0234793616,
+   "delta_diesel_MMBtu": -197663.97184078943,
+   "delta_grid_MWh": -97294.5148649512
+  },
+  "B+staged|sym1|continuous|eGRID2023 SRVC total": {
+   "delta_co2_kt": -49.707202566360834,
+   "nosig_co2_kt": 3264.08966745614,
+   "delta_rel": -0.015228504002802111,
+   "delta_gas_MMBtu": 1643663.9896903315,
+   "delta_diesel_MMBtu": -1706400.7515420055,
+   "delta_grid_MWh": -39807.38167195693
+  },
+  "B+staged|sym1|continuous|eGRID2023 SRVC non-baseload": {
+   "delta_co2_kt": -62.22744782837924,
+   "nosig_co2_kt": 3669.4874759282598,
+   "delta_rel": -0.016958076090077878,
+   "delta_gas_MMBtu": 1643663.9896903315,
+   "delta_diesel_MMBtu": -1706400.7515420055,
+   "delta_grid_MWh": -39807.38167195693
+  },
+  "B+staged|sym1|continuous|sweep 0.2": {
+   "delta_co2_kt": -46.95406462546908,
+   "nosig_co2_kt": 3174.9447614018686,
+   "delta_rel": -0.014788939069521617,
+   "delta_gas_MMBtu": 1643663.9896903315,
+   "delta_diesel_MMBtu": -1706400.7515420055,
+   "delta_grid_MWh": -39807.38167195693
+  },
+  "B+staged|sym1|continuous|sweep 0.4": {
+   "delta_co2_kt": -54.91554095986055,
+   "nosig_co2_kt": 3432.7324477147095,
+   "delta_rel": -0.015997617581999364,
+   "delta_gas_MMBtu": 1643663.9896903315,
+   "delta_diesel_MMBtu": -1706400.7515420055,
+   "delta_grid_MWh": -39807.38167195693
+  },
+  "B+staged|sym1|continuous|sweep 0.6": {
+   "delta_co2_kt": -62.877017294252184,
+   "nosig_co2_kt": 3690.520134027551,
+   "delta_rel": -0.017037440526203828,
+   "delta_gas_MMBtu": 1643663.9896903315,
+   "delta_diesel_MMBtu": -1706400.7515420055,
+   "delta_grid_MWh": -39807.38167195693
+  },
+  "B+staged|sym1|continuous|sweep 0.8": {
+   "delta_co2_kt": -70.83849362864322,
+   "nosig_co2_kt": 3948.3078203403925,
+   "delta_rel": -0.01794148198468884,
+   "delta_gas_MMBtu": 1643663.9896903315,
+   "delta_diesel_MMBtu": -1706400.7515420055,
+   "delta_grid_MWh": -39807.38167195693
+  },
+  "B+staged|sym1|batched|eGRID2023 SRVC total": {
+   "delta_co2_kt": -50.47430657948059,
+   "nosig_co2_kt": 3269.5148882823414,
+   "delta_rel": -0.01543785800161857,
+   "delta_gas_MMBtu": 1733813.3334140917,
+   "delta_diesel_MMBtu": -1774205.6355057885,
+   "delta_grid_MWh": -41797.187002464
+  },
+  "B+staged|sym1|batched|eGRID2023 SRVC non-baseload": {
+   "delta_co2_kt": -63.62038679258665,
+   "nosig_co2_kt": 3661.0544496651282,
+   "delta_rel": -0.017377612834577186,
+   "delta_gas_MMBtu": 1733813.3334140917,
+   "delta_diesel_MMBtu": -1774205.6355057885,
+   "delta_grid_MWh": -41797.187002464
+  },
+  "B+staged|sym1|batched|sweep 0.2": {
+   "delta_co2_kt": -47.583550731549295,
+   "nosig_co2_kt": 3183.417339932128,
+   "delta_rel": -0.014947317819335558,
+   "delta_gas_MMBtu": 1733813.3334140917,
+   "delta_diesel_MMBtu": -1774205.6355057885,
+   "delta_grid_MWh": -41797.187002464
+  },
+  "B+staged|sym1|batched|sweep 0.4": {
+   "delta_co2_kt": -55.9429881320422,
+   "nosig_co2_kt": 3432.39273032513,
+   "delta_rel": -0.016298539394337622,
+   "delta_gas_MMBtu": 1733813.3334140917,
+   "delta_diesel_MMBtu": -1774205.6355057885,
+   "delta_grid_MWh": -41797.187002464
+  },
+  "B+staged|sym1|batched|sweep 0.6": {
+   "delta_co2_kt": -64.30242553253512,
+   "nosig_co2_kt": 3681.3681207181307,
+   "delta_rel": -0.017466991461856724,
+   "delta_gas_MMBtu": 1733813.3334140917,
+   "delta_diesel_MMBtu": -1774205.6355057885,
+   "delta_grid_MWh": -41797.187002464
+  },
+  "B+staged|sym1|batched|sweep 0.8": {
+   "delta_co2_kt": -72.66186293302802,
+   "nosig_co2_kt": 3930.343511111133,
+   "delta_rel": -0.018487407710703143,
+   "delta_gas_MMBtu": 1733813.3334140917,
+   "delta_diesel_MMBtu": -1774205.6355057885,
+   "delta_grid_MWh": -41797.187002464
+  },
+  "B+staged|sym2|continuous|eGRID2023 SRVC total": {
+   "delta_co2_kt": -44.21194743242937,
+   "nosig_co2_kt": 3264.0896672776857,
+   "delta_rel": -0.013544954930512982,
+   "delta_gas_MMBtu": 1805629.2815141263,
+   "delta_diesel_MMBtu": -1649174.0809778695,
+   "delta_grid_MWh": -67044.21904010825
+  },
+  "B+staged|sym2|continuous|eGRID2023 SRVC non-baseload": {
+   "delta_co2_kt": -65.29874165315917,
+   "nosig_co2_kt": 3669.4874758766946,
+   "delta_rel": -0.017795057779168014,
+   "delta_gas_MMBtu": 1805629.2815141263,
+   "delta_diesel_MMBtu": -1649174.0809778695,
+   "delta_grid_MWh": -67044.21904010825
+  },
+  "B+staged|sym2|continuous|sweep 0.2": {
+   "delta_co2_kt": -39.57506916000531,
+   "nosig_co2_kt": 3174.9447611955125,
+   "delta_rel": -0.012464805575106598,
+   "delta_gas_MMBtu": 1805629.2815141263,
+   "delta_diesel_MMBtu": -1649174.0809778695,
+   "delta_grid_MWh": -67044.21904010825
+  },
+  "B+staged|sym2|continuous|sweep 0.4": {
+   "delta_co2_kt": -52.98391296802696,
+   "nosig_co2_kt": 3432.732447589041,
+   "delta_rel": -0.015434909005285248,
+   "delta_gas_MMBtu": 1805629.2815141263,
+   "delta_diesel_MMBtu": -1649174.0809778695,
+   "delta_grid_MWh": -67044.21904010825
+  },
+  "B+staged|sym2|continuous|sweep 0.6": {
+   "delta_co2_kt": -66.39275677604846,
+   "nosig_co2_kt": 3690.52013398257,
+   "delta_rel": -0.017990081171675304,
+   "delta_gas_MMBtu": 1805629.2815141263,
+   "delta_diesel_MMBtu": -1649174.0809778695,
+   "delta_grid_MWh": -67044.21904010825
+  },
+  "B+staged|sym2|continuous|sweep 0.8": {
+   "delta_co2_kt": -79.80160058407053,
+   "nosig_co2_kt": 3948.307820376099,
+   "delta_rel": -0.020211595502315466,
+   "delta_gas_MMBtu": 1805629.2815141263,
+   "delta_diesel_MMBtu": -1649174.0809778695,
+   "delta_grid_MWh": -67044.21904010825
+  },
+  "B+staged|sym2|batched|eGRID2023 SRVC total": {
+   "delta_co2_kt": -45.54025056338879,
+   "nosig_co2_kt": 3269.514888099151,
+   "delta_rel": -0.01392874849083964,
+   "delta_gas_MMBtu": 1874061.5702876828,
+   "delta_diesel_MMBtu": -1720091.4411980321,
+   "delta_grid_MWh": -65982.67199031732
+  },
+  "B+staged|sym2|batched|eGRID2023 SRVC non-baseload": {
+   "delta_co2_kt": -66.29316627057875,
+   "nosig_co2_kt": 3661.0544496213097,
+   "delta_rel": -0.018107670121496267,
+   "delta_gas_MMBtu": 1874061.5702876828,
+   "delta_diesel_MMBtu": -1720091.4411980321,
+   "delta_grid_MWh": -65982.67199031732
+  },
+  "B+staged|sym2|batched|sweep 0.2": {
+   "delta_co2_kt": -40.976790469605795,
+   "nosig_co2_kt": 3183.417339718291,
+   "delta_rel": -0.012871950516306463,
+   "delta_gas_MMBtu": 1874061.5702876828,
+   "delta_diesel_MMBtu": -1720091.4411980321,
+   "delta_grid_MWh": -65982.67199031732
+  },
+  "B+staged|sym2|batched|sweep 0.4": {
+   "delta_co2_kt": -54.173324867669336,
+   "nosig_co2_kt": 3432.392730199917,
+   "delta_rel": -0.015782962244100213,
+   "delta_gas_MMBtu": 1874061.5702876828,
+   "delta_diesel_MMBtu": -1720091.4411980321,
+   "delta_grid_MWh": -65982.67199031732
+  },
+  "B+staged|sym2|batched|sweep 0.6": {
+   "delta_co2_kt": -67.3698592657324,
+   "nosig_co2_kt": 3681.368120681542,
+   "delta_rel": -0.01830022346509048,
+   "delta_gas_MMBtu": 1874061.5702876828,
+   "delta_diesel_MMBtu": -1720091.4411980321,
+   "delta_grid_MWh": -65982.67199031732
+  },
+  "B+staged|sym2|batched|sweep 0.8": {
+   "delta_co2_kt": -80.56639366379616,
+   "nosig_co2_kt": 3930.3435111631684,
+   "delta_rel": -0.020498562895321298,
+   "delta_gas_MMBtu": 1874061.5702876828,
+   "delta_diesel_MMBtu": -1720091.4411980321,
+   "delta_grid_MWh": -65982.67199031732
+  },
+  "B+staged|sym4|continuous|eGRID2023 SRVC total": {
+   "delta_co2_kt": -29.48123563635264,
+   "nosig_co2_kt": 3264.089667714935,
+   "delta_rel": -0.00903199318571151,
+   "delta_gas_MMBtu": 2156358.8220164482,
+   "delta_diesel_MMBtu": -1464242.059953832,
+   "delta_grid_MWh": -132271.11949781777
+  },
+  "B+staged|sym4|continuous|eGRID2023 SRVC non-baseload": {
+   "delta_co2_kt": -71.08323977823771,
+   "nosig_co2_kt": 3669.48747578837,
+   "delta_rel": -0.019371435451749526,
+   "delta_gas_MMBtu": 2156358.8220164482,
+   "delta_diesel_MMBtu": -1464242.059953832,
+   "delta_grid_MWh": -132271.11949781777
+  },
+  "B+staged|sym4|continuous|sweep 0.2": {
+   "delta_co2_kt": -20.333167557556088,
+   "nosig_co2_kt": 3174.9447617483324,
+   "delta_rel": -0.00640425868271148,
+   "delta_gas_MMBtu": 2156358.8220164482,
+   "delta_diesel_MMBtu": -1464242.059953832,
+   "delta_grid_MWh": -132271.11949781777
+  },
+  "B+staged|sym4|continuous|sweep 0.4": {
+   "delta_co2_kt": -46.787391457119725,
+   "nosig_co2_kt": 3432.732447807655,
+   "delta_rel": -0.013629780988903143,
+   "delta_gas_MMBtu": 2156358.8220164482,
+   "delta_diesel_MMBtu": -1464242.059953832,
+   "delta_grid_MWh": -132271.11949781777
+  },
+  "B+staged|sym4|continuous|sweep 0.6": {
+   "delta_co2_kt": -73.24161535668316,
+   "nosig_co2_kt": 3690.5201338669767,
+   "delta_rel": -0.019845878819238303,
+   "delta_gas_MMBtu": 2156358.8220164482,
+   "delta_diesel_MMBtu": -1464242.059953832,
+   "delta_grid_MWh": -132271.11949781777
+  },
+  "B+staged|sym4|continuous|sweep 0.8": {
+   "delta_co2_kt": -99.69583925624678,
+   "nosig_co2_kt": 3948.307819926299,
+   "delta_rel": -0.025250270192486598,
+   "delta_gas_MMBtu": 2156358.8220164482,
+   "delta_diesel_MMBtu": -1464242.059953832,
+   "delta_grid_MWh": -132271.11949781777
+  },
+  "B+staged|sym4|batched|eGRID2023 SRVC total": {
+   "delta_co2_kt": -32.322534042297896,
+   "nosig_co2_kt": 3269.5148885390445,
+   "delta_rel": -0.009886033599541415,
+   "delta_gas_MMBtu": 2168876.1852729996,
+   "delta_diesel_MMBtu": -1544069.504725506,
+   "delta_grid_MWh": -123359.85923535036
+  },
+  "B+staged|sym4|batched|eGRID2023 SRVC non-baseload": {
+   "delta_co2_kt": -71.12176243271097,
+   "nosig_co2_kt": 3661.0544495324084,
+   "delta_rel": -0.019426578711986837,
+   "delta_gas_MMBtu": 2168876.1852729996,
+   "delta_diesel_MMBtu": -1544069.504725506,
+   "delta_grid_MWh": -123359.85923535036
+  },
+  "B+staged|sym4|batched|sweep 0.2": {
+   "delta_co2_kt": -23.79078202598288,
+   "nosig_co2_kt": 3183.4173402744627,
+   "delta_rel": -0.0074733468731849415,
+   "delta_gas_MMBtu": 2168876.1852729996,
+   "delta_diesel_MMBtu": -1544069.504725506,
+   "delta_grid_MWh": -123359.85923535036
+  },
+  "B+staged|sym4|batched|sweep 0.4": {
+   "delta_co2_kt": -48.46275387305323,
+   "nosig_co2_kt": 3432.392730419834,
+   "delta_rel": -0.014119233339340367,
+   "delta_gas_MMBtu": 2168876.1852729996,
+   "delta_diesel_MMBtu": -1544069.504725506,
+   "delta_grid_MWh": -123359.85923535036
+  },
+  "B+staged|sym4|batched|sweep 0.6": {
+   "delta_co2_kt": -73.13472572012341,
+   "nosig_co2_kt": 3681.368120565207,
+   "delta_rel": -0.019866181084029957,
+   "delta_gas_MMBtu": 2168876.1852729996,
+   "delta_diesel_MMBtu": -1544069.504725506,
+   "delta_grid_MWh": -123359.85923535036
+  },
+  "B+staged|sym4|batched|sweep 0.8": {
+   "delta_co2_kt": -97.80669756719334,
+   "nosig_co2_kt": 3930.3435107105784,
+   "delta_rel": -0.024885025265771382,
+   "delta_gas_MMBtu": 2168876.1852729996,
+   "delta_diesel_MMBtu": -1544069.504725506,
+   "delta_grid_MWh": -123359.85923535036
+  },
+  "B+staged|opt2|continuous|eGRID2023 SRVC total": {
+   "delta_co2_kt": -37.8155306472859,
+   "nosig_co2_kt": 3264.0896677134933,
+   "delta_rel": -0.011585322248140264,
+   "delta_gas_MMBtu": -310941.47659620363,
+   "delta_diesel_MMBtu": -698139.2101052972,
+   "delta_grid_MWh": 112636.46877907493
+  },
+  "B+staged|opt2|continuous|eGRID2023 SRVC non-baseload": {
+   "delta_co2_kt": -2.3890304523454926,
+   "nosig_co2_kt": 3669.4874758258156,
+   "delta_rel": -0.0006510528971918192,
+   "delta_gas_MMBtu": -310941.47659620363,
+   "delta_diesel_MMBtu": -698139.2101052972,
+   "delta_grid_MWh": 112636.46877907493
+  },
+  "B+staged|opt2|continuous|sweep 0.2": {
+   "delta_co2_kt": -45.60563697176719,
+   "nosig_co2_kt": 3174.9447617383394,
+   "delta_rel": -0.014364230055705689,
+   "delta_gas_MMBtu": -310941.47659620363,
+   "delta_diesel_MMBtu": -698139.2101052972,
+   "delta_grid_MWh": 112636.46877907493
+  },
+  "B+staged|opt2|continuous|sweep 0.4": {
+   "delta_co2_kt": -23.078343215952025,
+   "nosig_co2_kt": 3432.7324478223895,
+   "delta_rel": -0.006723024170028792,
+   "delta_gas_MMBtu": -310941.47659620363,
+   "delta_diesel_MMBtu": -698139.2101052972,
+   "delta_grid_MWh": 112636.46877907493
+  },
+  "B+staged|opt2|continuous|sweep 0.6": {
+   "delta_co2_kt": -0.5510494601373266,
+   "nosig_co2_kt": 3690.5201339064406,
+   "delta_rel": -0.00014931484997862264,
+   "delta_gas_MMBtu": -310941.47659620363,
+   "delta_diesel_MMBtu": -698139.2101052972,
+   "delta_grid_MWh": 112636.46877907493
+  },
+  "B+staged|opt2|continuous|sweep 0.8": {
+   "delta_co2_kt": 21.976244295677414,
+   "nosig_co2_kt": 3948.307819990491,
+   "delta_rel": 0.00556599062119993,
+   "delta_gas_MMBtu": -310941.47659620363,
+   "delta_diesel_MMBtu": -698139.2101052972,
+   "delta_grid_MWh": 112636.46877907493
+  },
+  "B+staged|opt2|batched|eGRID2023 SRVC total": {
+   "delta_co2_kt": -39.1877901013901,
+   "nosig_co2_kt": 3269.5148885436915,
+   "delta_rel": -0.011985811790826601,
+   "delta_gas_MMBtu": -106079.4164354153,
+   "delta_diesel_MMBtu": -818517.5965081037,
+   "delta_grid_MWh": 100231.07277257636
+  },
+  "B+staged|opt2|batched|eGRID2023 SRVC non-baseload": {
+   "delta_co2_kt": -7.66304365287215,
+   "nosig_co2_kt": 3661.0544495663466,
+   "delta_rel": -0.0020931247427308382,
+   "delta_gas_MMBtu": -106079.4164354153,
+   "delta_diesel_MMBtu": -818517.5965081037,
+   "delta_grid_MWh": 100231.07277257636
+  },
+  "B+staged|opt2|batched|sweep 0.2": {
+   "delta_co2_kt": -46.11992071928683,
+   "nosig_co2_kt": 3183.4173402726688,
+   "delta_rel": -0.014487550889364865,
+   "delta_gas_MMBtu": -106079.4164354153,
+   "delta_diesel_MMBtu": -818517.5965081037,
+   "delta_grid_MWh": 100231.07277257636
+  },
+  "B+staged|opt2|batched|sweep 0.4": {
+   "delta_co2_kt": -26.0737061647716,
+   "nosig_co2_kt": 3432.3927304366666,
+   "delta_rel": -0.007596364464230328,
+   "delta_gas_MMBtu": -106079.4164354153,
+   "delta_diesel_MMBtu": -818517.5965081037,
+   "delta_grid_MWh": 100231.07277257636
+  },
+  "B+staged|opt2|batched|sweep 0.6": {
+   "delta_co2_kt": -6.027491610256611,
+   "nosig_co2_kt": 3681.3681206006645,
+   "delta_rel": -0.001637296627991972,
+   "delta_gas_MMBtu": -106079.4164354153,
+   "delta_diesel_MMBtu": -818517.5965081037,
+   "delta_grid_MWh": 100231.07277257636
+  },
+  "B+staged|opt2|batched|sweep 0.8": {
+   "delta_co2_kt": 14.018722944258872,
+   "nosig_co2_kt": 3930.3435107646624,
+   "delta_rel": 0.003566793311033386,
+   "delta_gas_MMBtu": -106079.4164354153,
+   "delta_diesel_MMBtu": -818517.5965081037,
+   "delta_grid_MWh": 100231.07277257636
+  },
+  "B+staged|uninf|continuous|eGRID2023 SRVC total": {
+   "delta_co2_kt": 16.70132290524127,
+   "nosig_co2_kt": 3264.089668019307,
+   "delta_rel": 0.005116686305794979,
+   "delta_gas_MMBtu": 1175721.8238631254,
+   "delta_diesel_MMBtu": -86272.84558487161,
+   "delta_grid_MWh": -146015.4534017319
+  },
+  "B+staged|uninf|continuous|eGRID2023 SRVC non-baseload": {
+   "delta_co2_kt": -29.22355865817739,
+   "nosig_co2_kt": 3669.487475551011,
+   "delta_rel": -0.007963934705565162,
+   "delta_gas_MMBtu": 1175721.8238631254,
+   "delta_diesel_MMBtu": -86272.84558487161,
+   "delta_grid_MWh": -146015.4534017319
+  },
+  "B+staged|uninf|continuous|sweep 0.2": {
+   "delta_co2_kt": 26.79996963437394,
+   "nosig_co2_kt": 3174.944762171828,
+   "delta_rel": 0.00844108217367579,
+   "delta_gas_MMBtu": 1175721.8238631254,
+   "delta_diesel_MMBtu": -86272.84558487161,
+   "delta_grid_MWh": -146015.4534017319
+  },
+  "B+staged|uninf|continuous|sweep 0.4": {
+   "delta_co2_kt": -2.4031210459724086,
+   "nosig_co2_kt": 3432.73244788667,
+   "delta_rel": -0.0007000606899765427,
+   "delta_gas_MMBtu": 1175721.8238631254,
+   "delta_diesel_MMBtu": -86272.84558487161,
+   "delta_grid_MWh": -146015.4534017319
+  },
+  "B+staged|uninf|continuous|sweep 0.6": {
+   "delta_co2_kt": -31.60621172631902,
+   "nosig_co2_kt": 3690.520133601513,
+   "delta_rel": -0.008564161847689225,
+   "delta_gas_MMBtu": 1175721.8238631254,
+   "delta_diesel_MMBtu": -86272.84558487161,
+   "delta_grid_MWh": -146015.4534017319
+  },
+  "B+staged|uninf|continuous|sweep 0.8": {
+   "delta_co2_kt": -60.809302406665346,
+   "nosig_co2_kt": 3948.3078193163556,
+   "delta_rel": -0.015401358047406343,
+   "delta_gas_MMBtu": 1175721.8238631254,
+   "delta_diesel_MMBtu": -86272.84558487161,
+   "delta_grid_MWh": -146015.4534017319
+  },
+  "B+staged|uninf|batched|eGRID2023 SRVC total": {
+   "delta_co2_kt": 13.073425768443755,
+   "nosig_co2_kt": 3269.5148888350786,
+   "delta_rel": 0.003998582729532022,
+   "delta_gas_MMBtu": 1164336.368870822,
+   "delta_diesel_MMBtu": -173410.46833546646,
+   "delta_grid_MWh": -133305.93225834172
+  },
+  "B+staged|uninf|batched|eGRID2023 SRVC non-baseload": {
+   "delta_co2_kt": -28.854048399799737,
+   "nosig_co2_kt": 3661.0544493032294,
+   "delta_rel": -0.007881349157560667,
+   "delta_gas_MMBtu": 1164336.368870822,
+   "delta_diesel_MMBtu": -173410.46833546646,
+   "delta_grid_MWh": -133305.93225834172
+  },
+  "B+staged|uninf|batched|sweep 0.2": {
+   "delta_co2_kt": 22.293063042526715,
+   "nosig_co2_kt": 3183.417340685988,
+   "delta_rel": 0.00700287164915764,
+   "delta_gas_MMBtu": 1164336.368870822,
+   "delta_diesel_MMBtu": -173410.46833546646,
+   "delta_grid_MWh": -133305.93225834172
+  },
+  "B+staged|uninf|batched|sweep 0.4": {
+   "delta_co2_kt": -4.368123409142056,
+   "nosig_co2_kt": 3432.392730497384,
+   "delta_rel": -0.0012726176029714048,
+   "delta_gas_MMBtu": 1164336.368870822,
+   "delta_diesel_MMBtu": -173410.46833546646,
+   "delta_grid_MWh": -133305.93225834172
+  },
+  "B+staged|uninf|batched|sweep 0.6": {
+   "delta_co2_kt": -31.029309860810397,
+   "nosig_co2_kt": 3681.368120308779,
+   "delta_rel": -0.008428744110004348,
+   "delta_gas_MMBtu": 1164336.368870822,
+   "delta_diesel_MMBtu": -173410.46833546646,
+   "delta_grid_MWh": -133305.93225834172
+  },
+  "B+staged|uninf|batched|sweep 0.8": {
+   "delta_co2_kt": -57.690496312478516,
+   "nosig_co2_kt": 3930.3435101201744,
+   "delta_rel": -0.014678232618582126,
+   "delta_gas_MMBtu": 1164336.368870822,
+   "delta_diesel_MMBtu": -173410.46833546646,
+   "delta_grid_MWh": -133305.93225834172
+  }
+ }
+}
