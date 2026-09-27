@@ -44,6 +44,10 @@ python experiments/make_figures.py --paper                # the paper's figures,
 python tools/md2tex_tables.py <spec.json> <out.tex>       # tables in LaTeX
 ```
 
+`python reproduce_check.py` runs all of these analyses and report generators at once. It then compares every
+regenerated file in `data/` with its released version, line endings normalized. Set `REF_FIGS` to a directory of
+reference renders to compare the figures pixel by pixel as well.
+
 From scratch (hours; 16 parallel workers recommended):
 
 ```bash
