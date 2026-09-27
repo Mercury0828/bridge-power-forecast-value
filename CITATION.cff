@@ -1,7 +1,22 @@
 cff-version: 1.2.0
-message: "If you use this code or data, please cite the paper."
+message: "If you use this code or data, please cite the paper and this repository."
 title: "The value of grid-connection information in bridge-power planning for AI data centres: code and results"
 authors:
-  - name: "[Authors]"
+  - family-names: Shen
+    given-names: Jiachen
+    affiliation: "Department of Electrical and Computer Engineering, University of Houston"
+    orcid: "https://orcid.org/0000-0002-7233-497X"
+  - family-names: Zhong
+    given-names: Hui
+    affiliation: "Department of Computer Science and Software Engineering, Miami University"
+    orcid: "https://orcid.org/0009-0005-7952-007X"
+repository-code: "https://github.com/Mercury0828/bridge-power-forecast-value"
 license: MIT
 date-released: 2026-09-26
+keywords:
+  - AI data centre
+  - bridge power
+  - grid connection delay
+  - value of information
+  - multistage stochastic programming
+  - trigeneration

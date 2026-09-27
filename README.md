@@ -1,5 +1,7 @@
 # The value of grid-connection information in bridge-power planning for AI data centres — code and results
 
+Jiachen Shen (University of Houston) and Hui Zhong (Miami University)
+
 This repository holds the model, the run definitions, the analysis code and the results behind the paper
 *The value of grid-connection information in bridge-power planning for AI data centres* (submitted to *Energy*).
 
@@ -20,7 +22,7 @@ evaluated exactly under declared joint laws of the connection quarter and the fo
 | `tools/` | `md2tex_tables.py` and `decomp_table.py`, which turn the tables in `data/` into the supplementary tables |
 
 The job-level results of every run (one JSON item per solved plan, the run plans and the logs, 21,130 files) are in
-the separate archive `runs.zip` of the data deposit. Unzip it into `experiments/` to obtain `experiments/r2_runs/`.
+the archive `runs.zip` at the repository root. Unzip it into `experiments/` to obtain `experiments/r2_runs/`.
 
 ## Environment
 
@@ -76,6 +78,11 @@ python experiments/p1e_tpit.py && python experiments/p1e_eval.py   # downloads t
 Code comments cite planning documents and decision records (`docs/...`, `D-0xx`) that are not part of this release;
 the pre-registration and amendment records are available from the corresponding author on request.
 
+## Citation
+
+Please cite the paper and this repository (`CITATION.cff`). The archived version of this repository has a DOI on
+Zenodo.
+
 ## Licence
 
-Code: MIT (`LICENSE`). Data and results: CC BY 4.0 (`LICENSE-data`).
+Code: MIT (`LICENSE`). Data and results, including `runs.zip`: CC BY 4.0 (`LICENSE-data`).

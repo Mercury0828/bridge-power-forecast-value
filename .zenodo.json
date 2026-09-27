@@ -1,0 +1,27 @@
+{
+  "title": "Code and data for: The value of grid-connection information in bridge-power planning for AI data centres",
+  "upload_type": "software",
+  "description": "Model, run definitions, analysis code, derived results and the job-level run archive (runs.zip) behind the paper 'The value of grid-connection information in bridge-power planning for AI data centres'. A multistage stochastic mixed-integer program plans on-site bridge power (gas combined cooling, heat and power, diesel and rented gensets, a battery and purchased standby) for a 150 MW AI campus before its grid-connection quarter is known, and values a utility's connection-date forecast by exact evaluation under declared forecast-error laws. Code: MIT licence. Data and results: CC BY 4.0.",
+  "creators": [
+    {
+      "name": "Shen, Jiachen",
+      "affiliation": "University of Houston",
+      "orcid": "0000-0002-7233-497X"
+    },
+    {
+      "name": "Zhong, Hui",
+      "affiliation": "Miami University",
+      "orcid": "0009-0005-7952-007X"
+    }
+  ],
+  "keywords": [
+    "AI data centre",
+    "bridge power",
+    "grid connection delay",
+    "value of information",
+    "multistage stochastic programming",
+    "trigeneration"
+  ],
+  "license": "MIT",
+  "access_right": "open"
+}
