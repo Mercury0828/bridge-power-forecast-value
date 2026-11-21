@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this code or data, please cite the paper and this repository."
-title: "The value of grid-connection information in bridge-power planning for AI data centres: code and results"
+title: "Bridge-power procurement for AI data centres: the value of an imperfect grid-connection date estimate: code and results"
 authors:
   - family-names: Shen
     given-names: Jiachen

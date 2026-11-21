@@ -6,3 +6,10 @@ experiments/r2_runs/
 figures/
 paper/figs/*.pdf
 paper/figs/*.png
+paper_es/figs/*.pdf
+paper_es/figs/*.png
+paper_es/figs/*.aux
+paper_es/figs/*.log
+data/es_perfect_info.partial.json
+data/es_perfect_info.log
+data/es_perfect_info.err

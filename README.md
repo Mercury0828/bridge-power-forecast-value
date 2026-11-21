@@ -1,9 +1,12 @@
-# The value of grid-connection information in bridge-power planning for AI data centres — code and results
+# Bridge-power procurement for AI data centres: the value of an imperfect grid-connection date estimate — code and results
 
 Jiachen Shen (University of Houston) and Hui Zhong (Miami University)
 
 This repository holds the model, the run definitions, the analysis code and the results behind the paper
-*The value of grid-connection information in bridge-power planning for AI data centres* (submitted to *Energy*).
+*Bridge-power procurement for AI data centres: the value of an imperfect grid-connection date estimate*. An earlier
+version of the paper had the title *The value of grid-connection information in bridge-power planning for AI data
+centres*; the sections "Reproducing the paper" and "Where each result comes from" below refer to that version's
+numbering, and the section "Current paper" maps the current tables and figures.
 
 An AI data-centre campus of 150 MW of IT load plans on-site bridge power before its grid-connection quarter is known:
 gas CHP gensets with absorption chillers, diesel gensets, rented gensets, a battery and purchased standby, each with a
@@ -37,7 +40,7 @@ From the stored runs (minutes):
 
 ```bash
 python -m pytest tests -q
-python experiments/analyze_p1c.py --run p1c_main          # registered benchmark: data/p1c_summary.json, p1c_rows.json
+python experiments/analyze_p1c.py --run p1c_main          # benchmark: data/p1c_summary.json, p1c_rows.json
 python experiments/make_p1c_report.py --run p1c_main      # data/p1c_tables.md
 python experiments/analyze_p1d.py --variant spine --run p1d_spine   # one exploratory variant (see data/run_manifest.md)
 python experiments/make_p1d_report.py                     # data/p1d_tables.md (also make_p1e_report.py, make_p1f_report.py)
@@ -65,7 +68,7 @@ python experiments/p1e_tpit.py && python experiments/p1e_eval.py   # downloads t
 
 | Paper item | Data | Code |
 |---|---|---|
-| Table 4, Fig. 3 (registered benchmark) | `data/p1c_summary.json`, `data/p1c_tables.md` | `analyze_p1c.py`, `make_p1c_report.py`, `make_figures.py` (`fig_main_values`) |
+| Table 4, Fig. 3 (benchmark) | `data/p1c_summary.json`, `data/p1c_tables.md` | `analyze_p1c.py`, `make_p1c_report.py`, `make_figures.py` (`fig_main_values`) |
 | Table 4 right columns, Fig. 5 (implementation) | `data/p1d/{spine,units,e2,e4b_spine,e1,...}_summary.json` | `analyze_p1d.py`, `make_figures.py` (`fig_implementation`) |
 | Fig. 4 (representative cell) | `r2_runs/p1c_main/items/` | `make_figures.py` (`fig_policy_illustration`) |
 | Fig. 6 (techno-economic levels) | `data/p1d/s_*_summary.json` | `make_p1f_report.py`, `make_figures.py` (`fig_tornado`) |
@@ -75,8 +78,34 @@ python experiments/p1e_tpit.py && python experiments/p1e_eval.py   # downloads t
 | TPIT schedule errors | `data/p1e/tpit_*.json`, `data/p1e/*.csv` | `p1e_tpit.py`, `p1e_eval.py` |
 | Certificates (Supplementary S3) | `data/gate2_vertex_certificates_*.json` | `gate2_vertex_certificates.py` |
 
-Code comments cite planning documents and decision records (`docs/...`, `D-0xx`) that are not part of this release;
-the pre-registration and amendment records are available from the corresponding author on request.
+## Current paper
+
+The current version adds three computations to the stored runs. None of them changes a stored result.
+
+```bash
+python experiments/es_perfect_info.py     # perfect-information reference: 116 deterministic path solves (minutes)
+python experiments/w3_decision_map.py     # decision map: re-tabulates stored rows and policies, no solve
+python experiments/es_model_size.py       # model sizes (builds, does not solve) and stored solve times
+python experiments/make_figures_es.py     # result figures at the 119 mm print width, into paper_es/figs/
+```
+
+`model/bridge.py` gains the option `only_T=t`, which builds the deterministic path model that knows the connection
+quarter `t` from the start (same procurement rules, only branch `t`). The default model is unchanged.
+
+| Current paper item | Data | Code |
+|---|---|---|
+| Fig. 1 (information and commitments), Fig. 2 (campus energy system) | — | `paper_es/figs/fig_timeline.tex`, `paper_es/figs/fig_system.tex` (TikZ, `pdflatex`) |
+| Table 4 (techno-economic data), Table 5 (main variants) | — | parameter values in `model/bridge.py` (`Params`); variant definitions in `experiments/p1d_core.py` (`VARIANTS`) |
+| Table 6 (value, allowance and threshold columns), Fig. 3 (value of the estimate) | `data/p1c_summary.json`, `data/p1c_tables.md` | `analyze_p1c.py`; `make_figures_es.py` (`main_values`) for Fig. 3 |
+| Table 6, columns LC, RU and Joint | `data/p1d/spine_summary.json` (LC), `data/p1d/units_summary.json` (RU), `data/p1d/e4b_spine_summary.json` (Joint) | `analyze_p1d.py` |
+| Table 7 (perfect-information reference) | `data/es_perfect_info.json` | `es_perfect_info.py` |
+| Table 8 (decision map), Online Resource 1 decision-map tables | `data/w3/decision_map.json`, `data/w3/decision_map.md` | `w3_decision_map.py` |
+| Fig. 4 (running example) | `experiments/r2_runs/p1c_main/items/` | `make_figures_es.py` (`policy_illustration`) |
+| Fig. 5 (face value), Fig. 6 (techno-economic levels), Fig. 7 (timing) | `data/p1d/{naive,s_*,tau2,tau6}_summary.json` | `make_figures_es.py` (`naive`, `tornado`, value against arrival quarter) |
+| Table 9 (physical quantities) | `data/p1d/representative_cells.json` | `p1d_accounting.py repcells` |
+| Computation paragraph (model size, solve times) | `data/es_compute.json` | `es_model_size.py` |
+
+Some code comments cite design notes that are not part of this release; they are not needed to run the code or to reproduce the results.
 
 ## Citation
 

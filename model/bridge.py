@@ -318,10 +318,16 @@ def _check_pmf(phat):
 class Model:
     """Builds the joint spine + branch model with scenario-cost variables C[T], T = 1..Q+1."""
 
-    def __init__(self, P: Params, fix: dict | None = None, time_limit=600.0, gap=1e-4, threads=1, h=None, prefix=""):
+    def __init__(self, P: Params, fix: dict | None = None, time_limit=600.0, gap=1e-4, threads=1, h=None, prefix="",
+                 only_T=None):
         """`h` and `prefix` let several policy copies share one HiGHS instance (the signal tree, SignalModel). By
-        default each Model owns its instance, as before."""
+        default each Model owns its instance, as before.
+        `only_T` (perfect-information reference of the Energy Systems paper): build the deterministic path model of
+        scenario T = only_T alone. Only branch T is built, and spine quarters q >= T carry no service requirement
+        (they are post-connection in that scenario and C_T does not cost them), so no constraint of an unrealized
+        history binds the plan. Procurement rules (whole-unit orders, lead times, permits, minimum rental terms) stay."""
         self.P = P
+        self.only_T = only_T
         self.prefix = prefix
         if h is None:
             h = highspy.Highs()
@@ -416,7 +422,9 @@ class Model:
             v["w"] = {q: self._var(0, 1, integer=True, name=f"w_{q}") for q in range(1, Q + 1)}
             v["vs"] = {q: self._var(0, 1, name=f"vs_{q}") for q in range(1, Q + 1)}
         # pre-connection dispatch in quarter q = 1..Q (at node m_q); D-014 must-energize fixes S_q = L_q
-        v["S"] = {q: self._var(P.L(q) if P.service_hard else 0, P.L(q), name=f"S_{q}") for q in range(1, Q + 1)}
+        oT = self.only_T
+        v["S"] = {q: self._var(P.L(q) if (P.service_hard and (oT is None or q < oT)) else 0, P.L(q), name=f"S_{q}")
+                  for q in range(1, Q + 1)}
         for key in ("gGE", "gDG", "gNR", "gST", "a", "e"):
             v[key] = {(q, b): self._var(0, inf, name=f"{key}_{q}_{b}") for q in range(1, Q + 1) for b in P.blocks}
 
@@ -531,6 +539,8 @@ class Model:
         legacy_bu = P.backup_mode == "instant" and not P.backup_ramp
         node_exprs = [node_cost(k) for k in range(0, Q + 1)]
         for T in range(1, Q + 2):
+            if oT is not None and T != oT:
+                continue
             spine = sum((node_exprs[k] for k in range(0, T)), 0.0)
             if T <= Q:
                 # Retention by order cohort k (orders placed at spine nodes m_0..m_{T-1}). A cohort retained while still
@@ -820,6 +830,8 @@ class Model:
         return self._lexi(eta + 0.0, tiebreak)
 
     def solve_det(self, T_hat, tiebreak=True):
+        if self.only_T is not None and (T_hat != self.only_T or tiebreak):
+            raise ValueError("a path model (only_T) solves only its own scenario, without the all-scenario tie-break")
         return self._lexi(self.C[T_hat] + 0.0, tiebreak)
 
     def _status(self):

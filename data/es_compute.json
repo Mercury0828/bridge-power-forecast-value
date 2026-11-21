@@ -1,0 +1,80 @@
+{
+ "model_size": {
+  "A": {
+   "no_forecast": {
+    "columns": 5930,
+    "rows": 6785,
+    "integer": 59,
+    "nonzeros": 51520
+   },
+   "forecast_aware": {
+    "columns": 17790,
+    "rows": 20507,
+    "integer": 177,
+    "nonzeros": 154864
+   }
+  },
+  "A+staged": {
+   "no_forecast": {
+    "columns": 6460,
+    "rows": 7643,
+    "integer": 59,
+    "nonzeros": 63376
+   },
+   "forecast_aware": {
+    "columns": 19380,
+    "rows": 23081,
+    "integer": 177,
+    "nonzeros": 190432
+   }
+  },
+  "B": {
+   "no_forecast": {
+    "columns": 5930,
+    "rows": 6785,
+    "integer": 59,
+    "nonzeros": 51496
+   },
+   "forecast_aware": {
+    "columns": 17790,
+    "rows": 20507,
+    "integer": 177,
+    "nonzeros": 154792
+   }
+  },
+  "B+staged": {
+   "no_forecast": {
+    "columns": 6460,
+    "rows": 7643,
+    "integer": 59,
+    "nonzeros": 63256
+   },
+   "forecast_aware": {
+    "columns": 19380,
+    "rows": 23081,
+    "integer": 177,
+    "nonzeros": 190072
+   }
+  }
+ },
+ "solve_seconds": {
+  "oracle": {
+   "n": 200,
+   "median": 31.38,
+   "max": 216.0,
+   "total_hours": 2.4885666666666673
+  },
+  "sig": {
+   "n": 88,
+   "median": 46.625,
+   "max": 158.35,
+   "total_hours": 1.2468555555555556
+  },
+  "nosig": {
+   "n": 88,
+   "median": 9.415,
+   "max": 53.93,
+   "total_hours": 0.2831666666666666
+  }
+ }
+}
