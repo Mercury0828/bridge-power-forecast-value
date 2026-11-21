@@ -84,8 +84,10 @@ def _tail(arr, k):
     return float(sum(arr[k:]))
 
 
-def policy_stats(run, tau):
-    """Open capacity and technology switch per plan cell, from stored spine orders and planner laws (no solves)."""
+def policy_stats(run, tau, skip_jobs=frozenset()):
+    """Open capacity and technology switch per plan cell, from stored spine orders and planner laws (no solves).
+    skip_jobs: cells whose forecast-aware or no-forecast job is listed are left out, so that policy metrics use the
+    same usable cells as the values; the default reproduces the decision-map tables."""
     plan = json.loads((RUNS / run / "plan.json").read_text(encoding="utf-8"))
     cache = {}
 
@@ -97,6 +99,8 @@ def policy_stats(run, tau):
     cells, excluded = {}, []
     for c in plan["cells"]:
         sig_job, ns_job = c["jobs"]["sig"], c["jobs"]["nosig"]
+        if sig_job in skip_jobs or ns_job in skip_jobs:
+            continue
         post = plan["jobs"][sig_job]["law"]["post"]
         ny = len(post)
         surv_tau = sum(_tail(post[y], tau) for y in range(ny))  # Pr_pl(T > tau)

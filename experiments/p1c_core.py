@@ -140,6 +140,12 @@ def exact_kernel(th):
     return K
 
 
+def eps_kernel(th, eps):
+    """Face-value fallback check: the exact kernel with weight eps on the broad planner kernel, so that no connection
+    quarter outside the announced category has zero planner probability."""
+    return (1.0 - eps) * exact_kernel(th) + eps * planner_kernel(th)
+
+
 def true_kernel(th, family, p_true):
     f = FAMILIES[family]
     K = kernel(th, f["sd"], f["bias"])

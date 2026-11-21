@@ -161,6 +161,19 @@ VARIANTS.update({
        for p in GR_PRICES},
 })
 
+# Face-value fallback and resale-value checks (paper Sections 5.4 and 5.5, Online Resource 1 Section S7).
+# naive_eps: face-value planner with weight eps on the broad planner kernel (short-wait configurations).
+# s_salv: resale fraction of new equipment (Params.salv) x0.5 and x1.5. With the main-case age_salvage, salv starts the
+#    one straight-line depreciation curve that prices equipment sold at connection, orders still in transit at
+#    connection and equipment left at the horizon end, so the whole curve scales.
+SALV_MULT = (("lo", 0.5), ("hi", 1.5))
+VARIANTS.update({
+    "naive_eps": {f"{c}|naive_eps{tag}": (c, {}, dict(planner="eps", eps=e))
+                  for c in ("A", "A+staged") for tag, e in (("01", 0.01), ("05", 0.05))},
+    "s_salv": {f"{c}|salv_{lv}": (c, dict(salv={j: round(v * m, 6) for j, v in _default_params().salv.items()}))
+               for c in core.CONFIGS for lv, m in SALV_MULT},
+})
+
 
 # B4 declared units (docs/phase1d_plan.md v2): MW-e (GE, DG at COP), MWth (ABS), MW (BESS), counted MW-DCC (standby)
 UNITS = {"GE": 4.455, "DG": 2.1, "ABS": 3.517, "BESS": 1.0, "SB": 2.5}
@@ -183,10 +196,16 @@ def signal_law(centre, thresholds, sig):
     planner that treats the estimate category as exact)."""
     from model.signal import joint_law, clean_law
     th = tuple(thresholds)
-    K = core.exact_kernel(th) if sig.get("planner", "registered") == "exact" else core.planner_kernel(th)
+    planner = sig.get("planner", "registered")
+    if planner == "eps":                                       # face value with weight eps on the broad kernel
+        K = core.eps_kernel(th, float(sig["eps"]))
+    else:
+        K = core.exact_kernel(th) if planner == "exact" else core.planner_kernel(th)
     tau = int(sig.get("tau", core.TAU))
-    return dict(law=clean_law(joint_law(np.array(centre), K, tau)), tau=tau,
-                planner=sig.get("planner", "registered"))
+    out = dict(law=clean_law(joint_law(np.array(centre), K, tau)), tau=tau, planner=planner)
+    if planner == "eps":                                       # earlier variants keep their job keys unchanged
+        out["eps"] = float(sig["eps"])
+    return out
 
 
 def frozen_p1c_plan():

@@ -1,6 +1,6 @@
 """Regenerate the released results from the stored runs and compare them with the released files.
 
-    python reproduce_check.py            (after unzipping runs.zip into experiments/)
+    python reproduce_check.py            (after unzipping runs.zip, and runs_es.zip if wanted, into experiments/)
 
 Runs the analyses and report generators, then compares every file in data/ with its released version (line endings
 normalized) and the paper figures with a reference directory when one is given (REF_FIGS). Prints one line per
@@ -48,6 +48,10 @@ def main():
             rc |= run(["experiments/analyze_p1d.py", "--variant", r["variant"], "--run", r["run"]])
     for script in ("make_p1d_report.py", "make_p1e_report.py", "make_p1f_report.py", "make_p1g_report.py"):
         rc |= run([f"experiments/{script}"])
+    if (ROOT / "experiments" / "r2_runs" / "es_naive_eps").exists():   # after unzipping runs_es.zip
+        for v in ("naive_eps", "s_salv"):
+            rc |= run(["experiments/analyze_p1d.py", "--variant", v, "--run", f"es_{v}"])
+        rc |= run(["experiments/es_fallback_resale.py"])
     rc |= run(["experiments/make_figures.py", "--paper"])
     after = snapshot()
     changed = sorted(k for k in after if before.get(k) != after[k])

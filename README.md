@@ -26,6 +26,8 @@ evaluated exactly under declared joint laws of the connection quarter and the fo
 
 The job-level results of every run (one JSON item per solved plan, the run plans and the logs, 21,130 files) are in
 the archive `runs.zip` at the repository root. Unzip it into `experiments/` to obtain `experiments/r2_runs/`.
+The runs of the face-value fallback and resale-value checks (Sections 5.4 and 5.5 of the current paper; 1,286 files)
+are in `runs_es.zip`; unzip it into `experiments/` in the same way.
 
 ## Environment
 
@@ -80,14 +82,20 @@ python experiments/p1e_tpit.py && python experiments/p1e_eval.py   # downloads t
 
 ## Current paper
 
-The current version adds three computations to the stored runs. None of them changes a stored result.
+The current version adds four computations to the stored runs. None of them changes a stored result.
 
 ```bash
 python experiments/es_perfect_info.py     # perfect-information reference: 116 deterministic path solves (minutes)
 python experiments/w3_decision_map.py     # decision map: re-tabulates stored rows and policies, no solve
 python experiments/es_model_size.py       # model sizes (builds, does not solve) and stored solve times
 python experiments/make_figures_es.py     # result figures at the 119 mm print width, into paper_es/figs/
+python experiments/es_fallback_resale.py  # face-value fallback and resale value: tables from the runs in runs_es.zip
 ```
+
+The face-value fallback and resale-value checks are two new variants of `experiments/p1d_core.py`: `naive_eps` (the
+face-value planner with weight 0.01 or 0.05 on the broad planner kernel, `p1c_core.eps_kernel`; 280 jobs) and `s_salv`
+(all resale fractions of new equipment scaled by 0.5 and 1.5; 352 jobs). `bash experiments/run_es_fallback_resale.sh`
+solves them from scratch (hours), applies the recorded solver rules, analyses them and writes the tables.
 
 `model/bridge.py` gains the option `only_T=t`, which builds the deterministic path model that knows the connection
 quarter `t` from the start (same procurement rules, only branch `t`). The default model is unchanged.
@@ -101,11 +109,13 @@ quarter `t` from the start (same procurement rules, only branch `t`). The defaul
 | Table 7 (perfect-information reference) | `data/es_perfect_info.json` | `es_perfect_info.py` |
 | Table 8 (decision map), Online Resource 1 decision-map tables | `data/w3/decision_map.json`, `data/w3/decision_map.md` | `w3_decision_map.py` |
 | Fig. 4 (running example) | `experiments/r2_runs/p1c_main/items/` | `make_figures_es.py` (`policy_illustration`) |
-| Fig. 5 (face value), Fig. 6 (techno-economic levels), Fig. 7 (timing) | `data/p1d/{naive,s_*,tau2,tau6}_summary.json` | `make_figures_es.py` (`naive`, `tornado`, value against arrival quarter) |
+| Fig. 5 (face value), Fig. 6 (techno-economic levels), Fig. 7 (timing) | `data/p1d/{naive,s_*,tau2,tau6}_summary.json` (Fig. 6 does not use `s_salv`) | `make_figures_es.py` (`naive`, `tornado`, value against arrival quarter) |
 | Table 9 (physical quantities) | `data/p1d/representative_cells.json` | `p1d_accounting.py repcells` |
 | Computation paragraph (model size, solve times) | `data/es_compute.json` | `es_model_size.py` |
+| Section 5.4 (face-value fallback), Online Resource 1 Tables S49–S50 | `data/p1d/naive_eps_{rows,summary}.json`, `data/es_fallback_resale.json`, `data/es_fallback_resale.md` | `analyze_p1d.py --variant naive_eps --run es_naive_eps`; `es_fallback_resale.py` |
+| Section 5.5 (resale value), Online Resource 1 Tables S51–S52 | `data/p1d/s_salv_{rows,summary}.json`, `data/es_fallback_resale.json`, `data/es_fallback_resale.md` | `analyze_p1d.py --variant s_salv --run es_s_salv`; `es_fallback_resale.py` |
 
-Some code comments cite design notes that are not part of this release; they are not needed to run the code or to reproduce the results.
+Run, file and field names keep the stage labels of the computations: p1c (Phase 1c) is the benchmark analysis, and the later labels p1d to p1g (Phase 1d to 1g) mark the variants and checks built on it, so a field such as `vs_phase1c` in a variant summary compares the variant with the benchmark. Some code comments cite design notes that are not part of this release; they are not needed to run the code or to reproduce the results.
 
 ## Citation
 
@@ -114,4 +124,4 @@ Please cite the paper and this repository (`CITATION.cff`). The repository is ar
 
 ## Licence
 
-Code: MIT (`LICENSE`). Data and results, including `runs.zip`: CC BY 4.0 (`LICENSE-data`).
+Code: MIT (`LICENSE`). Data and results, including `runs.zip` and `runs_es.zip`: CC BY 4.0 (`LICENSE-data`).
