@@ -101,7 +101,7 @@ The face-value fallback and resale-value checks are two new variants of `experim
 face-value planner with weight 0.01 or 0.05 on the broad planner kernel, `p1c_core.eps_kernel`; 280 jobs) and `s_salv`
 (all resale fractions of new equipment scaled by 0.5 and 1.5; 352 jobs). `bash experiments/run_es_fallback_resale.sh`
 solves them from scratch (hours), applies the recorded solver rules, analyses them and writes the tables.
-`es_fallback_decomposition.py` was written after the main results were known. It splits the gain from the error weight
+`es_fallback_decomposition.py` is a post hoc analysis. It splits the gain from the error weight
 by connection history and by whether the earlier decisions agree, using the stored plans only.
 
 `model/bridge.py` gains the option `only_T=t`, which builds the deterministic path model that knows the connection
