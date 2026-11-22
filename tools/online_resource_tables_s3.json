@@ -1,0 +1,289 @@
+[
+ {
+  "file": "data/p1c_tables.md",
+  "heading": "1. Claims",
+  "label": "tab:s-claims",
+  "caption": "Benchmark results at full precision (Section 5.1 of the paper; \\$M). The integration term is the numerical-integration allowance subtracted to give the value after allowance. H3b exceeds the threshold when the affected cell is solved with presolve disabled; when that cell is instead treated as omitted, its value after allowance is \\$2.36M, below the \\$3.16M threshold.",
+  "group": "benchmark",
+  "cell_override": [
+   [
+    "H3b",
+    8,
+    "**PASS** (amended)"
+   ]
+  ],
+  "rename": {
+   "lower end": "after allowance"
+  }
+ },
+ {
+  "file": "data/p1c_tables.md",
+  "heading": "2. E[",
+  "label": "tab:s-all",
+  "caption": "Value of the forecast for every configuration, family and shift of the true law (benchmark run; \\$M, with the per cent of the no-forecast cost and the integration term in brackets). A:staging and B:staging are the staging interactions.",
+  "group": "benchmark"
+ },
+ {
+  "include": "tables_decomp_s3",
+  "group": "benchmark"
+ },
+ {
+  "file": "data/supplement_tables.md",
+  "heading": "S5.",
+  "index": 0,
+  "label": "tab:s-money",
+  "caption": "Additive decomposition of the value of the forecast by cost component, over all cells (\\$M; positive: the forecast-aware plan spends less). The last row splits the total by forecast category.",
+  "group": "benchmark"
+ },
+ {
+  "file": "data/supplement_tables.md",
+  "heading": "S6.",
+  "index": 0,
+  "label": "tab:s-timing",
+  "align": "@{}l>{\\raggedright\\arraybackslash}p{6cm}>{\\raggedright\\arraybackslash}p{5.5cm}",
+  "caption": "Orders in the representative cells (high dispersion). Common orders precede the forecast; the last column gives post-forecast GE orders.",
+  "group": "benchmark"
+ },
+ {
+  "file": "data/supplement_tables.md",
+  "heading": "S7.",
+  "index": 0,
+  "label": "tab:s-fuel",
+  "caption": "Relative change in fuel and grid use, forecast-aware against no-forecast plan, in the representative cells.",
+  "group": "benchmark"
+ },
+ {
+  "file": "data/p1d_tables.md",
+  "heading": "B1. Staging",
+  "index": 0,
+  "label": "tab:s-staging",
+  "size": "\\scriptsize",
+  "caption": "Staging decomposition in the benchmark (\\$M). I00: unstaged; I10: import cap only; I01: full-standby delay only; I11: staged.",
+  "group": "procurement"
+ },
+ {
+  "file": "data/p1d_tables.md",
+  "heading": "B3. Backup",
+  "index": 0,
+  "label": "tab:s-lead",
+  "caption": "Value of the forecast in the lead-consistent reference, with standby ordered five quarters ahead (\\$M).",
+  "group": "procurement"
+ },
+ {
+  "file": "data/p1d_tables.md",
+  "heading": "B5. DG",
+  "index": 0,
+  "label": "tab:s-refurb",
+  "caption": "Recommissioning of DG delivered during bridge service, moderate and stress cases (\\$M).",
+  "group": "procurement"
+ },
+ {
+  "file": "data/p1d_tables.md",
+  "heading": "B6. Permitting",
+  "index": 0,
+  "label": "tab:s-permit",
+  "caption": "The encoded residence rule removed (\\$M).",
+  "group": "procurement"
+ },
+ {
+  "file": "data/p1d_tables.md",
+  "heading": "B4. Whole-unit",
+  "index": 0,
+  "label": "tab:s-roundup",
+  "caption": "The conservative whole-unit round-up rule. Value before and after rounding and the rounding cost of each plan (\\$M).",
+  "group": "procurement"
+ },
+ {
+  "file": "data/p1e_tables.md",
+  "heading": "E1. Rented",
+  "index": 0,
+  "label": "tab:s-rsb",
+  "caption": "Rented-standby contract added to the lead-consistent reference (\\$M).",
+  "group": "procurement"
+ },
+ {
+  "file": "data/p1e_tables.md",
+  "heading": "E1. Rented",
+  "index": 1,
+  "label": "tab:s-rsbcost",
+  "caption": "Rented standby at three cost levels, staged ERCOT-like case (\\$M).",
+  "group": "procurement"
+ },
+ {
+  "file": "data/p1e_tables.md",
+  "heading": "E2. The",
+  "index": 0,
+  "label": "tab:s-batch",
+  "caption": "Batched whole units against the round-up rule, with the rule's cost changes $d_N$ and $d_S$ (\\$M).",
+  "group": "procurement"
+ },
+ {
+  "file": "data/p1e_tables.md",
+  "heading": "E4a (lead",
+  "index": 0,
+  "label": "tab:s-e4a",
+  "caption": "Staging decomposition under the lead-consistent reference (\\$M).",
+  "group": "procurement"
+ },
+ {
+  "file": "data/p1e_tables.md",
+  "heading": "E4a' (batch",
+  "index": 0,
+  "label": "tab:s-e4a2",
+  "caption": "Staging decomposition under batched whole units (\\$M).",
+  "group": "procurement"
+ },
+ {
+  "file": "data/p1e_tables.md",
+  "heading": "E4b. Joint",
+  "index": 0,
+  "label": "tab:s-joint",
+  "size": "\\scriptsize",
+  "caption": "Joint implementations, one plan under both restrictions (\\$M).",
+  "group": "procurement"
+ },
+ {
+  "file": "data/p1f_tables.md",
+  "heading": "E-S. Techno",
+  "index": 0,
+  "label": "tab:s-es-results",
+  "size": "\\scriptsize",
+  "caption": "Techno-economic levels, one parameter group at a time (\\$M, $\\Delta=0$). H3 is the staging interaction in A. Table~\\ref{tab:s-es} gives the levels.",
+  "rename": {
+   "Phase 1c (main)": "registered benchmark"
+  },
+  "group": "techno"
+ },
+ {
+  "file": "data/p1f_tables.md",
+  "heading": "E-C, E-N",
+  "index": 0,
+  "label": "tab:s-variants",
+  "size": "\\scriptsize",
+  "caption": "No absorption chillers (nocchp), face-value planner (naive), forecast at quarter 2 or 6 (tau2, tau6), campus size $\\times0.5$ or $\\times2$ (size075, size300), four blocks (\\$M).",
+  "rename": {
+   "Phase 1c (main)": "registered benchmark"
+  },
+  "group": "techno"
+ },
+ {
+  "file": "data/p1f_tables.md",
+  "heading": "E-N. The value",
+  "index": 0,
+  "label": "tab:s-naive",
+  "size": "\\scriptsize",
+  "align": "@{}ll>{\\raggedleft\\arraybackslash}p{2.4cm}>{\\raggedleft\\arraybackslash}p{3.4cm}>{\\raggedleft\\arraybackslash}p{3.2cm}",
+  "caption": "The face-value planner and the value of modelling the forecast error (\\$M).",
+  "group": "techno"
+ },
+ {
+  "file": "data/p1f_tables.md",
+  "heading": "E-Z. Size",
+  "index": 0,
+  "label": "tab:s-size",
+  "caption": "Size-normalized value of the forecast ($\\sigma=2$).",
+  "group": "techno"
+ },
+ {
+  "file": "data/p1f_tables.md",
+  "heading": "E-R. Peak",
+  "index": 1,
+  "label": "tab:s-blocks",
+  "size": "\\scriptsize",
+  "align": "@{}llrrrr>{\\raggedright\\arraybackslash}p{4.2cm}",
+  "caption": "Four operating blocks per quarter, matched cells (173 of 176 jobs usable).",
+  "group": "techno"
+ },
+ {
+  "file": "data/p1g_result_tables.md",
+  "heading": "G1. Rental carry-over",
+  "index": 0,
+  "label": "tab:s-carry",
+  "group": "phase1g",
+  "caption": "Rental carry-over at staged connection (\\$M). Benchmark and carry-over values on the n matched cells; low and high: the carry-over value at each dispersion level; own reference: 0.5\\% of the variant's no-forecast cost; $\\Delta J$ no-forecast: change in the no-forecast plan's expected cost ($\\sigma=2$)."
+ },
+ {
+  "file": "data/p1g_result_tables.md",
+  "heading": "G1. Rental carry-over",
+  "index": 1,
+  "label": "tab:s-carry-h3",
+  "group": "phase1g",
+  "caption": "Staging interaction in A with rental carry-over (\\$M)."
+ },
+ {
+  "file": "data/p1g_result_tables.md",
+  "heading": "G1. Rental carry-over",
+  "index": 2,
+  "label": "tab:s-carry-cells",
+  "group": "phase1g",
+  "caption": "Expected staged rental in the connection quarter (MW) in the representative staged cells, under the true law of $T$ (forecast-aware plan: the $\\sigma=2$ joint law): the benchmark's rental decided at connection and the carried contract."
+ },
+ {
+  "file": "data/p1g_result_tables.md",
+  "heading": "G2. Compact table",
+  "index": 0,
+  "label": "tab:s-gr",
+  "group": "phase1g",
+  "caption": "Value of the forecast with limited gas rentals at three rents (\\$/kW-month; \\$M)."
+ },
+ {
+  "file": "data/p1g_result_tables.md",
+  "heading": "G2. Limited gas rentals",
+  "index": 1,
+  "label": "tab:s-gr-ref",
+  "group": "phase1g",
+  "caption": "Gas rentals, value against its own reference (0.5\\% of the variant's no-forecast cost) at each rent, compared separately."
+ },
+ {
+  "file": "data/p1g_result_tables.md",
+  "heading": "G2. Compact table",
+  "index": 1,
+  "label": "tab:s-gr-h3",
+  "group": "phase1g",
+  "caption": "Staging interaction in A with gas rentals in both configurations (\\$M)."
+ },
+ {
+  "file": "data/p1g_result_tables.md",
+  "heading": "G2. Where the money moves",
+  "index": 0,
+  "label": "tab:s-gr-money",
+  "group": "phase1g",
+  "size": "\\scriptsize",
+  "caption": "Value of the forecast by cost component with gas rentals ($\\sigma=2$; \\$M; positive: the forecast-aware plan spends less)."
+ },
+ {
+  "file": "data/p1g_result_tables.md",
+  "heading": "G2. Representative cells",
+  "index": 0,
+  "label": "tab:s-gr-cells",
+  "group": "phase1g",
+  "caption": "Gas rentals contracted for bridge quarters (MW-quarters) and gas CHP ordered before connection (MW), expected under the true law of $T$ (forecast-aware plan: the $\\sigma=2$ joint law), in the representative cells."
+ },
+ {
+  "file": "data/p1g_result_tables.md",
+  "heading": "Pre-declared expectations",
+  "index": 0,
+  "label": "tab:s-p1g-expect",
+  "group": "phase1g",
+  "align": "@{}>{\\raggedright\\arraybackslash}p{10.5cm}>{\\raggedright\\arraybackslash}p{3.6cm}l",
+  "caption": "Expected and computed effects of rental carry-over and gas rentals."
+ },
+ {
+  "file": "data/p1e_tables.md",
+  "heading": "E3. Operational",
+  "index": 0,
+  "label": "tab:s-co2",
+  "caption": "Operational CO$_2$ screening, forecast-aware minus no-forecast plan, expected over all benchmark cells (kt).",
+  "group": "energy"
+ },
+ {
+  "file": "data/supplement_tables.md",
+  "heading": "S34.",
+  "index": 0,
+  "label": "tab:s-gate2",
+  "size": "\\scriptsize",
+  "align": "@{}>{\\raggedright\\arraybackslash}p{3.2cm}rrrr",
+  "caption": "Certificates over the reliability boxes (Propositions~\\ref{prop:s-vertex} and~\\ref{prop:s-room}; \\$M). One type: the category is right with probability $r\\in[0.6,0.95]$; two types: $r_s\\in[0.8,0.95]$, $r_w\\in[0.55,0.95]$.",
+  "group": "certificates"
+ }
+]

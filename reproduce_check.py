@@ -51,6 +51,7 @@ def main():
     if (ROOT / "experiments" / "r2_runs" / "es_naive_eps").exists():   # after unzipping runs_es.zip
         rc |= run(["experiments/es_fallback_resale.py"])         # their analyses run in the manifest loop above
         rc |= run(["experiments/es_fallback_decomposition.py"])
+    rc |= run(["experiments/make_supplement_tables.py"])
     rc |= run(["experiments/make_figures.py", "--paper"])
     after = snapshot()
     changed = sorted(k for k in after if before.get(k) != after[k])

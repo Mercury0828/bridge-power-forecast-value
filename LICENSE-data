@@ -1,4 +1,14 @@
-The data and results in data/ and in the runs archive (runs.zip) are licensed under the
+The authors' data and results in data/ and in the run archives (runs.zip, runs_es.zip) are licensed under the
 Creative Commons Attribution 4.0 International licence (CC BY 4.0):
 https://creativecommons.org/licenses/by/4.0/
 Copyright (c) 2026 Jiachen Shen and Hui Zhong
+
+Third-party material is not covered by this licence and keeps the terms of its publisher:
+- data/p1e/ derives from the public Transmission Project and Information Tracking (TPIT) reports of the Electric
+  Reliability Council of Texas, under its Terms of Use (https://www.ercot.com/help/terms, last updated 07/20/2023,
+  read 22 November 2026). Clause 5 of those terms lets raw data from the public portions of the website be "used,
+  reproduced, and redistributed in compilations, charts, and analyses", and states that ERCOT does not guarantee
+  the accuracy of such compilations, charts or analyses. The workbooks are not redistributed. tpit_project_errors.csv keeps only the project identifier, name, owner code, dates and the derived
+  error, so that the published error statistics can be checked against the source.
+- Prices, costs, lead times and emission factors quoted from public reports are facts cited to their sources in the
+  paper and in its Online Resource 1.

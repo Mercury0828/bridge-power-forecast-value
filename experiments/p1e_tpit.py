@@ -4,7 +4,7 @@ source S7 in docs/phase1e_sources.md v2). Fixed before any policy is evaluated u
     python experiments/p1e_tpit.py   -> data/p1e/tpit_errors.json, data/p1e/tpit_project_errors.csv
 
 Data. ERCOT's archived Transmission Project and Information Tracking workbooks (2015-2026 .xlsx; about 3 snapshots
-per year) plus the current workbook. They are downloaded to D:\\_caches\\ercot_tpit (not committed); the URLs and the
+per year) plus the current workbook. They are downloaded to build/ercot_tpit or $TPIT_CACHE (not committed); the URLs and the
 SHA-256 of the files are recorded.
 
 Construction.
@@ -28,6 +28,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
 import pathlib
 import re
 import sys
@@ -41,7 +42,7 @@ import pandas as pd
 warnings.filterwarnings("ignore")
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "p1e"
-CACHE = pathlib.Path(r"D:\_caches\ercot_tpit")
+CACHE = pathlib.Path(os.environ.get("TPIT_CACHE", ROOT / "build" / "ercot_tpit"))
 ARCHIVE_URL = "https://www.ercot.com/files/docs/2021/10/22/Archived-Transmission-Project-and-Information-Tracking.zip"
 CURRENT_URL = "https://www.ercot.com/files/docs/2022/03/02/ERCOT-July-Ad-Hoc-TPIT-No-Cost-071326-UPDATE.xlsx"
 HORIZONS = (4, 8, 12)

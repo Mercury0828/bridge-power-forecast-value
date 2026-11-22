@@ -1,0 +1,38 @@
+[
+ {
+  "file": "data/p1e_tables.md",
+  "heading": "E0c. ERCOT TPIT",
+  "index": 0,
+  "label": "tab:s-tpit",
+  "caption": "TPIT schedule errors by horizon, 36 snapshots 2015--2026 (estimate minus actual, quarters)."
+ },
+ {
+  "file": "data/p1f_tables.md",
+  "heading": "E0-ext. TPIT",
+  "index": 0,
+  "label": "tab:s-tpit-ext",
+  "caption": "TPIT schedule errors with the 19 earlier snapshots of 2009--2014 added (quarters)."
+ },
+ {
+  "file": "data/p1f_tables.md",
+  "heading": "E0-ext. TPIT",
+  "index": 1,
+  "label": "tab:s-tpit-era",
+  "caption": "Mean TPIT error by completion era (quarters)."
+ },
+ {
+  "file": "data/p1e_tables.md",
+  "heading": "E0b/E0c",
+  "index": 0,
+  "label": "tab:s-tpit-values",
+  "size": "\\scriptsize",
+  "caption": "Value of the fixed plans under the proxy error laws (\\$M, $\\Delta=0$). The uninf columns keep each proxy's category marginal with $Y$ independent of $T$."
+ },
+ {
+  "file": "data/p1f_tables.md",
+  "heading": "E0-ext. TPIT",
+  "index": 2,
+  "label": "tab:s-tpit-ext-values",
+  "caption": "Value of the fixed plans under the extended TPIT error laws (\\$M, $\\Delta=0$)."
+ }
+]

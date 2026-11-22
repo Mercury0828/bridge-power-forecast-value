@@ -7,20 +7,20 @@
 # p1g_gasrent_25 (logs p1g_<v>_repair2.log) and both were re-analyzed before the report was regenerated.
 set -u
 cd "$(dirname "$0")/.."
-PY=.venv/Scripts/python.exe
+PY=${PY:-python}
 export PYTHONIOENCODING=utf-8
 VARIANTS="carry gasrent_25 gasrent_35 gasrent_50"
 for v in $VARIANTS; do
-  $PY experiments/harness.py --kind p1d --variant $v --run p1g_$v --workers 10 --time-limit 1800 \
+  "$PY" experiments/harness.py --kind p1d --variant $v --run p1g_$v --workers 10 --time-limit 1800 \
       > experiments/r2_runs/p1g_$v.log 2>&1
   echo "$v run exit $?"
-  $PY experiments/p1d_repair.py --run p1g_$v > experiments/r2_runs/p1g_${v}_repair.log 2>&1
+  "$PY" experiments/p1d_repair.py --run p1g_$v > experiments/r2_runs/p1g_${v}_repair.log 2>&1
   echo "$v repair exit $?"
-  $PY experiments/p1d_repair.py --run p1g_$v > experiments/r2_runs/p1g_${v}_repair2.log 2>&1
+  "$PY" experiments/p1d_repair.py --run p1g_$v > experiments/r2_runs/p1g_${v}_repair2.log 2>&1
   echo "$v escalation exit $?"
-  $PY experiments/analyze_p1d.py --variant $v --run p1g_$v > experiments/r2_runs/p1g_${v}_analyze.log 2>&1
+  "$PY" experiments/analyze_p1d.py --variant $v --run p1g_$v > experiments/r2_runs/p1g_${v}_analyze.log 2>&1
   echo "$v analyze exit $?"
 done
-$PY experiments/make_p1g_report.py > experiments/r2_runs/p1g_report.log 2>&1
+"$PY" experiments/make_p1g_report.py > experiments/r2_runs/p1g_report.log 2>&1
 echo "report exit $?"
 echo "CHAIN DONE"

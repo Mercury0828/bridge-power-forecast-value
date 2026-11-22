@@ -24,9 +24,9 @@ evaluated exactly under declared joint laws of the connection quarter and the fo
 | `tests/` | `pytest` suite: bookkeeping, duality and brute-force checks, the forecast tree, the variants |
 | `tools/` | `md2tex_tables.py` and `decomp_table.py`, which turn the tables in `data/` into the supplementary tables |
 
-The job-level results of every run (one JSON item per solved plan, the run plans and the logs, 21,130 files) are in
+The job-level results of every run (one JSON item per solved plan and the run plans, 21,020 files) are in
 the archive `runs.zip` at the repository root. Unzip it into `experiments/` to obtain `experiments/r2_runs/`.
-The runs of the face-value fallback and resale-value checks (Sections 5.4 and 5.5 of the current paper; 1,286 files)
+The runs of the face-value fallback and resale-value checks (Sections 5.4 and 5.5 of the current paper; 1,280 files)
 are in `runs_es.zip`; unzip it into `experiments/` in the same way.
 
 ## Environment
@@ -48,7 +48,8 @@ python experiments/analyze_p1d.py --variant spine --run p1d_spine   # one explor
 python experiments/make_p1d_report.py                     # data/p1d_tables.md (also make_p1e_report.py, make_p1f_report.py)
 python experiments/make_p1g_report.py                     # data/p1g_result_tables.md (rental carry-over, gas rentals)
 python experiments/make_figures.py --paper                # the paper's figures, into paper/figs/
-python tools/md2tex_tables.py <spec.json> <out.tex>       # tables in LaTeX
+python experiments/make_supplement_tables.py               # Online Resource 1 Tables S5-S7 and S34
+bash tools/make_online_resource_tables.sh                  # Online Resource 1 Tables S2-S39 in LaTeX, into build/tables/
 ```
 
 `python reproduce_check.py` runs all of these analyses and report generators at once. It then compares every
@@ -88,6 +89,9 @@ The current version adds four computations to the stored runs. None of them chan
 python experiments/es_perfect_info.py     # perfect-information reference: 116 deterministic path solves (minutes)
 python experiments/w3_decision_map.py     # decision map: re-tabulates stored rows and policies, no solve
 python experiments/es_model_size.py       # model sizes (builds, does not solve) and stored solve times
+mkdir -p build
+pdflatex -output-directory=build paper_es/figs/fig_timeline.tex   # Fig. 1 (needs a TeX distribution with TikZ)
+pdflatex -output-directory=build paper_es/figs/fig_system.tex     # Fig. 2
 python experiments/make_figures_es.py     # result figures at the 119 mm print width, into paper_es/figs/
 python experiments/es_fallback_resale.py  # face-value fallback and resale value: tables from the runs in runs_es.zip
 python experiments/es_fallback_decomposition.py  # gain from the error weight by connection history (both archives, no solve)
@@ -106,7 +110,7 @@ quarter `t` from the start (same procurement rules, only branch `t`). The defaul
 | Current paper item | Data | Code |
 |---|---|---|
 | Fig. 1 (information and commitments), Fig. 2 (campus energy system) | — | `paper_es/figs/fig_timeline.tex`, `paper_es/figs/fig_system.tex` (TikZ, `pdflatex`) |
-| Table 4 (techno-economic data), Table 5 (main variants) | — | parameter values in `model/bridge.py` (`Params`); variant definitions in `experiments/p1d_core.py` (`VARIANTS`) |
+| Tables 4 and A1 (techno-economic and model data), Table 5 (main variants) | — | parameter values in `model/bridge.py` (`Params`) with the main-analysis settings of `experiments/p1a_core.py` and `experiments/p1c_core.py` (`params`); variant definitions in `experiments/p1d_core.py` (`VARIANTS`) |
 | Table 6 (value, allowance and threshold columns), Fig. 3 (value of the estimate) | `data/p1c_summary.json`, `data/p1c_tables.md` | `analyze_p1c.py`; `make_figures_es.py` (`main_values`) for Fig. 3 |
 | Table 6, columns LC, RU and Joint | `data/p1d/spine_summary.json` (LC), `data/p1d/units_summary.json` (RU), `data/p1d/e4b_spine_summary.json` (Joint) | `analyze_p1d.py` |
 | Table 7 (perfect-information reference) | `data/es_perfect_info.json` | `es_perfect_info.py` |
@@ -114,6 +118,8 @@ quarter `t` from the start (same procurement rules, only branch `t`). The defaul
 | Fig. 4 (running example) | `experiments/r2_runs/p1c_main/items/` | `make_figures_es.py` (`policy_illustration`) |
 | Fig. 5 (face value), Fig. 6 (techno-economic levels), Fig. 7 (timing) | `data/p1d/{naive,s_*,tau2,tau6}_summary.json` (Fig. 6 does not use `s_salv`) | `make_figures_es.py` (`naive`, `tornado`, value against arrival quarter) |
 | Table 9 (physical quantities) | `data/p1d/representative_cells.json` | `p1d_accounting.py repcells` |
+| Online Resource 1 Tables S2-S4, S8-S33, S35-S39 | `data/p1c_tables.md`, `data/p1d/oracle_decomposition.json`, `data/p1d_tables.md`, `data/p1e_tables.md`, `data/p1f_tables.md`, `data/p1g_result_tables.md` | `make_p1c_report.py`, `tools/decomp_table.py`, `make_p1d_report.py`, `make_p1e_report.py`, `make_p1f_report.py`, `make_p1g_report.py`; LaTeX: `bash tools/make_online_resource_tables.sh` |
+| Online Resource 1 Tables S5-S7, S34 | `data/p1d/component_reconciliation.json`, `data/p1d/representative_cells.json`, `data/gate2_vertex_certificates_A_A-staged_B.json` -> `data/supplement_tables.md` | `make_supplement_tables.py` |
 | Computation paragraph (model size, solve times) | `data/es_compute.json` | `es_model_size.py` |
 | Computation paragraph (sensitivity solves: 7,724, of which 7,720 usable) | `data/run_manifest.json` (runs with harness kind `p1d`), `unusable` in `data/p1d/blocks4_summary.json` (3) and `data/es_fallback_resale.json` (1) | `run_manifest.py`, `analyze_p1d.py` |
 | Section 5.4 (decomposition of the gain from the error weight), Online Resource 1 Table S53 | `data/es_fallback_decomposition.json`, `data/es_fallback_decomposition.md` | `es_fallback_decomposition.py` |
@@ -129,4 +135,5 @@ Please cite the paper and this repository (`CITATION.cff`). The repository is ar
 
 ## Licence
 
-Code: MIT (`LICENSE`). Data and results, including `runs.zip` and `runs_es.zip`: CC BY 4.0 (`LICENSE-data`).
+Code: MIT (`LICENSE`). The authors' data and results, including `runs.zip` and `runs_es.zip`: CC BY 4.0 (`LICENSE-data`).
+Facts taken from third-party sources keep the terms of their publishers (`LICENSE-data`).

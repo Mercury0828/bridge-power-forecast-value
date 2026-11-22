@@ -19,6 +19,9 @@ sys.path.insert(0, str(ROOT))
 import make_figures as mf  # noqa: E402
 import numpy as np  # noqa: E402
 import matplotlib.pyplot as plt  # noqa: E402
+from matplotlib.artist import Artist  # noqa: E402
+from matplotlib.collections import LineCollection, PolyCollection  # noqa: E402
+from matplotlib.transforms import IdentityTransform  # noqa: E402
 from experiments import p1c_core as core  # noqa: E402
 
 PRINT_W = 119.0
@@ -33,6 +36,90 @@ def _fig_es(w, h):
 
 
 mf._fig_mm = _fig_es
+_orig_save_exact = mf._save_exact
+
+
+def _clipped_hatches(fig):
+    """Replace each hatch tile pattern by the same strokes and dots, cut to the bar. A tile extends far outside the bar
+    and is only clipped by the viewer, so tools that read the page see it crossing margins and labels. The geometry is
+    computed while drawing, because legend boxes move with the text metrics of each output backend."""
+    items = [(p, ax) for ax in fig.axes for p in ax.patches]
+    items += [(p, None) for leg in fig.legends for p in leg.get_patches()]
+    for patch, ax in items:
+        hatch = patch.get_hatch()
+        if hatch:
+            colour = patch.get_hatchcolor()
+            patch.set_hatch(None)
+            (fig if ax is None else ax).add_artist(_ClippedHatch(patch, ax, hatch, colour))
+
+
+class _ClippedHatch(Artist):
+    def __init__(self, patch, ax, hatch, colour):
+        super().__init__()
+        self._patch, self._ax, self._pattern, self._colour = patch, ax, hatch, colour
+        self.set_zorder(10 if ax is None else patch.get_zorder() + 0.1)
+
+    def get_window_extent(self, renderer=None):
+        return self._patch.get_window_extent()
+
+    def draw(self, renderer):
+        fig, hatch = self.get_figure(root=True), self._pattern
+        per_pt = fig.dpi / 72.0
+        box = self._patch.get_window_extent()
+        x0, x1 = sorted((box.x0, box.x1))
+        y0, y1 = sorted((box.y0, box.y1))
+        if self._ax is not None:
+            x0, x1 = max(x0, self._ax.bbox.x0), min(x1, self._ax.bbox.x1)
+            y0, y1 = max(y0, self._ax.bbox.y0), min(y1, self._ax.bbox.y1)
+        inset = 0.25 * per_pt                             # stay inside the outline
+        x0, x1, y0, y1 = x0 + inset, x1 - inset, y0 + inset, y1 - inset
+        if x1 <= x0 or y1 <= y0:
+            return
+        shapes = []
+        strokes = []
+        for sign, n in ((1, hatch.count("/") + hatch.count("x")), (-1, hatch.count("x"))):
+            if not n:
+                continue
+            step = 12.0 / n * per_pt                      # matplotlib's spacing: 6 n strokes per 72 pt
+            # the strokes are y = sign * (x - c) with c on one grid for the whole page
+            ends = (x0 - sign * y0, x0 - sign * y1, x1 - sign * y0, x1 - sign * y1)
+            for c in np.arange(np.floor(min(ends) / step), np.ceil(max(ends) / step) + 1) * step:
+                lo, hi = sorted((c + sign * y0, c + sign * y1))
+                a, b = max(lo, x0), min(hi, x1)
+                if b - a > 1e-6:
+                    strokes.append([(a, sign * (a - c)), (b, sign * (b - c))])
+        if strokes:
+            shapes.append(LineCollection(strokes, colors=[self._colour],
+                                         linewidths=plt.rcParams["hatch.linewidth"], transform=IdentityTransform()))
+        if "." in hatch:
+            step = 12.0 / hatch.count(".") * per_pt
+            r = 0.1 * step
+            turn = np.linspace(0, 2 * np.pi, 12, endpoint=False)
+            ring = r * np.c_[np.cos(turn), np.sin(turn)]
+            mx, my = (x0 + x1) / 2, (y0 + y1) / 2         # centred, so that a small legend box keeps its dots
+            rows, cols = int((y1 - y0) / step) + 1, int((x1 - x0) / step) + 1
+            dots = []
+            for row in range(-rows, rows + 1):
+                cy = my + row * step
+                for col in range(-cols, cols + 1):
+                    cx = mx + (col + 0.5 * (row % 2)) * step
+                    if x0 + r <= cx <= x1 - r and y0 + r <= cy <= y1 - r:
+                        dots.append(ring + (cx, cy))
+            if dots:
+                shapes.append(PolyCollection(dots, facecolors=[self._colour], edgecolors="none",
+                                             transform=IdentityTransform()))
+        for shape in shapes:
+            shape.set_figure(fig)
+            shape.draw(renderer)
+        self.stale = False
+
+
+def _save_clipped(fig, name):
+    _clipped_hatches(fig)
+    _orig_save_exact(fig, name)
+
+
+mf._save_exact = _save_clipped
 mf.CFG_LABEL.update({"A": "Short wait", "A+staged": "Short wait, partial supply", "B": "Long wait",
                      "B+staged": "Long wait, partial supply"})
 mf.TXT.update(value="Value of using the estimate ($M)", arrives="estimate\narrives", none="no estimate",

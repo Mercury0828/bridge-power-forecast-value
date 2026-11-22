@@ -13,3 +13,4 @@ paper_es/figs/*.log
 data/es_perfect_info.partial.json
 data/es_perfect_info.log
 data/es_perfect_info.err
+build/
