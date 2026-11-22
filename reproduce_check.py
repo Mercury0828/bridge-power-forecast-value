@@ -49,9 +49,8 @@ def main():
     for script in ("make_p1d_report.py", "make_p1e_report.py", "make_p1f_report.py", "make_p1g_report.py"):
         rc |= run([f"experiments/{script}"])
     if (ROOT / "experiments" / "r2_runs" / "es_naive_eps").exists():   # after unzipping runs_es.zip
-        for v in ("naive_eps", "s_salv"):
-            rc |= run(["experiments/analyze_p1d.py", "--variant", v, "--run", f"es_{v}"])
-        rc |= run(["experiments/es_fallback_resale.py"])
+        rc |= run(["experiments/es_fallback_resale.py"])         # their analyses run in the manifest loop above
+        rc |= run(["experiments/es_fallback_decomposition.py"])
     rc |= run(["experiments/make_figures.py", "--paper"])
     after = snapshot()
     changed = sorted(k for k in after if before.get(k) != after[k])

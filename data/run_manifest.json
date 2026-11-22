@@ -1,5 +1,43 @@
 [
  {
+  "run": "es_naive_eps",
+  "harness_kind": "p1d",
+  "variant": "naive_eps",
+  "job_kinds": {
+   "sig": 140,
+   "nosig": 140
+  },
+  "jobs": 280,
+  "items": 280,
+  "ok": 280,
+  "repairs": {
+   "D-022a solver rule": 3
+  },
+  "attempts": [
+   "attempt1"
+  ],
+  "fingerprint": "1d6108698fc747d6"
+ },
+ {
+  "run": "es_s_salv",
+  "harness_kind": "p1d",
+  "variant": "s_salv",
+  "job_kinds": {
+   "nosig": 176,
+   "sig": 176
+  },
+  "jobs": 352,
+  "items": 352,
+  "ok": 352,
+  "repairs": {
+   "D-022a solver rule": 2
+  },
+  "attempts": [
+   "attempt1"
+  ],
+  "fingerprint": "1d6108698fc747d6"
+ },
+ {
   "run": "p1a_main",
   "harness_kind": "p1a",
   "variant": "",

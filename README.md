@@ -90,12 +90,15 @@ python experiments/w3_decision_map.py     # decision map: re-tabulates stored ro
 python experiments/es_model_size.py       # model sizes (builds, does not solve) and stored solve times
 python experiments/make_figures_es.py     # result figures at the 119 mm print width, into paper_es/figs/
 python experiments/es_fallback_resale.py  # face-value fallback and resale value: tables from the runs in runs_es.zip
+python experiments/es_fallback_decomposition.py  # gain from the error weight by connection history (both archives, no solve)
 ```
 
 The face-value fallback and resale-value checks are two new variants of `experiments/p1d_core.py`: `naive_eps` (the
 face-value planner with weight 0.01 or 0.05 on the broad planner kernel, `p1c_core.eps_kernel`; 280 jobs) and `s_salv`
 (all resale fractions of new equipment scaled by 0.5 and 1.5; 352 jobs). `bash experiments/run_es_fallback_resale.sh`
 solves them from scratch (hours), applies the recorded solver rules, analyses them and writes the tables.
+`es_fallback_decomposition.py` was written after the main results were known. It splits the gain from the error weight
+by connection history and by whether the earlier decisions agree, using the stored plans only.
 
 `model/bridge.py` gains the option `only_T=t`, which builds the deterministic path model that knows the connection
 quarter `t` from the start (same procurement rules, only branch `t`). The default model is unchanged.
@@ -112,6 +115,8 @@ quarter `t` from the start (same procurement rules, only branch `t`). The defaul
 | Fig. 5 (face value), Fig. 6 (techno-economic levels), Fig. 7 (timing) | `data/p1d/{naive,s_*,tau2,tau6}_summary.json` (Fig. 6 does not use `s_salv`) | `make_figures_es.py` (`naive`, `tornado`, value against arrival quarter) |
 | Table 9 (physical quantities) | `data/p1d/representative_cells.json` | `p1d_accounting.py repcells` |
 | Computation paragraph (model size, solve times) | `data/es_compute.json` | `es_model_size.py` |
+| Computation paragraph (sensitivity solves: 7,724, of which 7,720 usable) | `data/run_manifest.json` (runs with harness kind `p1d`), `unusable` in `data/p1d/blocks4_summary.json` (3) and `data/es_fallback_resale.json` (1) | `run_manifest.py`, `analyze_p1d.py` |
+| Section 5.4 (decomposition of the gain from the error weight), Online Resource 1 Table S53 | `data/es_fallback_decomposition.json`, `data/es_fallback_decomposition.md` | `es_fallback_decomposition.py` |
 | Section 5.4 (face-value fallback), Online Resource 1 Tables S49–S50 | `data/p1d/naive_eps_{rows,summary}.json`, `data/es_fallback_resale.json`, `data/es_fallback_resale.md` | `analyze_p1d.py --variant naive_eps --run es_naive_eps`; `es_fallback_resale.py` |
 | Section 5.5 (resale value), Online Resource 1 Tables S51–S52 | `data/p1d/s_salv_{rows,summary}.json`, `data/es_fallback_resale.json`, `data/es_fallback_resale.md` | `analyze_p1d.py --variant s_salv --run es_s_salv`; `es_fallback_resale.py` |
 
